@@ -17,8 +17,6 @@ jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.h
 publisher:
   name: HL7 International / Community Based Collaborative Care
   url: http://hl7.org/Special/committees/cbcc
-  email: cbcp@lists.hl7.org
-
 
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -32,12 +30,8 @@ extension:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
-# dependencies:
-#   hl7.fhir.us.core: 3.1.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
+dependencies:
+  hl7.fhir.us.core: 6.1.0
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
@@ -51,14 +45,11 @@ extension:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
+pages:
+  index.md:
+    title: Index
+  technical.md:
+    title: Technical Considerations
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -85,6 +76,7 @@ extension:
 menu:
   Home: index.html
   Artifacts: artifacts.html
+  Technical: technical.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

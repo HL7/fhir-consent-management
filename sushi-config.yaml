@@ -5,8 +5,8 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.consent-management
 canonical: http://hl7.org/fhir/us/consent-management
-name: FAST Consent Management
-title: FAST Consent Management
+name: ScalableConsentManagement
+title: Scalable Consent Management
 description: A FHIR IG that provides APIs for managing consent at scale across multiple consent management repositories.
 status: active # draft | active | retired | unknown
 version: 0.1.0

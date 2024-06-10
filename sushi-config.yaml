@@ -16,7 +16,7 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 International / Community Based Collaborative Care
-  url: http://hl7.org/Special/committees/cbcc
+  url: http://www.hl7.org/Special/committees/cbcc
 
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -50,6 +50,16 @@ pages:
     title: Index
   technical.md:
     title: Technical Considerations
+  review.md:
+    title: Review Consent Use Case
+  filesign.md:
+    title: File/Sign Consent Use Case
+  delegate.md:
+    title: Delegate Consent Use Case
+  revoke.md:
+    title: Revoke Consent Use Case
+  disclosure.md:
+    title: Disclosure/Audit of Consent Use Case
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -75,6 +85,12 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Use Cases:
+    Review Consent: review.html
+    File/Sign: filesign.html
+    Delegate: delegate.html
+    Revoke: revoke.html
+    Disclosure/Audit: disclosure.html
   Artifacts: artifacts.html
   Technical: technical.html
 

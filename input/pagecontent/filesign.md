@@ -1,6 +1,6 @@
 ### Sign and File Consent
 
-**Actor:** Patient/Client
+**Actor:** Consenter
 
 **Pre-condition:**
 A consent form has been reviewed and completed (see use case X).

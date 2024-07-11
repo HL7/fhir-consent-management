@@ -1,4 +1,5 @@
 ### Disclosure Audit
+(implementing this use case is optional)
 
 **Actor:** Consenter
 

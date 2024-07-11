@@ -16,7 +16,7 @@ Our initial set of potential use cases are:
 4. File/Sign Consent
 5. Delegate Consent
 6. Revoke Consent
-7. Propogation of Revocation
+7. Propagation of Revocation
 8. Disclosure Audit
 9. Query Consent Decision
 10. Enforce Consent Decision

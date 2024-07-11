@@ -60,6 +60,8 @@ pages:
     title: Revoke Consent Use Case
   disclosure.md:
     title: Disclosure/Audit of Consent Use Case
+  propagation.md:
+    title: Propagate Consent Events Use Case
 #
 #
 # The parameters property represents IG.definition.parameter. Rather

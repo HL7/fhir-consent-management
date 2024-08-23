@@ -99,7 +99,7 @@ menu:
     Delegate: delegate.html
     Revoke: revoke.html
     Disclosure/Audit: disclosure.html
-    Propogation: propogation.html
+    Propagation: propagation.html
     Provenance: provenance.html
     Request Consent: request.html
   Artifacts: artifacts.html

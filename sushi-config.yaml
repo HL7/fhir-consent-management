@@ -64,6 +64,8 @@ pages:
     title: Disclosure/Audit of Consent Use Case
   propagation.md:
     title: Propagate Consent Events Use Case
+  provenance.md:
+    title: Determine Consent Provenance Use Case
   request.md:
     title: Request Consent Use Case
 #
@@ -97,6 +99,9 @@ menu:
     Delegate: delegate.html
     Revoke: revoke.html
     Disclosure/Audit: disclosure.html
+    Propogation: propogation.html
+    Provenance: provenance.html
+    Request Consent: request.html
   Artifacts: artifacts.html
   Technical: technical.html
 

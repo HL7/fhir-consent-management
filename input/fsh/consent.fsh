@@ -1,6 +1,6 @@
 Profile: FASTConsent
 Parent: Consent
-Description: "An example profile of the Consent resource."
+Description: "This profile captures the details of a Patient's Consent."
 * patient 1..1 MS
 * dateTime 1..1 MS
 

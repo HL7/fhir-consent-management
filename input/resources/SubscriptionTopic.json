@@ -1,0 +1,29 @@
+{
+  "resourceType": "SubscriptionTopic",
+  "id": "FASTConsentSubscriptionTopic",
+  "url": "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic",
+  "status": "active",
+  "name": "FASTConsent",
+  "title": "FAST Consent Subscription Topic",
+  "experimental": false,
+  "date": "2025-03-01",
+  "description": "This is the subscription topic used for ensuring Consent records are updated amongst a set of Consent Registries.",
+  "resourceTrigger": [
+    {
+      "description": "When a consent record has been 'touched' and needs to be distributed amongst interested parties.",
+      "resource": "http://hl7.org/fhir/StructureDefinition/Consent"
+    }
+  ],
+  "canFilterBy": [
+    {
+      "description": "The id of the consent patient.",
+      "filterParameter": "patientId",
+      "comparator": ["eq"] 
+    },
+    {
+      "description": "The id of the organization that gained consent.",
+      "filterParameter": "organizationId",
+      "comparator": ["eq"] 
+    }
+  ]
+}

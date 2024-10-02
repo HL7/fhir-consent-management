@@ -21,7 +21,7 @@ A [consent request may be initiated by an administrator](request.html), or the c
 
 - The consenter shall be able to see whether the form is complete and ready for signing and submission as the consenter navigates the form
 
-- Any information known to the session (such as the consenter's name, DoB, or current date and time) should be pre-filled in the form to minimize the effort for the consenter.
+- Any information known to the session (such as the consenter's name, date of birth, or current date and time) should be pre-filled in the form to minimize the effort for the consenter.
 
 **Post-condition:**
 A completed consent form is available for submission.

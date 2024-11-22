@@ -8,18 +8,27 @@
 <artifact id="SubscriptionTopic/FASTConsentSubscriptionTopic" key="SubscriptionTopic-FASTConsentSubscriptionTopic" name="FAST Consent Subscription Topic"/>
 <artifact id="StructureDefinition/FASTConsent" key="StructureDefinition-FASTConsent" name="FASTConsent"/>
 <artifact id="StructureDefinition/FASTConsentAuditEvent" key="StructureDefinition-FASTConsentAuditEvent" name="FASTConsentAuditEvent"/>
-<artifact id="StructureDefinition/FASTConsentDocumentReference" key="StructureDefinition-FASTConsentDocumentReference" name="FASTConsentDocumentReference"/>
 <artifact id="StructureDefinition/FASTConsentProvenance" key="StructureDefinition-FASTConsentProvenance" name="FASTConsentProvenance"/>
-<artifact id="StructureDefinition/FASTConsentQuestionnaireResponse" key="StructureDefinition-FASTConsentQuestionnaireResponse" name="FASTConsentQuestionnaireResponse"/>
 <artifact id="StructureDefinition/FASTConsentTask" key="StructureDefinition-FASTConsentTask" name="FASTConsentTask"/>
+<artifact id="Subscription/FASTOrganizationSubscriptionExample" key="Subscription-FASTOrganizationSubscriptionExample" name="FASTOrganizationSubscriptionExample"/>
+<artifact id="Subscription/FASTPatientSubscriptionExample" key="Subscription-FASTPatientSubscriptionExample" name="FASTPatientSubscriptionExample"/>
+<artifact id="StructureDefinition/FASTQuestionnaireResponse" key="StructureDefinition-FASTQuestionnaireResponse" name="FASTQuestionnaireResponse"/>
+<artifact id="StructureDefinition/FASTSubscription" key="StructureDefinition-FASTSubscription" name="FASTSubscription"/>
+<artifact id="Bundle/FASTSubscriptionNotification" key="Bundle-FASTSubscriptionNotification" name="FASTSubscriptionNotification"/>
+<artifact id="Parameters/FASTSubscriptionNotificationParameters" key="Parameters-FASTSubscriptionNotificationParameters" name="FASTSubscriptionNotificationParameters"/>
+<artifact id="Organization/OrganizationExample" key="Organization-OrganizationExample" name="OrganizationExample"/>
 <artifact id="Patient/PatientExample" key="Patient-PatientExample" name="PatientExample"/>
+<artifact id="QuestionnaireResponse/QuestionnaireResponseExample" key="QuestionnaireResponse-QuestionnaireResponseExample" name="QuestionnaireResponseExample"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="delegate" name="Delegate Consent Use Case"/>
+<page key="provenance" name="Determine Consent Provenance Use Case"/>
 <page key="disclosure" name="Disclosure/Audit of Consent Use Case"/>
 <page key="filesign" name="File/Sign Consent Use Case"/>
 <page key="index" name="Index"/>
+<page key="propagation" name="Propagate Consent Events Use Case"/>
+<page key="request" name="Request Consent Use Case"/>
 <page key="review" name="Review Consent Use Case"/>
 <page key="revoke" name="Revoke Consent Use Case"/>
 <page key="toc" name="Table of Contents"/>

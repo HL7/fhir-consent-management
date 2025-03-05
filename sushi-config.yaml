@@ -85,6 +85,15 @@ pages:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
 # │ as a simple structure where the YAML key is the menu item name and the value is the URL.       │

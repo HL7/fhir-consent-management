@@ -1,27 +1,30 @@
-### Cross-Version Analysis
-{% include cross-version-analysis.xhtml %}
+This section of the implementation guide defines the specific conformance requirements for systems wishing to conform to this FAST Consent implementation guide.
 
-### Intellectual Property Statements
-{% include ip-statements.xhtml %}
+### Context
 
-### Global Profiles
+#### Pre-reading
+Before reading this formal specification, implementers should first familiarize themselves with two other key portions of the specification:
 
-{% include globals-table.xhtml %}
+* The [Use Cases & Overview](usecases.html) page provides context for what this formal specification is trying to accomplish and will give a sense of both the business context and general process flow enabled by the formal specification below.
 
-### IG Dependencies
+* The [Technical Background](background.html) page provides information about the underlying specifications and indicates what portions of them should be read and understood to have the necessary foundation to understand the constraints and usage guidance described here.
 
-This IG Contains the following dependencies on other IGs.
 
-{% include dependency-table.xhtml %}
+#### Systems
 
-### Value Sets
+This implementation guide sets expectations for two types of systems:
 
-These value sets are used in this implementation guide:
+* **Client** systems are systems that are responsible for gathering and filing consents
+* **Server** systems are consent administration services that store consents and handle requests for consents.
 
-{% include valueset-ref-all-list.xhtml %}
 
-### Code Systems
+#### Profiles
+This specification makes significant use of [FHIR profiles]({{site.data.fhir.path}}profiling.html) and terminology artifacts to describe the content to be shared as part of prior authorization requests and responses.
 
-These code systems are used in this implementation guide:
+The full set of profiles defined in this implementation guide can be found by following the links on the [Artifacts](artifact_overview.html) page.
 
-{% include codesystem-ref-all-list.xhtml %}
+#### Integration with other Implementation Guides
+
+### Detailed Requirements
+
+#### Summary

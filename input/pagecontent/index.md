@@ -39,3 +39,43 @@ NOTE: The actual authentication (is the consumer who they say they are) and data
 
 **Authentication**: The process of assuring a user's identity. This is NOT in scope for this project.
 
+### Content and Organization
+This implementation guide (and the menu for it) is organized into the following sections:
+
+* *Background* - Supporting informative pages that do not set conformance expectations
+  * [Reading this IG](background.html) points to key pages in the FHIR spec and other source specifications that must be understood in order to understand this guide
+  * *Use Case Pages - each use case page describes the intent use case, gives examples of its use, and provides a high-level overview of expected process flow
+  * [Project and Participants](credits.html) gives a high-level overview of FAST and identifies the individuals and organizations involved in developing this implementation guide
+* *Specification* - Pages that set conformance expectations
+  * [Conformance Expectations](conformance.html) defines base language and expectations for declaring conformance with the guide
+  * [Technical Specification](technical.html) defines the specific conformance requirements for systems wishing to conform to this implementation guide.
+  * [Privacy, Safety, and Security](privacy.html) covers considerations around data access, protection, and similar concepts that apply to all implementations
+* *FHIR Artifacts*
+  * [Overview](fhirArtifacts.html) introduces and provides links to the profiles, search parameters and other FHIR artifacts used in this implementation guide
+  * [Artifacts](artifacts.html) points to the complete list of artifacts defined in this guide
+* *Base Specifications* - Quick links to the various specifications this guide derives from
+* *Support* - Links to help with use of this guide
+  * *Discussion Forum* is a place to ask questions about the guide, discuss potential issues, and search through prior discussions
+  * *Project Home* includes information about project calls, agendas, past minutes, and instructions for how to participate
+  * *Project Dashoard* shows new and historical issues that have been logged against the specification, proposed dispositions, unapplied changes, etc.
+  * *Propose a Change* allows formal submission of requests for change to the specification.  (Consider raising on the discussion forum first.)
+  * [Downloads](downloads.html) allows download of this and other specifications, as well as other useful files
+
+### Dependencies
+
+At present, FAST Consent is based on [FHIR R4]({{site.data.fhir.path}}).  In addition, PAS is dependent on the [US Core 6.1 (FHIR R4)]({{site.data.fhir.ver.uscore}}) implementation guides.  
+
+In addition, this guide uses content from the following FHIR-related specifications and implementation guides:
+* [Subscriptions R5 Backport]({{site.data.fhir.ver.subscriptions}})
+* [IHE Privacy Consent on FHIR]({{site.data.fhir.ver.iheconsent}})
+
+In addition, this guide also relies on a number of parent implementation guides:
+
+{% include dependency-table-nontech.xhtml %}
+
+This implementation guide defines additional constraints and usage expectations above and beyond the information found in these base specifications.
+
+### Intellectual Property Considerations
+This implementation guide and the underlying FHIR specification are licensed as public domain under the [FHIR license](http://hl7.org/fhir/R4/license.html#license). The license page also describes rules for the use of the FHIR name and logo.
+
+{% include ip-statements.xhtml %}

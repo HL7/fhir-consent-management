@@ -21,16 +21,13 @@
 <artifact id="QuestionnaireResponse/QuestionnaireResponseExample" key="QuestionnaireResponse-QuestionnaireResponseExample" name="QuestionnaireResponseExample"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
+<page key="artifact_overview" name="Artifact Overview"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="delegate" name="Delegate Consent Use Case"/>
-<page key="provenance" name="Determine Consent Provenance Use Case"/>
-<page key="disclosure" name="Disclosure/Audit of Consent Use Case"/>
-<page key="filesign" name="File/Sign Consent Use Case"/>
-<page key="index" name="Index"/>
-<page key="propagation" name="Propagate Consent Events Use Case"/>
-<page key="request" name="Request Consent Use Case"/>
-<page key="review" name="Review Consent Use Case"/>
-<page key="revoke" name="Revoke Consent Use Case"/>
+<page key="conformance" name="Conformance Expectations"/>
+<page key="index" name="Overview"/>
+<page key="credits" name="Project and Participants"/>
+<page key="background" name="Reading this IG"/>
 <page key="toc" name="Table of Contents"/>
-<page key="technical" name="Technical Considerations"/>
+<page key="technical" name="Technical Specification"/>
+<page key="usecases" name="Use Cases"/>
 </specification>

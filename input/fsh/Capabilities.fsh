@@ -17,6 +17,7 @@ Usage: #definition
   * mode = #client
   * resource[+]
     * type = #Parameters
+    * profile = Canonical(FileConsentParameters)
     * operation[+]
       * name = "File Consent"
       * definition = Canonical(FileConsent)
@@ -56,6 +57,7 @@ Usage: #definition
   * mode = #server
   * resource[+]
     * type = #Parameters
+    * profile = Canonical(FileConsentParameters)
     * operation[+]
       * name = "File Consent"
       * definition = Canonical(FileConsent)

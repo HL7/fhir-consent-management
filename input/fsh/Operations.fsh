@@ -27,16 +27,11 @@ Usage: #definition
   * name = #document
   * use = #in
   * min = 0
-  * max = "*"
+  * max = "1"
   * documentation = "Accompanying documentation for the Consent"
-  * type = #DocumentReference
-* parameter[+]
-  * name = #questionnaire
-  * use = #in
-  * min = 0
-  * max = "*"
-  * documentation = "Accompanying questionnaire responses for the Consent"
-  * type = #QuestionnaireResponse
+  * type = #Resource
+  * targetProfile[+] = Canonical(FASTDocumentReference)
+  * targetProfile[+] = Canonical(FASTQuestionnaireResponse)
 
 Profile: FileConsentParameters
 Parent: Parameters
@@ -51,20 +46,21 @@ Description: "A profile that indicates the parameters for the File Consent opera
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains Consent 1..1 MS and Document 0..* MS and Questionnaire 0..* MS
+* parameter contains Consent 1..1 MS and Document 0..1 MS
 * parameter[Consent]
   * name = "Consent"
   * resource only FASTConsent
 * parameter[Document]
   * name = "Document"
-  * resource only FASTDocumentReference
-* parameter[Questionnaire]
-  * name = "Questionnaire"
-  * resource only FASTQuestionnaireResponse
+  * resource only FASTDocumentReference or FASTQuestionnaireResponse
 
-Instance: FileConsentExample
+Instance: FileConsentDocRefExample
 InstanceOf: FileConsentParameters
 * parameter[Consent].resource = ConsentExample
 * parameter[Document].resource = DocumentReferenceExample
-* parameter[Questionnaire].resource = QuestionnaireResponseExample
+
+Instance: FileConsentQuestionnaireExample
+InstanceOf: FileConsentParameters
+* parameter[Consent].resource = ConsentExample
+* parameter[Document].resource = QuestionnaireResponseExample
 

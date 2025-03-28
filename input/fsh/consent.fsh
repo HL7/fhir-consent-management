@@ -65,8 +65,27 @@ Description: "An example of a consent questionnaire response."
 
 Profile: FASTQuestionnaireResponse
 Parent: $USCoreQuestionnaireResponse
-Description: "This profile records form that recorded the patient's consent."
+Description: "This profile records a form that recorded the patient's consent."
 
+Instance: DocumentReferenceExample
+InstanceOf: FASTDocumentReference
+Description: "An example of a consent document."
+* identifier.system = "http://example.org"
+* identifier.value = "1234567"
+* status = #current
+* type = http://loinc.org#64292-6
+* category = http://loinc.org#59284-0
+* subject = Reference(PatientExample)
+* date = 2024-01-01T15:30:00Z
+* author = Reference(OrganizationExample)
+* content
+  * attachment
+    * contentType = #application/pdf
+    * url = "http://example.org/consentexample"
+
+Profile: FASTDocumentReference
+Parent: $USCoreDocumentReference
+Description: "This profile records non-structured documentation that records a patient's consent."
 
 Profile: FASTConsentTask
 Parent: Task

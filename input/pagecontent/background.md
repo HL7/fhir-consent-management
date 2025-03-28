@@ -1,6 +1,3 @@
-### FAST
-PUT STUFF HERE TALKING ABOUT FAST
-
 ### Underlying Technologies
 This guide is based on the [HL7 FHIR]({{site.data.fhir.path}}index.html) standard.  Implementers of this specification therefore need to understand some basic information about these specifications.
 

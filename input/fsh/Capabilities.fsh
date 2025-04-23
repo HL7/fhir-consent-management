@@ -29,6 +29,9 @@ Usage: #definition
     * interaction[+]
       * code = #read
     * searchParam[+]
+      * name = "actor"
+      * type = #reference
+    * searchParam[+]
       * name = "organization"
       * type = #reference
     * searchParam[+]
@@ -36,6 +39,9 @@ Usage: #definition
       * type = #reference
     * searchParam[+]
       * name = "status"
+      * type = #token
+    * searchParam[+]
+      * name = "scope"
       * type = #token
 
 Instance: ConsentAdministrativeServerCapabilities
@@ -69,6 +75,9 @@ Usage: #definition
     * interaction[+]
       * code = #read
     * searchParam[+]
+      * name = "actor"
+      * type = #reference
+    * searchParam[+]
       * name = "organization"
       * type = #reference
     * searchParam[+]
@@ -76,4 +85,7 @@ Usage: #definition
       * type = #reference
     * searchParam[+]
       * name = "status"
+      * type = #token
+    * searchParam[+]
+      * name = "scope"
       * type = #token

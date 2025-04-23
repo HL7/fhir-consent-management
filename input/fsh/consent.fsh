@@ -1,7 +1,9 @@
 Profile: FASTConsent
 Parent: $IHEAdvancedConsent
 Description: "This profile captures the details of a Patient's Consent."
-* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantor named grantor 0..* MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 0..* MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period named period 0..1 MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantor named grantor 0..* MS and GrantorDigitalID named grantorDigitalID 0..* MS
+and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 0..* MS and GranteeDigitalID named granteeDigitalID 0..* MS
+and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period named period 0..1 MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
 * category MS
 * patient MS
 * patient only Reference($USCorePatient)
@@ -16,6 +18,18 @@ Description: "This profile captures the details of a Patient's Consent."
 * policy MS
 * policy.uri MS
 * provision.type MS
+
+Extension: GrantorDigitalID
+Id: grantor-digital-id
+Title: "Grantor Digital Identity"
+Description: "An digital identifier that representes the grantor."
+* value[x] only Identifier
+
+Extension: GranteeDigitalID
+Id: grantee-digital-id
+Title: "Grantee Digital Identity"
+Description: "An digital identifier that representes the grantee."
+* value[x] only Identifier
 
 
 Instance: ConsentExample

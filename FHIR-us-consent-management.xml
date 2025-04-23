@@ -24,6 +24,8 @@
 <artifact id="OperationDefinition/file-consent" key="OperationDefinition-file-consent" name="File a Consent"/>
 <artifact id="Parameters/FileConsentDocRefExample" key="Parameters-FileConsentDocRefExample" name="FileConsentDocRefExample"/>
 <artifact id="Parameters/FileConsentQuestionnaireExample" key="Parameters-FileConsentQuestionnaireExample" name="FileConsentQuestionnaireExample"/>
+<artifact id="StructureDefinition/grantee-digital-id" key="StructureDefinition-grantee-digital-id" name="Grantee Digital Identity"/>
+<artifact id="StructureDefinition/grantor-digital-id" key="StructureDefinition-grantor-digital-id" name="Grantor Digital Identity"/>
 <artifact id="ValueSet/LOINCConsentDocumentTypes" key="ValueSet-LOINCConsentDocumentTypes" name="LOINC Consent Document Types"/>
 <artifact id="Organization/OrganizationExample" key="Organization-OrganizationExample" name="OrganizationExample"/>
 <artifact id="Patient/PatientExample" key="Patient-PatientExample" name="PatientExample"/>

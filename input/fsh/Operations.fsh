@@ -23,7 +23,6 @@ Usage: #definition
   * max = "1"
   * documentation = "The Consent instance to file"
   * type = #Consent
-  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in
@@ -31,8 +30,6 @@ Usage: #definition
   * max = "1"
   * documentation = "Accompanying documentation for the Consent"
   * type = #Resource
-  * targetProfile[+] = Canonical(FASTDocumentReference)
-  * targetProfile[+] = Canonical(FASTQuestionnaireResponse)
 
 Profile: FileConsentParameters
 Parent: Parameters
@@ -47,23 +44,30 @@ Description: "A profile that indicates the parameters for the File Consent opera
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains Consent 1..1 MS and Document 0..1 MS
-* parameter[Consent]
-  * name = "Consent"
-  * resource only FASTConsent
-* parameter[Document]
-  * name = "Document"
-  * resource only FASTDocumentReference or FASTQuestionnaireResponse
+* parameter contains consent 1..1 MS and document 0..1 MS
+* parameter[consent].name ^patternString = "consent"
+* parameter[consent].resource ^type.code = #Consent
+* parameter[consent].resource ^type.profile[+] = Canonical(FASTConsent)
+* parameter[document].name ^patternString = "document"
+* parameter[document].resource ^type.code = #Resource
+* parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
+* parameter[document].resource ^type.profile[+] = Canonical(FASTQuestionnaireResponse)
 
 Instance: FileConsentDocRefExample
 InstanceOf: FileConsentParameters
-* parameter[Consent].resource = ConsentExample
-* parameter[Document].resource = DocumentReferenceExample
+Description: "An example of a $fileConsent Parameters resource with an optional DocumentReference."
+* parameter[consent].name = "consent"
+* parameter[consent].resource = ConsentExample
+* parameter[document].name = "document"
+* parameter[document].resource = DocumentReferenceExample
 
 Instance: FileConsentQuestionnaireExample
 InstanceOf: FileConsentParameters
-* parameter[Consent].resource = ConsentExample
-* parameter[Document].resource = QuestionnaireResponseExample
+Description: "An example of a $fileConsent Parameters resource with an optional QuestionnaireResponse."
+* parameter[consent].name = "consent"
+* parameter[consent].resource = ConsentExample
+* parameter[document].name = "document"
+* parameter[document].resource = QuestionnaireResponseExample
 
 Instance: RevokeConsent
 InstanceOf: OperationDefinition
@@ -92,7 +96,7 @@ Usage: #definition
   * type = #Reference
   * targetProfile = Canonical(FASTConsent)
 * parameter[+]
-  * name = #consent
+  * name = #patient
   * use = #in
   * min = 1
   * max = "1"
@@ -106,8 +110,6 @@ Usage: #definition
   * max = "1"
   * documentation = "Accompanying documentation for the revocation of the Consent"
   * type = #Resource
-  * targetProfile[+] = Canonical(FASTDocumentReference)
-  * targetProfile[+] = Canonical(FASTQuestionnaireResponse)
 
 Profile: RevokeConsentParameters
 Parent: Parameters
@@ -120,22 +122,22 @@ Description: "A profile that indicates the parameters for the Revoke Consent ope
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains Consent 1..1 MS and Patient 1..1 MS and Document 0..1 MS
-* parameter[Consent]
-  * name = "Consent"
-  * resource 0..0
-  * value[x] 1..1 MS
-  * value[x] only Reference(FASTConsent)
-* parameter[Patient]
-  * name = "Patient"
-  * resource 0..0
-  * value[x] 1..1 MS
-  * value[x] only Reference($USCorePatient)
-* parameter[Document]
-  * name = "Document"
-  * resource 1..1
-  * value[x] 0..0
-  * resource only FASTDocumentReference or FASTQuestionnaireResponse
+* parameter contains consent 1..1 MS and patient 1..1 MS and document 0..1 MS
+* parameter[consent].name ^patternString = "consent"
+* parameter[consent].value[x] ^min = 1
+* parameter[consent].value[x] only Reference(FASTConsent)
+* parameter[consent].value[x] ^mustSupport = true
+* parameter[patient].name ^patternString = "patient"
+* parameter[patient].value[x] ^min = 1
+* parameter[patient].value[x] only Reference($USCorePatient)
+* parameter[patient].value[x] ^mustSupport = true
+* parameter[document].name ^patternString = "document"
+* parameter[document].value[x] ^min = 0
+* parameter[document].value[x] ^max = "0"
+* parameter[document].resource ^min = 1
+* parameter[document].resource ^type.code = #Resource
+* parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
+* parameter[document].resource ^type.profile[+] = Canonical(FASTQuestionnaireResponse)
 
 Instance: UpdateConsent
 InstanceOf: OperationDefinition
@@ -162,16 +164,13 @@ Usage: #definition
   * max = "1"
   * documentation = "The Consent instance to update"
   * type = #Consent
-  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "Accompanying documentation for the revocation of the Consent"
+  * documentation = "Accompanying documentation for the update of the Consent"
   * type = #Resource
-  * targetProfile[+] = Canonical(FASTDocumentReference)
-  * targetProfile[+] = Canonical(FASTQuestionnaireResponse)
 
 Profile: UpdateConsentParameters
 Parent: Parameters
@@ -186,13 +185,14 @@ Description: "A profile that indicates the parameters for the Update Consent ope
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains Consent 1..1 MS and Document 0..1 MS
-* parameter[Consent]
-  * name = "Consent"
-  * resource only FASTConsent
-* parameter[Document]
-  * name = "Document"
-  * resource only FASTDocumentReference or FASTQuestionnaireResponse
+* parameter contains consent 1..1 MS and document 0..1 MS
+* parameter[consent].name ^patternString = "consent"
+* parameter[consent].resource ^type.code = #Consent
+* parameter[consent].resource ^type.profile[+] = Canonical(FASTConsent)
+* parameter[document].name ^patternString = "document"
+* parameter[document].resource ^type.code = #Resource
+* parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
+* parameter[document].resource ^type.profile[+] = Canonical(FASTQuestionnaireResponse)
 
 Instance: RecordDisclosure
 InstanceOf: OperationDefinition
@@ -219,7 +219,6 @@ Usage: #definition
   * max = "1"
   * documentation = "An Audit Event detailing the disclosure."
   * type = #AuditEvent
-  * targetProfile = Canonical(FASTConsentAuditEvent)
 
 Profile: RecordDisclosureParameters
 Parent: Parameters
@@ -234,7 +233,7 @@ Description: "A profile that indicates the parameters for the Record Disclosure 
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains Disclosure 1..1 MS
-* parameter[Disclosure]
-  * name = "Disclosure"
-  * resource only FASTConsentAuditEvent
+* parameter contains disclosure 1..1 MS
+* parameter[disclosure].name ^patternString = "disclosure"
+* parameter[disclosure].resource ^type.code = #AuditEvent
+* parameter[disclosure].resource ^type.profile[+] = Canonical(FASTConsentAuditEvent)

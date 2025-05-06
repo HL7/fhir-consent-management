@@ -71,6 +71,8 @@ pages:
     title: Technical Specification
   artifact_overview.md:
     title: Artifact Overview
+  downloads.md:
+    title: Downloads
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -115,6 +117,7 @@ menu:
   Artifacts:
     Overview: artifact_overview.html 
     FHIR Artifacts: artifacts.html
+    Downloads: downloads.html
     
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

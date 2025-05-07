@@ -1,3 +1,21 @@
+### Request Consent
+
+**Actor:** Administrator, Consenter
+
+**Pre-condition:** 
+- If the initiator is an administrator, they are already aware of the identity of the consenter, either by manual selection or implied by the overarching workflow (e.g., a referral).
+
+**Narrative:**
+- The administrator specified a consent form. The consent form is either explicitly selected by the administrator or is implied by the workflow.
+
+- The administrator specifies a consenter. The consenter is either explicitly selected by the administrator or is implied by the workflow.
+
+- The administrator initiates a request for consent from the consenter by assigning the form to the consenter.
+
+**Post-condition:**
+- The consenter is notified about the request.
+- If there is a delegation in place, the substitute decision maker should be notified.
+
 ### Review Consent
 
 **Actor:** Consenter 
@@ -103,25 +121,27 @@ A consent has been previously signed and filed and is still active (not expired)
 A consent has been signed and filed.
 
 **Narrative:**
-The consenter is able to see a record of activities authorized or blocked based on the consent. 
+- The consenter can navigate and find a previously filed consent. This may be active or inactive.
 
-**Post-condition:**### Propagate Consent Events
+- The consenter is able to navigate a record of activities authorized or blocked based on the consent in question. 
+
+**Post-condition:**
+
+### Propagate Consent Events
 
 **Actor:** Consenter
 
 **Pre-condition:**
-- A subscription has been registered with the consent administration service by an authorized entity.
-- The subscription specifies the address and the protocol for sending the notification and the consent events of interest.
+- A subscription has been registered with the consent administration service by an authorized entity specifying the address and the protocol for sending notifications about the events pertaining to consents of interest.
 
 **Narrative:**
 A notice of consent event is sent to a partner system. Supported events are:
-- the consenter starting to review the consent form.
+- the consenter starting to review the consent form (optional).
 - the consenter signs and files the consent.
 - the consent is revoked.
 
 **Post-condition:**
-
-
+- The requesting entity will receive event notifications. 
 
 ### Consent Provenance
 
@@ -138,14 +158,5 @@ The consenter can navigate the timeline of the lifecycle events about the consen
 - if/when and by whom the consent was revoked.
 - if/when and to whom the consent has been shared.
 
-**Post-condition:**### Request Consent
-
-**Actor:** Administrator
-
-**Pre-condition:** 
-
-**Narrative:**
-An administrator requests a consent from a consenter. The specific consent form is either explicitly selected by the admin or is implied by the workflow.
-
 **Post-condition:**
-The consenter is notified about the request.
+

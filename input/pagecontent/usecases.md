@@ -53,6 +53,7 @@ A consent form has been reviewed and completed (see use case [Review Consent](us
 - A signed consent form is retained for future review.  
 - A computable consent resource is extracted based on the finalized consent form and is stored in the consent store FHIR server.
 
+
 ### Delegate Consent
 
 **Actor:** Consenter
@@ -79,16 +80,20 @@ By navigating and signing a delegation form, the consenter assigns a delegate to
 **Actor:** Consenter
 
 **Pre-condition:**
-A consent has been previously signed and filed.
+A consent has been previously signed and filed and is still active (not expired).
 
 **Narrative:**
-- A consenter revokes a consent previously created. 
+- The consenter navigates the user interface to find the consent they intend to revoke. This may be in the form of a search (for example by form or by original requester) or by plain navigation of all active consents.
+
+- The consenter interacts with the UI to revoke the consent. 
 
 - Depending on the policy context, the consenter may have to sign a form to confirm their intent to revoke the consent.
 
 **Post-condition:**
 - The state of the consent is marked as inactive.
-- The revocation event and pertinent metadata is recorded in the provenance of the consent. 
+- The revocation event and pertinent metadata is recorded in the provenance of the consent.
+- The record of the consent revocation (if a signed form was required in the legal context) is retained and associated with the consent and the provenance event.
+
 ### Disclosure Audit
 (implementing this use case is optional)
 

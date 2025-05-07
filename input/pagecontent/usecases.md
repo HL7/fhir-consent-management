@@ -3,30 +3,34 @@
 **Actor:** Consenter 
 
 **Pre-Condition:**
-- A consent form is available  (could be incomplete).
-  
-- A [consent request may be initiated by an administrator](request.html), or the consenter may choose to initiate the process themselves.
+- A consent request may have been initiated by an administrator or the consenter themselves.
 
+- A consent form is available  and assigned to the consenter. 
+
+- Any information known to the session (such as the consenter's name, date of birth, or timestamp) should be pre-filled by the application to minimize the effort for the consenter. 
+
+- Some of the responses in the form may be pre-populated at the time of assignment. These options may be read-only or simply defaults the consenter can change. 
+
+- The consenter may have reviewed the form in a previous session and may have entered some responses; any such responses are saved and visible to the consenter upon revisiting the form.
+  
 **Narrative:**
 
 - The consenter views the consent form. 
 
-- If the form is arranged as multiple pages, the consenter can navigate all the pages.
+- The form may be arranged as multiple pages in which case the consenter can navigate back and forth between pages.
 
-- The consenter can review the options available in each page and enter a response thereby communicating a decision. The response shall be retained as the consenter navigates between pages. 
-
-- The consenter can save the incomplete form and log out of the application.
-
-- Once logging back in, the last-saved state/information shall be visible to the consenter.
+- The consenter can review the options available in each page and enter a response, thereby communicating a decision. The response shall be retained as the consenter navigates between pages. 
 
 - The consenter shall be able to see what mandatory fields remain in the form and await response as the consenter navigates the form.
 
 - The consenter shall be able to see whether the form is complete and ready for signing and submission as the consenter navigates the form.
 
-- Any information known to the session (such as the consenter's name, date of birth, or timestamp) should be pre-filled in the form to minimize the effort for the consenter.
-
 **Post-condition:**
 A completed consent form is available for submission.
+
+**Alternative Flow:**
+- The consenter may save the incomplete form and log out of the application. The state of the form including all the information entered shall be retained.
+
 
 
 ### Sign and File Consent
@@ -34,20 +38,21 @@ A completed consent form is available for submission.
 **Actor:** Consenter
 
 **Pre-condition:**
-A consent form has been reviewed and completed (see use case X).
-
+A consent form has been reviewed and completed (see use case [Review Consent](usecases.html#review-consent)).
 
 **Narrative:**
-- The patient/client expresses their wish to sign and enact the consent. The user experience provide a mechanism to ensure the patient is making this decision in an informed way (and not by accident).
+- The consenter expresses their wish to sign and enact the consent. The user experience provide a mechanism to ensure the patient is making this decision in an informed way (and not by accident).
 
-- A proper user experience enables the patient/client to sign the consent form.
+- A proper user experience enables the consenter to sign the consent form.
 
-- The patient/client can see the change in the status of the consent to become active.
+- The consenter can see the change in the status of the consent to become active.
 
-- The patient/client can review the finalized consent and download a human readable copy.
+- The consenter can review the finalized consent and download a human-readable or print-friendly copy.
 
 **Post-condition:**
-A consent resource is extracted based on the finalized consent form and is stored in the consent store FHIR server.
+- A signed consent form is retained for future review.  
+- A computable consent resource is extracted based on the finalized consent form and is stored in the consent store FHIR server.
+
 ### Delegate Consent
 
 **Actor:** Consenter

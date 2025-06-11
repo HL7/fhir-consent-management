@@ -2,7 +2,7 @@ Complying with this implementation guide means complying with a number of profil
 
 These FHIR artifacts define the data that can be submitted as part of the required Consent operations.
 
-The artifacts are of four types:
+The artifacts are of five types:
 
 * [Profiles]({{site.data.fhir.path}}profiling.html) constrain FHIR resources to reflect FAST Consent requirements
 * [Extensions]({{site.data.fhir.path}}extensibility.html) define additional data elements that can be conveyed as part of a resource

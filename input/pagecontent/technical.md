@@ -25,6 +25,69 @@ The full set of profiles defined in this implementation guide can be found by fo
 
 #### Integration with other Implementation Guides
 
+This implementation guide also builds on the [US Core]({{site.data.fhir.uscore}}) Implementation Guide and implementers need to familiarize themselves with the profiles in that IG.
+
+This implementation guide uses Subscriptions that are based on the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
+
 ### Detailed Requirements
 
-#### Summary
+#### Identifying Patients, Practitioners, Organizations, and Related Persons
+One of the most important parts of registering consents across systems is the proper identification of patients, practitioners, organizations, and related persons.  For a self-contained consent adminstration system, the URIs of those entities could be used, but when consents are spread across multiple systems, those URIs may be potentially no longer useful.  For that reason, this guide mandates that client systems SHALL query the consent administration service for the identifiers of the involved patients, practitioners, organizations, and related persons.  How exactly these systems will identify that the proper entities are discovered is out of scope of this guide.  For patient matching and identification, the [FAST Interoperable Digital Identity and Patient Matching guide](https://hl7.org/fhir/us/identity-matching/) can be referenced.  Similar means for matching and identifying practitioners, organizations, and related persons should be used.
+
+#### General Operation Details
+Every operation in this guide has an optional OperationOutcome defined as the return of the operation.  This OperationOutcome instance will detail whether the operation was a success or not and, if not, what business rules did not allow the operation to be successful.  The HTTP status code returned by the operation will indicate whether an operation was successful or not.  But systems MAY return an OperationOutcome with a success to be consistent.  Systems SHOULD return an OperationOutcome with the details if an HTTP status code of 4xx or 5xx is returned.
+
+#### Consent Management
+
+To satisfy the business use cases for consent management, three operations are defined that a consent administration service SHALL support:
+
+* File Consent
+* Update Consent
+* Revoke Consent
+
+Along with these operations, consent administration service systems SHALL support searching for consents.  Finally, a consent administration service SHALL support subscriptions to allow other systems to be informed when consents for a patient have changed.
+
+##### File Consent Operation
+The [File Consent Operation](OperationDefinition-file-consent.html) is used to file a consent with a consent administration service.  The details of the consent are contained in the [Consent](StructureDefinition-FASTConsent.html) instance and any documents that were used to generate the Consent are also included in the operation parameters.  
+
+##### Update Consent Operation
+The [Update Consent Operation](OperationDefinition-update-consent.html) is used to update an existing consent with a consent administration service.  The updated [Consent](StructureDefinition-FASTConsent.html) instance along with supporting documentation are the parameters of the operation.
+
+##### Revoke Consent Operation
+The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used to revoke an existing consent with a consent administration service.  The parameters are a reference to a pre-existing Consent instance along with a reference to the Patient who is the subject of the consent and any supporting documentation for the revocation.
+
+##### Searching for Consents
+To support searching for consents, the following search parameters SHALL be supported:
+
+* patient
+* controller
+* manager
+* date
+* purpose
+
+##### Consent Subscriptions
+To allow for systems to be informed when a patient's consent has changed but not require polling of systems, this guide mandates that Subscriptions be used.  A [SubscriptionTopic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) has been defined for use by systems to register subscriptions.
+
+To register a subscription, client systems will POST to a consent administration service's Subscription endpoint.  In this request is a link to the FAST Subscription Topic and any criteria to be used to filter subscription responses.  The defined filter criteria for the FAST Subscription Topic are:
+
+* patient ID
+* organization ID
+* actor
+* status
+* scope
+
+For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
+
+#### Disclosure of Consent
+Along with the business use cases of consent management, there is also a requirement for systems to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.  To support this requirement, this guide defines an operation for recording consent disclosures and requires systems to implement searches for disclosures.
+
+Disclosures are recorded as FHIR AuditEvent instances.
+
+##### Record Disclosure Operation
+The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SHALL be used when a system accesses a Consent instance for determining whether informtion can be accessed.  An [Audit Event instance](StructureDefinition-FASTConsentAuditEvent.html) conveys the purpose of the access (reading, writing, sending, etc.) while a reference to a Consent instance indicates the consent that was accessed.
+
+##### Searching for Disclosures
+To allow systems to docuement disclosures to requesting authorities (including a patient), systems SHALL support the searching for FAST Audit Events using the following search parameters:
+
+* consent
+* consent.patient

@@ -1,40 +1,38 @@
 Profile: FASTConsent
-Parent: $IHEAdvancedConsent
+Parent: Consent
 Description: "This profile captures the details of a Patient's Consent."
-* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantor named grantor 0..* MS and GrantorDigitalID named grantorDigitalID 0..* MS
-and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 0..* MS and GranteeDigitalID named granteeDigitalID 0..* MS
-and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.period named period 0..1 MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
-* category MS
-* patient MS
+* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 1..* MS
+and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS
+and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
+
+* status 1..1 MS
+* scope 1..1 MS
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
+* category 1..* MS
+* patient 1..1 MS
 * patient only Reference($USCorePatient)
-* scope MS
-* dateTime MS
-* performer MS
+* dateTime 1..1 MS
+* performer 1..* MS
 * performer only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
-* organization MS
-* organization only Reference($USCoreOrganization)
-* source[x] MS
+* organization 0..0
+* source[x] 1..1 MS
 * source[x] only Attachment or Reference(FASTConsent or FASTQuestionnaireResponse or $USCoreDocumentReference or Contract)
 * policy MS
-* policy.uri MS
-* provision.type MS
-
-Extension: GrantorDigitalID
-Id: grantor-digital-id
-Title: "Grantor Digital Identity"
-Description: "An digital identifier that representes the grantor."
-* value[x] only Identifier
-
-Extension: GranteeDigitalID
-Id: grantee-digital-id
-Title: "Grantee Digital Identity"
-Description: "An digital identifier that representes the grantee."
-* value[x] only Identifier
-
-
+  * uri 1..1 MS
+* provision 1..1 MS
+  * type 1..1 MS
+  * actor MS
+    * role 1..1 MS
+    * role = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP
+    * reference MS
+  * purpose MS
+  * provision MS
+    * provision 0..0
+	
 Instance: ConsentExample
 InstanceOf: FASTConsent
 Description: "An example of a consent."
+* extension[grantee].valueReference = Reference(OrganizationExample)
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category = http://terminology.hl7.org/CodeSystem/v3-ActCode#INFA
@@ -42,7 +40,6 @@ Description: "An example of a consent."
 * dateTime = 2024-01-01
 * policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#hipaa-auth
 * performer = Reference(PatientExample)
-* organization = Reference(OrganizationExample)
 * sourceReference = Reference(QuestionnaireResponseExample)
 * provision.type = #permit
 
@@ -102,7 +99,7 @@ Description: "An example of a consent document."
 Profile: FASTDocumentReference
 Parent: $USCoreDocumentReference
 Description: "This profile records non-structured documentation that records a patient's consent."
-* type from LOINCConsentDocumentTypes
+* type from LOINCConsentDocumentTypes (required)
 * category contains ConsentDocumentCategory 1..1 MS
 * category[ConsentDocumentCategory] = http://loinc.org#57016-8 "Privacy policy acknowledgment Document"
 
@@ -145,18 +142,4 @@ Description: "These codes are used to convey the type of consent document being 
 * ^copyright = "This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc"
 * ^experimental = false
 * http://loinc.org#64292-6
-* http://loinc.org#52027-0
-* http://loinc.org#94748-1
 * http://loinc.org#59284-0
-* http://loinc.org#96347-0
-* http://loinc.org#61359-6
-* http://loinc.org#89428-7
-* http://loinc.org#89427-9
-* http://loinc.org#52028-8
-* http://loinc.org#89424-6
-* http://loinc.org#64300-7
-* http://loinc.org#101133-7
-* http://loinc.org#64293-4
-* http://loinc.org#77602-1
-* http://loinc.org#52029-6
-* http://loinc.org#61358-8

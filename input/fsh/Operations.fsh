@@ -7,7 +7,7 @@ Usage: #definition
 * url = "http://hl7.org/fhir/us/consent-management/OperationDefinition/file-consent"
 * name = "FileConsent"
 * title = "File a Consent"
-* status = #draft
+* status = #active
 * kind = #operation
 * description = "This operation is used to file a consent with a consent administration service.  The parameters are the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
 * code = #fileConsent
@@ -23,6 +23,7 @@ Usage: #definition
   * max = "1"
   * documentation = "The Consent instance to file"
   * type = #Consent
+  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in
@@ -30,6 +31,16 @@ Usage: #definition
   * max = "1"
   * documentation = "Accompanying documentation for the Consent"
   * type = #Resource
+  * targetProfile = Canonical(FASTQuestionnaireResponse)
+  * targetProfile[+] = Canonical(FASTDocumentReference)
+* parameter[+]
+  * name = #return
+  * use = #out
+  * min = 0
+  * max = "1"
+  * documentation = "Optional outcome of the operation call"
+  * type = #OperationOutcome
+
 
 Profile: FileConsentParameters
 Parent: Parameters
@@ -78,7 +89,7 @@ Usage: #definition
 * url = "http://hl7.org/fhir/us/consent-management/OperationDefinition/revoke-consent"
 * name = "RevokeConsent"
 * title = "Revoke a Consent"
-* status = #draft
+* status = #active
 * kind = #operation
 * description = "This operation is used to revoke a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
 * code = #revokeConsent
@@ -110,6 +121,15 @@ Usage: #definition
   * max = "1"
   * documentation = "Accompanying documentation for the revocation of the Consent"
   * type = #Resource
+  * targetProfile = Canonical(FASTQuestionnaireResponse)
+  * targetProfile[+] = Canonical(FASTDocumentReference)
+* parameter[+]
+  * name = #return
+  * use = #out
+  * min = 0
+  * max = "1"
+  * documentation = "Optional outcome of the operation call"
+  * type = #OperationOutcome
 
 Profile: RevokeConsentParameters
 Parent: Parameters
@@ -148,7 +168,7 @@ Usage: #definition
 * url = "http://hl7.org/fhir/us/consent-management/OperationDefinition/update-consent"
 * name = "UpdateConsent"
 * title = "Update a Consent"
-* status = #draft
+* status = #active
 * kind = #operation
 * description = "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
 * code = #updateConsent
@@ -164,13 +184,23 @@ Usage: #definition
   * max = "1"
   * documentation = "The Consent instance to update"
   * type = #Consent
+  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "Accompanying documentation for the update of the Consent"
+  * documentation = "Accompanying documentation for the Consent"
   * type = #Resource
+  * targetProfile = Canonical(FASTQuestionnaireResponse)
+  * targetProfile[+] = Canonical(FASTDocumentReference)
+* parameter[+]
+  * name = #return
+  * use = #out
+  * min = 0
+  * max = "1"
+  * documentation = "Optional outcome of the operation call"
+  * type = #OperationOutcome
 
 Profile: UpdateConsentParameters
 Parent: Parameters
@@ -203,7 +233,7 @@ Usage: #definition
 * url = "http://hl7.org/fhir/us/consent-management/OperationDefinition/record-disclosure"
 * name = "RecordDisclosure"
 * title = "RecordDisclosure"
-* status = #draft
+* status = #active
 * kind = #operation
 * description = "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent Audit Event."
 * code = #recordDisclosure
@@ -219,6 +249,22 @@ Usage: #definition
   * max = "1"
   * documentation = "An Audit Event detailing the disclosure."
   * type = #AuditEvent
+  * targetProfile = Canonical(FASTConsentAuditEvent)
+* parameter[+]
+  * name = #consent
+  * use = #in
+  * min = 1
+  * max = "1"
+  * documentation = "An Audit Event detailing the disclosure."
+  * type = #Reference
+  * targetProfile = Canonical(FASTConsent)
+* parameter[+]
+  * name = #return
+  * use = #out
+  * min = 0
+  * max = "1"
+  * documentation = "Optional outcome of the operation call"
+  * type = #OperationOutcome
 
 Profile: RecordDisclosureParameters
 Parent: Parameters
@@ -226,14 +272,19 @@ Id: RecordDisclosuretParameters
 Title: "Record Disclosure Operation Parameters"
 Description: "A profile that indicates the parameters for the Record Disclosure operation."
 * parameter 1..*
-  * resource 1..1 MS
-  * value[x] 0..0
   * part 0..0
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains disclosure 1..1 MS
+* parameter contains disclosure 1..1 MS and consent 1..1 MS
 * parameter[disclosure].name ^patternString = "disclosure"
+* parameter[disclosure].value[x] ^min = 0
+* parameter[disclosure].value[x] ^max = "0"
+* parameter[disclosure].resource ^min = 1
 * parameter[disclosure].resource ^type.code = #AuditEvent
 * parameter[disclosure].resource ^type.profile[+] = Canonical(FASTConsentAuditEvent)
+* parameter[consent].name ^patternString = "consent"
+* parameter[consent].value[x] ^min = 1
+* parameter[consent].value[x] only Reference(FASTConsent)
+* parameter[consent].value[x] ^mustSupport = true

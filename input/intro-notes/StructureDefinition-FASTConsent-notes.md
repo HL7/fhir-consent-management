@@ -11,13 +11,7 @@ The following Notes section is a mock up of expected requirements - **This highl
 
 Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the FAST Consent interactions to access this profile's information (Profile Support + Interaction Support). See the FAST Consent Server CapabilityStatement (TBD) for a complete list of supported RESTful interactions for this IG.
 
-- See the [SMART App Launch - Scopes and Launch Context]({{site.data.fhir.ver.hl7_fhir_uv_smart_app_launch}}scopes-and-launch-context.html) section for a description of the SMART scopes syntax.
 - See the [Search Syntax]({{site.data.fhir.path}}search.html) section for a description of the FHIR search syntax.
-
-#### FAST Consent Scopes
-Servers providing access to patient consent data SHALL support these FAST Consent SMART Scopes:
-
-- [resource level scopes]({{site.data.fhir.ver.hl7_fhir_uv_smart_app_launch}}scopes-and-launch-context.html#scopes-for-requesting-clinical-data) `<patient|user|system>/Consent.crus`
 
 #### Mandatory Search Parameters:
 

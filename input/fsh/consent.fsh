@@ -37,11 +37,27 @@ Description: "An example of a consent."
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category = http://terminology.hl7.org/CodeSystem/v3-ActCode#INFA
 * patient = Reference(PatientExample)
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
 * dateTime = 2024-01-01
 * policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#hipaa-auth
 * performer = Reference(PatientExample)
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
 * sourceReference = Reference(QuestionnaireResponseExample)
-* provision.type = #permit
+* provision
+  * type = #permit
+  * period
+    * start = 2024-01-01
+  * actor
+    * role
+      * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP
+    * reference = Reference(OrganizationExample)
+      * identifier
+        * system = "http://hl7.org/fhir/sid/us-npi"
+        * value = "1234567893"
 
 Instance: PatientExample
 InstanceOf: $USCorePatient

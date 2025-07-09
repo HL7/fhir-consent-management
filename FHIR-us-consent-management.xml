@@ -31,6 +31,10 @@
 <artifact id="OperationDefinition/revoke-consent" key="OperationDefinition-revoke-consent" name="Revoke a Consent"/>
 <artifact id="StructureDefinition/UpdateConsentParameters" key="StructureDefinition-UpdateConsentParameters" name="Update Consent Operation Parameters"/>
 <artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>
+<artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
+<artifact id="SearchParameter/fast-consent-controller" key="SearchParameter-fast-consent-controller" name="fast-consent-controller"/>
+<artifact id="SearchParameter/fast-consent-manager" key="SearchParameter-fast-consent-manager" name="fast-consent-manager"/>
+<artifact id="SearchParameter/fast-consent-organizationId" key="SearchParameter-fast-consent-organizationId" name="fast-consent-organizationId"/>
 <artifact id="SearchParameter/fast-consent-patientId" key="SearchParameter-fast-consent-patientId" name="fast-consent-patientId"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>

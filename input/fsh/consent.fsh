@@ -63,7 +63,7 @@ Description: "An example of a consent."
   * actor
     * role
       * coding = http://terminology.hl7.org/CodeSystem/v3-ParticipationType#IRCP
-    * reference = Reference(OrganizationExample)
+    * reference
       * identifier
         * system = "http://hl7.org/fhir/sid/us-npi"
         * value = "1234567893"
@@ -93,7 +93,6 @@ Description: "An example of a consent document."
 * identifier.value = "1234567"
 * status = #current
 * type = http://loinc.org#64292-6
-* category = http://loinc.org#57016-8
 * subject
   * identifier
     * system = "http://example.org/mrn"
@@ -113,7 +112,7 @@ Parent: $USCoreDocumentReference
 Description: "This profile records non-structured documentation that records a patient's consent."
 * type from LOINCConsentDocumentTypes (required)
 * category contains ConsentDocumentCategory 1..1 MS
-* category[ConsentDocumentCategory] = http://loinc.org#57016-8 "Privacy policy acknowledgment Document"
+* category[ConsentDocumentCategory] = http://loinc.org#57016-8
 
 Profile: FASTConsentTask
 Parent: Task

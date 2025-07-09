@@ -107,29 +107,29 @@
 - Payer 1 confirms that the consent is valid and matches the request. 
 - **Step 8:** Payer 1 responds with the member's records. 
 - **FHIR Bundle Example:**  
-- { 
--   "resourceType": "Bundle", 
--   "type": "searchset", 
--   "entry": \[ 
--     { 
--       "fullUrl": "http://payer1.fhir.server/Patient/member-id", 
--       "resource": { 
--         "resourceType": "Patient", 
--         "id": "member-id", 
--         ... 
--       } 
--     }, 
--     { 
--       "fullUrl": "http://payer1.fhir.server/Condition/condition-id", 
--       "resource": { 
--         "resourceType": "Condition", 
--         "id": "condition-id", 
--         ... 
--       } 
--     } 
--     // Additional resources... 
--   \] 
-- } 
+<br> { 
+<br>   "resourceType": "Bundle", 
+<br>   "type": "searchset", 
+<br>   "entry": \[ 
+<br>     { 
+<br>       "fullUrl": "http://payer1.fhir.server/Patient/member-id", 
+<br>       "resource": { 
+<br>         "resourceType": "Patient", 
+<br>         "id": "member-id", 
+<br>         ... 
+<br>       } 
+<br>     }, 
+<br>     { 
+<br>       "fullUrl": "http://payer1.fhir.server/Condition/condition-id", 
+<br>       "resource": { 
+<br>         "resourceType": "Condition", 
+<br>         "id": "condition-id", 
+<br>         ... 
+<br>       } 
+<br>     } 
+<br>     // Additional resources... 
+<br>   \] 
+<br> } 
 
 **6\. Processing the Records at Payer 2** 
 
@@ -140,20 +140,20 @@
 
 - **Step 10:** If the member revokes consent, Payer 2 updates the Consent resource status to "inactive". 
 - **FHIR Consent Resource Update Example:**  
-- { 
--   "resourceType": "Consent", 
--   "id": "consent-001", 
--   "status": "inactive", 
--   ... 
-- } 
+<br> { 
+<br>   "resourceType": "Consent", 
+<br>   "id": "consent-001", 
+<br>   "status": "inactive", 
+<br>   ... 
+<br> } 
 - **Step 11:** Payer 2 sends a notification to Payer 1 via the subscribed REST-hook. 
 - **FHIR Notification Example:**  
-- { 
--   "resourceType": "Consent", 
--   "id": "consent-001", 
--   "status": "inactive", 
--   ... 
-- } 
+<br> { 
+<br>   "resourceType": "Consent", 
+<br>   "id": "consent-001", 
+<br>   "status": "inactive", 
+<br>   ... 
+<br> } 
 - **Step 12:** Payer 1 receives the notification and updates their records accordingly. 
 - Payer 1 acknowledges the revocation and stops sharing the member's data with Payer 2. 
 

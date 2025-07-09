@@ -59,22 +59,22 @@ The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used 
 ##### Searching for Consents
 To support searching for consents, the following search parameters SHALL be supported:
 
-* patient
-* controller
-* manager
-* date
-* purpose
+* [patient]({{site.data.fhir.path}}consent.html#search)
+* [controller](SearchParameter-fast-consent-controller.html)
+* [manager](SearchParameter-fast-consent-manager.html)
+* [date]({{site.data.fhir.path}}consent.html#search)
+* [purpose]({{site.data.fhir.path}}consent.html#search)
 
 ##### Consent Subscriptions
 To allow for systems to be informed when a patient's consent has changed but not require polling of systems, this guide mandates that Subscriptions be used.  A [SubscriptionTopic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) has been defined for use by systems to register subscriptions.
 
 To register a subscription, client systems will POST to a consent administration service's Subscription endpoint.  In this request is a link to the FAST Subscription Topic and any criteria to be used to filter subscription responses.  The defined filter criteria for the FAST Subscription Topic are:
 
-* patient ID
-* organization ID
-* actor
-* status
-* scope
+* [patient ID](SearchParameter-fast-consent-patientId.html)
+* [organization ID](SearchParameter-fast-consent-organizationId.html)
+* [actor]({{site.data.fhir.path}}consent.html#search)
+* [status]({{site.data.fhir.path}}consent.html#search)
+* [scope]({{site.data.fhir.path}}consent.html#search)
 
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
@@ -89,5 +89,8 @@ The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SH
 ##### Searching for Disclosures
 To allow systems to docuement disclosures to requesting authorities (including a patient), systems SHALL support the searching for FAST Audit Events using the following search parameters:
 
-* consent
-* consent.patient
+* [consent](SearchParameter-fast-auditevent-consent.html)
+* [patient]({{site.data.fhir.path}}auditevent.html#search)
+
+* consent-??
+* consent.patient-??

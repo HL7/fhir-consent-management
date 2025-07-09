@@ -11,34 +11,41 @@
   "resourceTrigger": [
     {
       "description": "When a consent record has been 'touched' and needs to be distributed amongst interested parties.",
-      "resource": "http://hl7.org/fhir/StructureDefinition/Consent"
+      "resource": "http://hl7.org/fhir/StructureDefinition/Consent",
+      "supportedInteraction" : ["create","update","delete"]
     }
   ],
   "canFilterBy": [
     {
-      "description": "The id of the consent patient.",
+      "description": "The identifier of the consent patient.",
       "filterParameter": "patientId",
-      "comparator": ["eq"] 
+      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-patientId",
+      "comparator": ["eq"]
     },
     {
-      "description": "The id of the organization that gained consent.",
+      "description": "The identifier of the organization actor that gained consent.",
       "filterParameter": "organizationId",
-      "comparator": ["eq"] 
+      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-organizationId",
+      "comparator": ["eq"]
     },
     {
-      "description": "The id of one of the actors that is controlled by a consent.",
+      "description": "The identifier of one of the actors that is controlled by a consent.",
       "filterParameter": "actor",
-      "comparator": ["eq"] 
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-actor",
+      "comparator": ["eq"],
+      "modifier" : ["identifier"]
     },
     {
       "description": "The status of a consent.",
       "filterParameter": "status",
-      "comparator": ["eq"] 
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-status",
+      "comparator": ["eq"]
     },
     {
       "description": "The scope of the consent.",
       "filterParameter": "scope",
-      "comparator": ["eq"] 
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-scope",
+      "comparator": ["eq"]
     }
   ]
 }

@@ -1,7 +1,3 @@
-
-The following Notes section is a mock up of expected requirements - **This highlighting will be removed prior to publication.**
-{:.new-content}
-
 ---
 
 **Quick Start**{:#search style="font-size: 20px;"}

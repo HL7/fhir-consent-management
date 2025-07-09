@@ -9,14 +9,17 @@ and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller nam
 * scope 1..1 MS
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category 1..* MS
+* identifier 1..1 MS
 * patient 1..1 MS
+* patient only FASTReference
 * patient only Reference($USCorePatient)
 * dateTime 1..1 MS
 * performer 1..* MS
+* performer only FASTReference
 * performer only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
 * organization 0..0
 * source[x] 1..1 MS
-* source[x] only Attachment or Reference(FASTConsent or FASTQuestionnaireResponse or $USCoreDocumentReference or Contract)
+* source[x] only Reference($USCoreQuestionnaireResponse or FASTDocumentReference)
 * policy MS
   * uri 1..1 MS
 * provision 1..1 MS
@@ -32,53 +35,46 @@ and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller nam
 Instance: ConsentExample
 InstanceOf: FASTConsent
 Description: "An example of a consent."
-* extension[grantee].valueReference = Reference(OrganizationExample)
+* extension[grantee].valueReference
+  * identifier
+    * system = "http://hl7.org/fhir/sid/us-npi"
+    * value = "1234567893"
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category = http://terminology.hl7.org/CodeSystem/v3-ActCode#INFA
-* patient = Reference(PatientExample)
+* identifier
+  * system = "http://example.org/consent"
+  * value = "33445522"
+* patient
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
 * dateTime = 2024-01-01
 * policyRule = http://terminology.hl7.org/CodeSystem/consentpolicycodes#hipaa-auth
-* performer = Reference(PatientExample)
+* performer
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
 * sourceReference = Reference(QuestionnaireResponseExample)
 * provision.type = #permit
 
-Instance: PatientExample
-InstanceOf: $USCorePatient
-Description: "An example of a patient."
-* name
-  * given[0] = "James"
-  * family = "Pond"
-* gender = #male
-* identifier
-  * system = "http://example.org/mrn"
-  * value = "M1230041"
-
-Instance: OrganizationExample
-InstanceOf: $USCoreOrganization
-Description: "An example of an organization."
-* name = "Holy Healthcare"
-* active = true
-* identifier
-  * system = "http://hl7.org/fhir/sid/us-npi"
-  * value = "1234567893"
-* type = http://terminology.hl7.org/CodeSystem/organization-type#prov
-
 Instance: QuestionnaireResponseExample
-InstanceOf: FASTQuestionnaireResponse
+InstanceOf: $USCoreQuestionnaireResponse
 Description: "An example of a consent questionnaire response."
 * questionnaire = "http://example.org/fhir/Questionnaire/Simple-Consent-Form"
 * status = #completed
-* subject = Reference(PatientExample)
+* subject
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
 * authored = 2024-01-01
-* author = Reference(OrganizationExample)
+* author
+  * identifier
+    * system = "http://hl7.org/fhir/sid/us-npi"
+    * value = "1234567893"
 * item
   * linkId = "1"
   * answer.valueBoolean = true
-
-Profile: FASTQuestionnaireResponse
-Parent: $USCoreQuestionnaireResponse
-Description: "This profile records a form that recorded the patient's consent."
 
 Instance: DocumentReferenceExample
 InstanceOf: FASTDocumentReference
@@ -88,9 +84,15 @@ Description: "An example of a consent document."
 * status = #current
 * type = http://loinc.org#64292-6
 * category = http://loinc.org#57016-8
-* subject = Reference(PatientExample)
+* subject
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
 * date = 2024-01-01T15:30:00Z
-* author = Reference(OrganizationExample)
+* author
+  * identifier
+    * system = "http://hl7.org/fhir/sid/us-npi"
+    * value = "1234567893"
 * content
   * attachment
     * contentType = #application/pdf
@@ -112,25 +114,26 @@ Description: "This profile records the completion of a consent process."
 * for 1..1 MS
 * for only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
 
-Profile: FASTConsentProvenance
-Parent: http://hl7.org/fhir/us/core/StructureDefinition/us-core-provenance
-Description: "This profile captures the consent event."
-
 Profile: FASTConsentAuditEvent
 Parent: AuditEvent
 Description: "This profile captures the events of sharing the consent with other properties."
-* type MS
-* action 1..1 MS
+* type = http://dicom.nema.org/resources/ontology/DCM#110106
+* action = http://hl7.org/fhir/audit-event-action#R
 * period 1..1 MS
 * recorded MS
+* purposeOfEvent MS
 * agent MS
   * type MS
   * role MS
   * who 1..1 MS
+  * who only FASTReference
+  * who only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
   * requestor MS
   * purposeOfUse 1..* MS
 * source MS
   * observer MS
+  * observer only FASTReference
+  * observer only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
   * type MS
 * entity 1..* MS
   * what MS
@@ -143,3 +146,9 @@ Description: "These codes are used to convey the type of consent document being 
 * ^experimental = false
 * http://loinc.org#64292-6
 * http://loinc.org#59284-0
+
+Profile: FASTReference
+Parent: Reference
+* extension contains http://hl7.org/fhir/StructureDefinition/additionalIdentifier|5.2.0 named additionalIdentifier 0..* MS
+* identifier 1..1 MS
+

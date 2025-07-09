@@ -79,22 +79,22 @@
 
 - **Step 5:** Payer 1 subscribes to updates on the Consent resource from Payer 2.  
 - **FHIR Subscription Resource Example:**  
-- { 
--   "resourceType": "Subscription", 
--   "id": "subscription-001", 
--   "status": "active", 
--   "criteria": "Consent?id=consent-001", 
--   "reason": "Monitor consent status changes", 
--   "channel": { 
--     "type": "rest-hook", 
--     "endpoint": "http://payer1.fhir.server/Subscription/consent-updates", 
--     "payload": "application/fhir+json", 
--     "header": \[ 
--       "Authorization: Bearer {access_token}" 
--     \] 
--   }, 
--   "end": "2024-10-10T12:00:00Z" 
-- } 
+<br> { 
+<br>   "resourceType": "Subscription", 
+<br>   "id": "subscription-001", 
+<br>   "status": "active", 
+<br>   "criteria": "Consent?id=consent-001", 
+<br>   "reason": "Monitor consent status changes", 
+<br>   "channel": { 
+<br>     "type": "rest-hook", 
+<br>     "endpoint": "http://payer1.fhir.server/Subscription/consent-updates", 
+<br>     "payload": "application/fhir+json", 
+<br>     "header": \[ 
+<br>       "Authorization: Bearer {access_token}" 
+<br>     \] 
+<br>   }, 
+<br>   "end": "2024-10-10T12:00:00Z" 
+<br> } 
 
 **5\. Retrieving Records from Payer 1** 
 

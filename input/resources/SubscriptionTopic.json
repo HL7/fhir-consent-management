@@ -18,30 +18,33 @@
   "canFilterBy": [
     {
       "description": "The identifier of the consent patient.",
-      "filterParameter": "patient",
-      "comparator": ["eq"],
-      "modifier" : ["identifier"]
+      "filterParameter": "patientId",
+      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-patientId",
+      "comparator": ["eq"]
     },
     {
       "description": "The identifier of the organization actor that gained consent.",
-      "filterParameter": "actor:Organization",
-      "comparator": ["eq"],
-      "modifier" : ["identifier"]
+      "filterParameter": "organizationId",
+      "filterDefinition": "http://hl7.org/fhir/us/consent-management/SearchParameter/fast-consent-organizationId",
+      "comparator": ["eq"]
     },
     {
       "description": "The identifier of one of the actors that is controlled by a consent.",
       "filterParameter": "actor",
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-actor",
       "comparator": ["eq"],
       "modifier" : ["identifier"]
     },
     {
       "description": "The status of a consent.",
       "filterParameter": "status",
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-status",
       "comparator": ["eq"]
     },
     {
       "description": "The scope of the consent.",
       "filterParameter": "scope",
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-scope",
       "comparator": ["eq"]
     }
   ]

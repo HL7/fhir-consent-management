@@ -103,7 +103,6 @@ Description: "An example of a consent document."
 * identifier.value = "1234567"
 * status = #current
 * type = http://loinc.org#64292-6
-* category = http://loinc.org#57016-8
 * subject = Reference(PatientExample)
 * date = 2024-01-01T15:30:00Z
 * author = Reference(OrganizationExample)

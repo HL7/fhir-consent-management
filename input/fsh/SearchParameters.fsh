@@ -77,7 +77,7 @@ Usage: #definition
 * experimental = false
 * description = "The Consent manager reference which is defined by the Consent extension manager."
 * jurisdiction = urn:iso:std:iso:3166#US
-* code = #controller
+* code = #manager
 * base = #Consent
 * type = #token
 * expression = "Consent.extension('http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager').extension.value.reference"
@@ -106,4 +106,3 @@ Usage: #definition
 * xpath = "f:AuditEvent/f:entity/f:what"
 * xpathUsage = #normal
 * comparator[0] = #eq
-

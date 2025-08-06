@@ -114,18 +114,9 @@ Description: "This profile records non-structured documentation that records a p
 * category contains ConsentDocumentCategory 1..1 MS
 * category[ConsentDocumentCategory] = http://loinc.org#57016-8
 
-Profile: FASTConsentTask
-Parent: Task
-Description: "This profile records the completion of a consent process."
-* status MS
-* focus 1..1 MS
-* focus only Reference(FASTConsent)
-* for 1..1 MS
-* for only Reference(http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient)
-
 Profile: FASTConsentAuditEvent
 Parent: AuditEvent
-Description: "This profile captures the events of sharing the consent with other properties."
+Description: "This profile captures the event of disclosing information after consulting a filed Consent."
 * type = http://dicom.nema.org/resources/ontology/DCM#110106
 * action = http://hl7.org/fhir/audit-event-action#R
 * period 1..1 MS

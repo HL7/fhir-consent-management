@@ -11,7 +11,6 @@
 <artifact id="SubscriptionTopic/FASTConsentSubscriptionTopic" key="SubscriptionTopic-FASTConsentSubscriptionTopic" name="FAST Consent Subscription Topic"/>
 <artifact id="StructureDefinition/FASTConsent" key="StructureDefinition-FASTConsent" name="FASTConsent"/>
 <artifact id="StructureDefinition/FASTConsentAuditEvent" key="StructureDefinition-FASTConsentAuditEvent" name="FASTConsentAuditEvent"/>
-<artifact id="StructureDefinition/FASTConsentTask" key="StructureDefinition-FASTConsentTask" name="FASTConsentTask"/>
 <artifact id="StructureDefinition/FASTDocumentReference" key="StructureDefinition-FASTDocumentReference" name="FASTDocumentReference"/>
 <artifact id="Subscription/FASTOrganizationSubscriptionExample" key="Subscription-FASTOrganizationSubscriptionExample" name="FASTOrganizationSubscriptionExample"/>
 <artifact id="Subscription/FASTPatientSubscriptionExample" key="Subscription-FASTPatientSubscriptionExample" name="FASTPatientSubscriptionExample"/>
@@ -19,15 +18,15 @@
 <artifact id="StructureDefinition/FASTSubscription" key="StructureDefinition-FASTSubscription" name="FASTSubscription"/>
 <artifact id="Bundle/FASTSubscriptionNotification" key="Bundle-FASTSubscriptionNotification" name="FASTSubscriptionNotification"/>
 <artifact id="Parameters/FASTSubscriptionNotificationParameters" key="Parameters-FASTSubscriptionNotificationParameters" name="FASTSubscriptionNotificationParameters"/>
-<artifact id="StructureDefinition/fileConsentParameters" key="StructureDefinition-fileConsentParameters" name="File Consent Operation Parameters"/>
+<artifact id="StructureDefinition/FileConsentParameters" key="StructureDefinition-FileConsentParameters" name="File Consent Operation Parameters"/>
 <artifact id="OperationDefinition/file-consent" key="OperationDefinition-file-consent" name="File a Consent"/>
 <artifact id="Parameters/FileConsentDocRefExample" key="Parameters-FileConsentDocRefExample" name="FileConsentDocRefExample"/>
 <artifact id="Parameters/FileConsentQuestionnaireExample" key="Parameters-FileConsentQuestionnaireExample" name="FileConsentQuestionnaireExample"/>
 <artifact id="ValueSet/LOINCConsentDocumentTypes" key="ValueSet-LOINCConsentDocumentTypes" name="LOINC Consent Document Types"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponseExample" key="QuestionnaireResponse-QuestionnaireResponseExample" name="QuestionnaireResponseExample"/>
-<artifact id="StructureDefinition/RecordDisclosuretParameters" key="StructureDefinition-RecordDisclosuretParameters" name="Record Disclosure Operation Parameters"/>
+<artifact id="StructureDefinition/RecordDisclosureParameters" key="StructureDefinition-RecordDisclosureParameters" name="Record Disclosure Operation Parameters"/>
 <artifact id="OperationDefinition/record-disclosure" key="OperationDefinition-record-disclosure" name="RecordDisclosure"/>
-<artifact id="StructureDefinition/revokeConsentParameters" key="StructureDefinition-revokeConsentParameters" name="Revoke Consent Operation Parameters"/>
+<artifact id="StructureDefinition/RevokeConsentParameters" key="StructureDefinition-RevokeConsentParameters" name="Revoke Consent Operation Parameters"/>
 <artifact id="OperationDefinition/revoke-consent" key="OperationDefinition-revoke-consent" name="Revoke a Consent"/>
 <artifact id="StructureDefinition/UpdateConsentParameters" key="StructureDefinition-UpdateConsentParameters" name="Update Consent Operation Parameters"/>
 <artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>

@@ -44,7 +44,7 @@ Usage: #definition
 
 Profile: FileConsentParameters
 Parent: Parameters
-Id: fileConsentParameters
+Id: FileConsentParameters
 Title: "File Consent Operation Parameters"
 Description: "A profile that indicates the parameters for the File Consent operation."
 * parameter 1..*
@@ -133,7 +133,7 @@ Usage: #definition
 
 Profile: RevokeConsentParameters
 Parent: Parameters
-Id: revokeConsentParameters
+Id: RevokeConsentParameters
 Title: "Revoke Consent Operation Parameters"
 Description: "A profile that indicates the parameters for the Revoke Consent operation."
 * parameter 1..*
@@ -268,7 +268,7 @@ Usage: #definition
 
 Profile: RecordDisclosureParameters
 Parent: Parameters
-Id: RecordDisclosuretParameters
+Id: RecordDisclosureParameters
 Title: "Record Disclosure Operation Parameters"
 Description: "A profile that indicates the parameters for the Record Disclosure operation."
 * parameter 1..*

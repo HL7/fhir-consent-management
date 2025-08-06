@@ -16,33 +16,66 @@ Usage: #definition
 * rest[0]
   * mode = #client
   * resource[+]
-    * type = #Parameters
-    * profile = Canonical(FileConsentParameters)
+    * type = #Consent
+    * supportedProfile = Canonical(FASTConsent)
     * operation[+]
       * name = "File Consent"
       * definition = Canonical(FileConsent)
-  * resource[+]
-    * type = #Consent
-    * profile = Canonical(FASTConsent)
+    * operation[+]
+      * name = "Update Consent"
+      * definition = Canonical(UpdateConsent)
+    * operation[+]
+      * name = "Revoke Consent"
+      * definition = Canonical(RevokeConsent)
     * interaction[+]
       * code = #search-type
     * interaction[+]
       * code = #read
     * searchParam[+]
-      * name = "actor"
-      * type = #reference
-    * searchParam[+]
-      * name = "organization"
-      * type = #reference
-    * searchParam[+]
       * name = "patient"
       * type = #reference
+    * searchParam[+]
+      * name = "controller"
+      * type = #reference
+    * searchParam[+]
+      * name = "manager"
+      * type = #reference
+    * searchParam[+]
+      * name = "date"
+      * type = #date
     * searchParam[+]
       * name = "status"
       * type = #token
     * searchParam[+]
       * name = "scope"
       * type = #token
+  * resource[+]
+    * type = #AuditEvent
+    * supportedProfile = Canonical(FASTConsentAuditEvent)
+    * operation[+]
+      * name = "Record Disclosure"
+      * definition = Canonical(RecordDisclosure)
+    * interaction[+]
+      * code = #search-type
+    * interaction[+]
+      * code = #read
+    * searchParam[+]
+      * name = "patient"
+      * type = #reference
+    * searchParam[+]
+      * name = "fast-auditevent-consent"
+      * type = #token
+  * resource[+]
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/capabilitystatement-subscriptiontopic-canonical"
+      * valueCanonical = "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic"
+    * type = #Subscription
+    * interaction[+]
+      * code = #create
+    * interaction[+]
+      * code = #update
+    * interaction[+]
+      * code = #delete
 
 Instance: ConsentAdministrativeServerCapabilities
 InstanceOf: CapabilityStatement
@@ -62,30 +95,63 @@ Usage: #definition
 * rest
   * mode = #server
   * resource[+]
-    * type = #Parameters
-    * profile = Canonical(FileConsentParameters)
+    * type = #Consent
+    * supportedProfile = Canonical(FASTConsent)
     * operation[+]
       * name = "File Consent"
       * definition = Canonical(FileConsent)
-  * resource[+]
-    * type = #Consent
-    * profile = Canonical(FASTConsent)
+    * operation[+]
+      * name = "Update Consent"
+      * definition = Canonical(UpdateConsent)
+    * operation[+]
+      * name = "Revoke Consent"
+      * definition = Canonical(RevokeConsent)
     * interaction[+]
       * code = #search-type
     * interaction[+]
       * code = #read
     * searchParam[+]
-      * name = "actor"
-      * type = #reference
-    * searchParam[+]
-      * name = "organization"
-      * type = #reference
-    * searchParam[+]
       * name = "patient"
       * type = #reference
+    * searchParam[+]
+      * name = "controller"
+      * type = #reference
+    * searchParam[+]
+      * name = "manager"
+      * type = #reference
+    * searchParam[+]
+      * name = "date"
+      * type = #date
     * searchParam[+]
       * name = "status"
       * type = #token
     * searchParam[+]
       * name = "scope"
       * type = #token
+  * resource[+]
+    * type = #AuditEvent
+    * supportedProfile = Canonical(FASTConsentAuditEvent)
+    * operation[+]
+      * name = "Record Disclosure"
+      * definition = Canonical(RecordDisclosure)
+    * interaction[+]
+      * code = #search-type
+    * interaction[+]
+      * code = #read
+    * searchParam[+]
+      * name = "patient"
+      * type = #reference
+    * searchParam[+]
+      * name = "fast-auditevent-consent"
+      * type = #token
+  * resource[+]
+    * extension[+]
+      * url = "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/capabilitystatement-subscriptiontopic-canonical"
+      * valueCanonical = "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic"
+    * type = #Subscription
+    * interaction[+]
+      * code = #create
+    * interaction[+]
+      * code = #update
+    * interaction[+]
+      * code = #delete

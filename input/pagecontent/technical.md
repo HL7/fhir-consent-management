@@ -63,7 +63,8 @@ To support searching for consents, the following search parameters SHALL be supp
 * [controller](SearchParameter-fast-consent-controller.html)
 * [manager](SearchParameter-fast-consent-manager.html)
 * [date]({{site.data.fhir.path}}consent.html#search)
-* [purpose]({{site.data.fhir.path}}consent.html#search)
+* [status]({{site.data.fhir.path}}consent.html#search)
+* [scope]({{site.data.fhir.path}}consent.html#search)
 
 ##### Consent Subscriptions
 To allow for systems to be informed when a patient's consent has changed but not require polling of systems, this guide mandates that Subscriptions be used.  A [SubscriptionTopic](SubscriptionTopic-FASTConsentSubscriptionTopic.html) has been defined for use by systems to register subscriptions.
@@ -91,6 +92,3 @@ To allow systems to docuement disclosures to requesting authorities (including a
 
 * [consent](SearchParameter-fast-auditevent-consent.html)
 * [patient]({{site.data.fhir.path}}auditevent.html#search)
-
-* consent-??
-* consent.patient-??

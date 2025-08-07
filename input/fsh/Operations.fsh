@@ -1,6 +1,6 @@
 Instance: FileConsent
 InstanceOf: OperationDefinition
-Description: "This operation is used to file a consent with a consent administration service.  The parameters are the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
+Description: "This operation is used to file a consent with a consent administration service.  The parameters are the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
 Usage: #definition
 
 * id = "file-consent"
@@ -9,7 +9,7 @@ Usage: #definition
 * title = "File a Consent"
 * status = #active
 * kind = #operation
-* description = "This operation is used to file a consent with a consent administration service.  The parameters are the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
+* description = "This operation is used to file a consent with a consent administration service.  The parameters are the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
 * code = #fileConsent
 * resource = #Consent
 * system = false
@@ -21,18 +21,15 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "The Consent instance to file"
+  * documentation = "The Consent instance to file (see Input Parameters Profile for conformance)"
   * type = #Consent
-  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Accompanying documentation for the Consent"
+  * documentation = "Accompanying documentation for the Consent in the form of a DocumentReference or QuestionnaireResponse (see Input Parameters Profile for conformance)"
   * type = #Resource
-  * targetProfile = Canonical($USCoreQuestionnaireResponse)
-  * targetProfile[+] = Canonical(FASTDocumentReference)
 * parameter[+]
   * name = #return
   * use = #out
@@ -82,7 +79,7 @@ Description: "An example of a $fileConsent Parameters resource with an optional 
 
 Instance: RevokeConsent
 InstanceOf: OperationDefinition
-Description: "This operation is used to revoke a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
+Description: "This operation is used to revoke a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
 Usage: #definition
 
 * id = "revoke-consent"
@@ -91,7 +88,7 @@ Usage: #definition
 * title = "Revoke a Consent"
 * status = #active
 * kind = #operation
-* description = "This operation is used to revoke a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
+* description = "This operation is used to revoke a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
 * code = #revokeConsent
 * resource = #Consent
 * system = false
@@ -103,7 +100,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "A reference to the Consent instance to revoke"
+  * documentation = "A reference to the Consent instance to revoke (see Input Parameters Profile for conformance)"
   * type = #Reference
   * targetProfile = Canonical(FASTConsent)
 * parameter[+]
@@ -111,7 +108,7 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "A reference to the Patient who the revoked Consent is about"
+  * documentation = "A reference to the Patient who the revoked Consent is about (see Input Parameters Profile for conformance)"
   * type = #Reference
   * targetProfile = Canonical($USCorePatient)
 * parameter[+]
@@ -119,10 +116,8 @@ Usage: #definition
   * use = #in
   * min = 0
   * max = "1"
-  * documentation = "Accompanying documentation for the revocation of the Consent"
+  * documentation = "Accompanying documentation for the revocation of the Consent in the form of a DocumentReference or QuestionnaireResponse (see Input Parameters Profile for conformance)"
   * type = #Resource
-  * targetProfile = Canonical($USCoreQuestionnaireResponse)
-  * targetProfile[+] = Canonical(FASTDocumentReference)
 * parameter[+]
   * name = #return
   * use = #out
@@ -161,7 +156,7 @@ Description: "A profile that indicates the parameters for the Revoke Consent ope
 
 Instance: UpdateConsent
 InstanceOf: OperationDefinition
-Description: "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
+Description: "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
 Usage: #definition
 
 * id = "update-consent"
@@ -170,7 +165,7 @@ Usage: #definition
 * title = "Update a Consent"
 * status = #active
 * kind = #operation
-* description = "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of DocumentReferences (for PDF or other forms) or QuestionnaireResponses."
+* description = "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
 * code = #updateConsent
 * resource = #Consent
 * system = false
@@ -182,18 +177,15 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "The Consent instance to update"
+  * documentation = "The Consent instance to update (see Input Parameters Profile for conformance)"
   * type = #Consent
-  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "Accompanying documentation for the Consent"
+  * documentation = "Accompanying documentation for the Consent in the form of a DocumentReference or QuestionnaireResponse (see Input Parameters Profile for conformance)"
   * type = #Resource
-  * targetProfile = Canonical($USCoreQuestionnaireResponse)
-  * targetProfile[+] = Canonical(FASTDocumentReference)
 * parameter[+]
   * name = #return
   * use = #out
@@ -226,7 +218,7 @@ Description: "A profile that indicates the parameters for the Update Consent ope
 
 Instance: RecordDisclosure
 InstanceOf: OperationDefinition
-Description: "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent Audit Event."
+Description: "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent AuditEvent and a reference to the corresponding Consent resource."
 Usage: #definition
 
 * id = "record-disclosure"
@@ -235,7 +227,7 @@ Usage: #definition
 * title = "RecordDisclosure"
 * status = #active
 * kind = #operation
-* description = "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent Audit Event."
+* description = "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent AuditEvent and a reference to the corresponding Consent resource."
 * code = #recordDisclosure
 * resource = #AuditEvent
 * system = false
@@ -247,15 +239,14 @@ Usage: #definition
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "An Audit Event detailing the disclosure."
+  * documentation = "An AuditEvent detailing the disclosure (see Input Parameters Profile for conformance)"
   * type = #AuditEvent
-  * targetProfile = Canonical(FASTConsentAuditEvent)
 * parameter[+]
   * name = #consent
   * use = #in
   * min = 1
   * max = "1"
-  * documentation = "An Audit Event detailing the disclosure."
+  * documentation = "A reference to the Consent instance (see Input Parameters Profile for conformance)"
   * type = #Reference
   * targetProfile = Canonical(FASTConsent)
 * parameter[+]

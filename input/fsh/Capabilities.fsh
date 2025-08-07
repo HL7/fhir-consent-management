@@ -16,44 +16,10 @@ Usage: #definition
 * rest[0]
   * mode = #client
   * resource[+]
-    * type = #Consent
-    * supportedProfile = Canonical(FASTConsent)
-    * operation[+]
-      * name = "File Consent"
-      * definition = Canonical(FileConsent)
-    * operation[+]
-      * name = "Update Consent"
-      * definition = Canonical(UpdateConsent)
-    * operation[+]
-      * name = "Revoke Consent"
-      * definition = Canonical(RevokeConsent)
-    * interaction[+]
-      * code = #search-type
-    * interaction[+]
-      * code = #read
-    * searchParam[+]
-      * name = "patient"
-      * type = #reference
-    * searchParam[+]
-      * name = "controller"
-      * type = #reference
-    * searchParam[+]
-      * name = "manager"
-      * type = #reference
-    * searchParam[+]
-      * name = "date"
-      * type = #date
-    * searchParam[+]
-      * name = "status"
-      * type = #token
-    * searchParam[+]
-      * name = "scope"
-      * type = #token
-  * resource[+]
     * type = #AuditEvent
     * supportedProfile = Canonical(FASTConsentAuditEvent)
     * operation[+]
-      * name = "Record Disclosure"
+      * name = "recordDisclosure"
       * definition = Canonical(RecordDisclosure)
     * interaction[+]
       * code = #search-type
@@ -63,7 +29,56 @@ Usage: #definition
       * name = "patient"
       * type = #reference
     * searchParam[+]
-      * name = "fast-auditevent-consent"
+      * name = "consent"
+      * definition = Canonical(fast-auditevent-consent)
+      * type = #reference
+  * resource[+]
+    * type = #Consent
+    * supportedProfile = Canonical(FASTConsent)
+    * operation[+]
+      * name = "fileConsent"
+      * definition = Canonical(FileConsent)
+    * operation[+]
+      * name = "updateConsent"
+      * definition = Canonical(UpdateConsent)
+    * operation[+]
+      * name = "revokeConsent"
+      * definition = Canonical(RevokeConsent)
+    * interaction[+]
+      * code = #search-type
+    * interaction[+]
+      * code = #read
+    * searchParam[+]
+      * name = "controller"
+      * definition = Canonical(fast-consent-controller)
+      * type = #reference
+    * searchParam[+]
+      * name = "date"
+      * type = #date
+    * searchParam[+]
+      * name = "grantee"
+      * definition = Canonical(fast-consent-grantee)
+      * type = #reference
+    * searchParam[+]
+      * name = "manager"
+      * definition = Canonical(fast-consent-manager)
+      * type = #reference
+    * searchParam[+]
+      * name = "organizationId"
+      * definition = Canonical(fast-consent-organizationId)
+      * type = #token
+    * searchParam[+]
+      * name = "patient"
+      * type = #reference
+    * searchParam[+]
+      * name = "patientId"
+      * definition = Canonical(fast-consent-patientId)
+      * type = #token
+    * searchParam[+]
+      * name = "scope"
+      * type = #token
+    * searchParam[+]
+      * name = "status"
       * type = #token
   * resource[+]
     * extension[+]
@@ -95,54 +110,69 @@ Usage: #definition
 * rest
   * mode = #server
   * resource[+]
-    * type = #Consent
-    * supportedProfile = Canonical(FASTConsent)
-    * operation[+]
-      * name = "File Consent"
-      * definition = Canonical(FileConsent)
-    * operation[+]
-      * name = "Update Consent"
-      * definition = Canonical(UpdateConsent)
-    * operation[+]
-      * name = "Revoke Consent"
-      * definition = Canonical(RevokeConsent)
-    * interaction[+]
-      * code = #search-type
-    * interaction[+]
-      * code = #read
-    * searchParam[+]
-      * name = "patient"
-      * type = #reference
-    * searchParam[+]
-      * name = "controller"
-      * type = #reference
-    * searchParam[+]
-      * name = "manager"
-      * type = #reference
-    * searchParam[+]
-      * name = "date"
-      * type = #date
-    * searchParam[+]
-      * name = "status"
-      * type = #token
-    * searchParam[+]
-      * name = "scope"
-      * type = #token
-  * resource[+]
     * type = #AuditEvent
     * supportedProfile = Canonical(FASTConsentAuditEvent)
     * operation[+]
-      * name = "Record Disclosure"
+      * name = "recordDisclosure"
       * definition = Canonical(RecordDisclosure)
     * interaction[+]
       * code = #search-type
     * interaction[+]
       * code = #read
     * searchParam[+]
+      * name = "consent"
+      * definition = Canonical(fast-auditevent-consent)
+      * type = #reference
+    * searchParam[+]
+      * name = "patient"
+      * type = #reference
+  * resource[+]
+    * type = #Consent
+    * supportedProfile = Canonical(FASTConsent)
+    * operation[+]
+      * name = "fileConsent"
+      * definition = Canonical(FileConsent)
+    * operation[+]
+      * name = "updateConsent"
+      * definition = Canonical(UpdateConsent)
+    * operation[+]
+      * name = "revokeConsent"
+      * definition = Canonical(RevokeConsent)
+    * interaction[+]
+      * code = #search-type
+    * interaction[+]
+      * code = #read
+    * searchParam[+]
+      * name = "controller"
+      * definition = Canonical(fast-consent-controller)
+      * type = #reference
+    * searchParam[+]
+      * name = "date"
+      * type = #date
+    * searchParam[+]
+      * name = "grantee"
+      * definition = Canonical(fast-consent-grantee)
+      * type = #reference
+    * searchParam[+]
+      * name = "manager"
+      * definition = Canonical(fast-consent-manager)
+      * type = #reference
+    * searchParam[+]
+      * name = "organizationId"
+      * definition = Canonical(fast-consent-organizationId)
+      * type = #token
+    * searchParam[+]
       * name = "patient"
       * type = #reference
     * searchParam[+]
-      * name = "fast-auditevent-consent"
+      * name = "patientId"
+      * definition = Canonical(fast-consent-patientId)
+      * type = #token
+    * searchParam[+]
+      * name = "scope"
+      * type = #token
+    * searchParam[+]
+      * name = "status"
       * type = #token
   * resource[+]
     * extension[+]

@@ -32,6 +32,7 @@
 <artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>
 <artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
 <artifact id="SearchParameter/fast-consent-controller" key="SearchParameter-fast-consent-controller" name="fast-consent-controller"/>
+<artifact id="SearchParameter/fast-consent-grantee" key="SearchParameter-fast-consent-grantee" name="fast-consent-grantee"/>
 <artifact id="SearchParameter/fast-consent-manager" key="SearchParameter-fast-consent-manager" name="fast-consent-manager"/>
 <artifact id="SearchParameter/fast-consent-organizationId" key="SearchParameter-fast-consent-organizationId" name="fast-consent-organizationId"/>
 <artifact id="SearchParameter/fast-consent-patientId" key="SearchParameter-fast-consent-patientId" name="fast-consent-patientId"/>

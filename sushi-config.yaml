@@ -90,13 +90,12 @@ pages:
 #   validation: [allow-any-extensions, no-broken-links]
 #
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
-  path-resource:
-    - input/resources
-    - fsh-generated/resources
-  path-pages:
-    - input/pagecontent
-    - input/intro-notes
-    - fsh-generated/includes
+  show-inherited-invariants: false
+  apply-publisher: true
+  apply-contact: true
+  produce-jekyll-data: true
+  globals-in-artifacts: true
+  pin-canonicals: pin-multiples
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │

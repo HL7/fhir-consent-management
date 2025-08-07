@@ -1,38 +1,36 @@
 == Suppressed Messages ==
 
 # 01 -This IG is based on hl7.fhir.us.core#6.1.0
-WARNING: ImplementationGuide/hl7.fhir.us.consent-management: ImplementationGuide.dependsOn[2]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
 
 # 02 - We don't have narratives on the parameters.
-WARNING: Parameters/FileConsentDocRefExample: Parameters.parameter[0].resource/*Consent/ConsentExample*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/FileConsentDocRefExample: Parameters.parameter[1].resource/*DocumentReference/DocumentReferenceExample*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/FileConsentQuestionnaireExample: Parameters.parameter[0].resource/*Consent/ConsentExample*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-WARNING: Parameters/FileConsentQuestionnaireExample: Parameters.parameter[0].resource/*Consent/ConsentExample*/.source.ofType(Reference).parameter[0].resource/*QuestionnaireResponse/QuestionnaireResponseExample*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
-# 03 - The use of specific canonical versions is under review
-WARNING: StructureDefinition/FASTConsentAuditEvent: StructureDefinition.snapshot.element[16].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 2.0.0, 3.1.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
-WARNING: StructureDefinition/FASTConsentAuditEvent: StructureDefinition.snapshot.element[36].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 2.0.0, 3.1.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
-WARNING: StructureDefinition/FASTConsentAuditEvent: StructureDefinition.snapshot.element[51].binding.valueSet: There are multiple different potential matches for the url 'http://hl7.org/fhir/ValueSet/object-lifecycle-events'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.2.0', found versions: 1.0.0, 4.0.1, 5.2.0. Suggested fix: change the canonical reference from 'http://hl7.org/fhir/ValueSet/object-lifecycle-events' to 'http://hl7.org/fhir/ValueSet/object-lifecycle-events|5.2.0'
-WARNING: StructureDefinition/FASTDocumentReference: StructureDefinition.snapshot.element[51].binding.valueSet: There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-ActCode'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.0.0', found versions: 2.0.0, 3.0.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-ActCode' to 'http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0'
-WARNING: StructureDefinition/FASTDocumentReference: StructureDefinition.snapshot: The slice 'uscore' on path 'DocumentReference.category' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true
-There are multiple different potential matches for the url 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '3.1.0', found versions: 2.0.0, 3.1.0. Suggested fix: change the canonical reference from 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse' to 'http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0'
-
-
-# 04 - Examples for these profiles are TBD
+# 03 - Examples for these profiles are TBD
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/FASTConsentAuditEvent'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/FASTConsentTask'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/RecordDisclosuretParameters'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/RevokeConsentParameters'): The Implementation Guide contains no examples for this profile
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/UpdateConsentParameters'): The Implementation Guide contains no examples for this profile
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/revokeConsentParameters'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/consent-management/StructureDefinition/RecordDisclosureParameters'): The Implementation Guide contains no examples for this profile
 
-# 05 - Ok to ignore large value sets
-WARNING: FASTDocumentReference.DocumentReference.type: Unable to check if http://hl7.org/fhir/us/consent-management/ValueSet/LOINCConsentDocumentTypes is a proper subset of http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type - value set is too large to check
+# 04 - We have checked that the LOINC Consent codes are in the US Core Doc Ref Type value set
+Unable to check if http://hl7.org/fhir/us/consent-management/ValueSet/LOINCConsentDocumentTypes is a proper subset of http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type - value set is too large to check
 
-# 06 - Messages due to definitions from the base spec or US Core
+# 05- Messages due to definitions from the base spec or US Core
 Reference to deprecated ValueSet http://hl7.org/fhir/5.0/ValueSet/jurisdiction|5.0.0
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
 The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 
-# 07 - An example URL for a Questionnaire for the purposes of this guide's examples
+# 06 - An example URL for a Questionnaire for the purposes of this guide's examples
 The questionnaire 'http://example.org/fhir/Questionnaire/Simple-Consent-Form' could not be resolved, so no validation can be performed against the base questionnaire
+
+# 07 - Core value sets that are pinned to a specific version
+Pinned the version of http://terminology.hl7.org/ValueSet/v3-PurposeOfUse to 3.1.0 from choices of 2.0.0 (hl7.terminology.r4#5.3.0), 3.1.0 (hl7.terminology.r4#6.5.0)
+Pinned the version of http://hl7.org/fhir/ValueSet/object-lifecycle-events to 5.2.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 4.0.1 (hl7.fhir.r4.core#4.0.1), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+Pinned the version of http://terminology.hl7.org/ValueSet/v3-ActCode to 3.0.0 from choices of 2.0.0 (hl7.terminology.r4#5.3.0), 3.0.0 (hl7.terminology.r4#6.5.0)
+
+#08 - Extension included in core FHIR
+The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+
+#09 - US Core has an inconsistent Must Support slice
+The slice 'uscore' on path 'DocumentReference.category' is not marked as 'must-support' which is not consistent with the element that defines the slicing, where 'must-support' is true

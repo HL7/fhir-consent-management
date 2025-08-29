@@ -4,6 +4,10 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
+<artifact id="ActorDefinition/admin-service" key="ActorDefinition-admin-service" name="Admin Service"/>
+<artifact id="Requirements/capstmt-admin-service" key="Requirements-capstmt-admin-service" name="CapStmt Admin Service"/>
+<artifact id="Requirements/capstmt-client" key="Requirements-capstmt-client" name="CapStmt Client"/>
+<artifact id="ActorDefinition/client" key="ActorDefinition-client" name="Client"/>
 <artifact id="CapabilityStatement/ConsentAdministrativeServerCapabilities" key="CapabilityStatement-ConsentAdministrativeServerCapabilities" name="Consent Administrative Server Capabilities"/>
 <artifact id="CapabilityStatement/ConsentClientCapabilities" key="CapabilityStatement-ConsentClientCapabilities" name="Consent Client Capabilities"/>
 <artifact id="Consent/ConsentExample" key="Consent-ConsentExample" name="ConsentExample"/>
@@ -23,11 +27,20 @@
 <artifact id="Parameters/FileConsentDocRefExample" key="Parameters-FileConsentDocRefExample" name="FileConsentDocRefExample"/>
 <artifact id="Parameters/FileConsentQuestionnaireExample" key="Parameters-FileConsentQuestionnaireExample" name="FileConsentQuestionnaireExample"/>
 <artifact id="ValueSet/LOINCConsentDocumentTypes" key="ValueSet-LOINCConsentDocumentTypes" name="LOINC Consent Document Types"/>
+<artifact id="Requirements/opdef-fileconsent-client-admin-service" key="Requirements-opdef-fileconsent-client-admin-service" name="OpDef FileConsent Client Admin Service"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponseExample" key="QuestionnaireResponse-QuestionnaireResponseExample" name="QuestionnaireResponseExample"/>
 <artifact id="StructureDefinition/RecordDisclosureParameters" key="StructureDefinition-RecordDisclosureParameters" name="Record Disclosure Operation Parameters"/>
 <artifact id="OperationDefinition/record-disclosure" key="OperationDefinition-record-disclosure" name="RecordDisclosure"/>
 <artifact id="StructureDefinition/RevokeConsentParameters" key="StructureDefinition-RevokeConsentParameters" name="Revoke Consent Operation Parameters"/>
 <artifact id="OperationDefinition/revoke-consent" key="OperationDefinition-revoke-consent" name="Revoke a Consent"/>
+<artifact id="Requirements/searchparam-fastauditeventconsent-client-admin-service" key="Requirements-searchparam-fastauditeventconsent-client-admin-service" name="SearchParam FASTAuditEventConsent Client Admin Service"/>
+<artifact id="Requirements/searchparam-fastconsentcontroller-client-admin-service" key="Requirements-searchparam-fastconsentcontroller-client-admin-service" name="SearchParam FASTConsentController Client Admin Service"/>
+<artifact id="Requirements/searchparam-fastconsentgrantee-client-admin-service" key="Requirements-searchparam-fastconsentgrantee-client-admin-service" name="SearchParam FASTConsentGrantee Client Admin Service"/>
+<artifact id="Requirements/searchparam-fastconsentmanager-client-admin-service" key="Requirements-searchparam-fastconsentmanager-client-admin-service" name="SearchParam FASTConsentManager Client Admin Service"/>
+<artifact id="Requirements/searchparam-fastconsentorganizationid-client-admin-service" key="Requirements-searchparam-fastconsentorganizationid-client-admin-service" name="SearchParam FASTConsentOrganizationId Client Admin Service"/>
+<artifact id="Requirements/searchparam-fastconsentpatientid-client-admin-service" key="Requirements-searchparam-fastconsentpatientid-client-admin-service" name="SearchParam FASTConsentPatientId Client Admin Service"/>
+<artifact id="Requirements/technical-specification-admin-service" key="Requirements-technical-specification-admin-service" name="Technical Specification Admin Service"/>
+<artifact id="Requirements/technical-specification-client" key="Requirements-technical-specification-client" name="Technical Specification Client"/>
 <artifact id="StructureDefinition/UpdateConsentParameters" key="StructureDefinition-UpdateConsentParameters" name="Update Consent Operation Parameters"/>
 <artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>
 <artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>

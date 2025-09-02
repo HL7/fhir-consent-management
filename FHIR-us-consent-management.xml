@@ -8,6 +8,11 @@
 <artifact id="Requirements/capstmt-admin-service" key="Requirements-capstmt-admin-service" name="CapStmt Admin Service"/>
 <artifact id="Requirements/capstmt-client" key="Requirements-capstmt-client" name="CapStmt Client"/>
 <artifact id="ActorDefinition/client" key="ActorDefinition-client" name="Client"/>
+<artifact id="Requirements/components-admin-service" key="Requirements-components-admin-service" name="Components Admin Service"/>
+<artifact id="Requirements/components-client" key="Requirements-components-client" name="Components Client"/>
+<artifact id="Requirements/conformance-admin-service" key="Requirements-conformance-admin-service" name="Conformance Admin Service"/>
+<artifact id="Requirements/conformance-client" key="Requirements-conformance-client" name="Conformance Client"/>
+<artifact id="Requirements/conformance-client-admin-service" key="Requirements-conformance-client-admin-service" name="Conformance Client Admin Service"/>
 <artifact id="CapabilityStatement/ConsentAdministrativeServerCapabilities" key="CapabilityStatement-ConsentAdministrativeServerCapabilities" name="Consent Administrative Server Capabilities"/>
 <artifact id="CapabilityStatement/ConsentClientCapabilities" key="CapabilityStatement-ConsentClientCapabilities" name="Consent Client Capabilities"/>
 <artifact id="Consent/ConsentExample" key="Consent-ConsentExample" name="ConsentExample"/>
@@ -28,6 +33,9 @@
 <artifact id="Parameters/FileConsentQuestionnaireExample" key="Parameters-FileConsentQuestionnaireExample" name="FileConsentQuestionnaireExample"/>
 <artifact id="ValueSet/LOINCConsentDocumentTypes" key="ValueSet-LOINCConsentDocumentTypes" name="LOINC Consent Document Types"/>
 <artifact id="Requirements/opdef-fileconsent-client-admin-service" key="Requirements-opdef-fileconsent-client-admin-service" name="OpDef FileConsent Client Admin Service"/>
+<artifact id="Requirements/opdef-recorddisclosure-client-admin-service" key="Requirements-opdef-recorddisclosure-client-admin-service" name="OpDef RecordDisclosure Client Admin Service"/>
+<artifact id="Requirements/opdef-revokeconsent-client-admin-service" key="Requirements-opdef-revokeconsent-client-admin-service" name="OpDef RevokeConsent Client Admin Service"/>
+<artifact id="Requirements/opdef-updateconsent-client-admin-service" key="Requirements-opdef-updateconsent-client-admin-service" name="OpDef UpdateConsent Client Admin Service"/>
 <artifact id="QuestionnaireResponse/QuestionnaireResponseExample" key="QuestionnaireResponse-QuestionnaireResponseExample" name="QuestionnaireResponseExample"/>
 <artifact id="StructureDefinition/RecordDisclosureParameters" key="StructureDefinition-RecordDisclosureParameters" name="Record Disclosure Operation Parameters"/>
 <artifact id="OperationDefinition/record-disclosure" key="OperationDefinition-record-disclosure" name="RecordDisclosure"/>
@@ -39,10 +47,24 @@
 <artifact id="Requirements/searchparam-fastconsentmanager-client-admin-service" key="Requirements-searchparam-fastconsentmanager-client-admin-service" name="SearchParam FASTConsentManager Client Admin Service"/>
 <artifact id="Requirements/searchparam-fastconsentorganizationid-client-admin-service" key="Requirements-searchparam-fastconsentorganizationid-client-admin-service" name="SearchParam FASTConsentOrganizationId Client Admin Service"/>
 <artifact id="Requirements/searchparam-fastconsentpatientid-client-admin-service" key="Requirements-searchparam-fastconsentpatientid-client-admin-service" name="SearchParam FASTConsentPatientId Client Admin Service"/>
+<artifact id="Requirements/structdef-backportsubscription-client-admin-service" key="Requirements-structdef-backportsubscription-client-admin-service" name="StructDef BackportSubscription Client Admin Service"/>
+<artifact id="Requirements/structdef-fastconsent-client-admin-service" key="Requirements-structdef-fastconsent-client-admin-service" name="StructDef FASTConsent Client Admin Service"/>
+<artifact id="Requirements/structdef-fastconsentauditevent-client-admin-service" key="Requirements-structdef-fastconsentauditevent-client-admin-service" name="StructDef FASTConsentAuditEvent Client Admin Service"/>
+<artifact id="Requirements/structdef-fastdocumentreference-client-admin-service" key="Requirements-structdef-fastdocumentreference-client-admin-service" name="StructDef FASTDocumentReference Client Admin Service"/>
+<artifact id="Requirements/structdef-fastreference-client-admin-service" key="Requirements-structdef-fastreference-client-admin-service" name="StructDef FASTReference Client Admin Service"/>
+<artifact id="Requirements/structdef-fastsubscription-client-admin-service" key="Requirements-structdef-fastsubscription-client-admin-service" name="StructDef FASTSubscription Client Admin Service"/>
+<artifact id="Requirements/structdef-fileconsentparameters-client-admin-service" key="Requirements-structdef-fileconsentparameters-client-admin-service" name="StructDef FileConsentParameters Client Admin Service"/>
+<artifact id="Requirements/structdef-recorddisclosureparameters-client-admin-service" key="Requirements-structdef-recorddisclosureparameters-client-admin-service" name="StructDef RecordDisclosureParameters Client Admin Service"/>
+<artifact id="Requirements/structdef-revokeconsentparameters-client-admin-service" key="Requirements-structdef-revokeconsentparameters-client-admin-service" name="StructDef RevokeConsentParameters Client Admin Service"/>
+<artifact id="Requirements/structdef-updateconsentparameters-client-admin-service" key="Requirements-structdef-updateconsentparameters-client-admin-service" name="StructDef UpdateConsentParameters Client Admin Service"/>
+<artifact id="Requirements/subscriptiontopic-fastconsentsubscriptiontopic-admin-service" key="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-admin-service" name="SubscriptionTopic FASTConsentSubscriptionTopic Admin Service"/>
+<artifact id="Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client" key="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client" name="SubscriptionTopic FASTConsentSubscriptionTopic Client"/>
+<artifact id="Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser" key="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser" name="SubscriptionTopic FASTConsentSubscriptionTopic Client Admin Service"/>
 <artifact id="Requirements/technical-specification-admin-service" key="Requirements-technical-specification-admin-service" name="Technical Specification Admin Service"/>
 <artifact id="Requirements/technical-specification-client" key="Requirements-technical-specification-client" name="Technical Specification Client"/>
 <artifact id="StructureDefinition/UpdateConsentParameters" key="StructureDefinition-UpdateConsentParameters" name="Update Consent Operation Parameters"/>
 <artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>
+<artifact id="Requirements/workflow-client-admin-service" key="Requirements-workflow-client-admin-service" name="Workflow Client Admin Service"/>
 <artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
 <artifact id="SearchParameter/fast-consent-controller" key="SearchParameter-fast-consent-controller" name="fast-consent-controller"/>
 <artifact id="SearchParameter/fast-consent-grantee" key="SearchParameter-fast-consent-grantee" name="fast-consent-grantee"/>

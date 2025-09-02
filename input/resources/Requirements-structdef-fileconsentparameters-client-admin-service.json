@@ -1,0 +1,50 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "structdef-fileconsentparameters-client-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/structdef-fileconsentparameters-client-admin-service",
+  "name" : "StructDefFileConsentParametersClientAdminService",
+  "title" : "StructDef FileConsentParameters Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "StructDef FileConsentParameters Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "464",
+    "label" : "requirement-464",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "StructureDefinition FileConsentParameters",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters.html"]
+  },
+  {
+    "key" : "70",
+    "label" : "requirement-70",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "The FileConsent operation \"consent\" input parameter SHALL be 1..1 and conform to the FASTConsent profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structdef-fileconsentparameters-client-admin-service.html#requirement-464",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters-definitions.html#Parameters.parameter:consent"]
+  },
+  {
+    "key" : "430",
+    "label" : "requirement-430",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "The FileConsent operation \"document\" input parameter SHALL be 1..1 and conform to either the us-core-questionnaireresponse or FASTDocumentReference profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structdef-fileconsentparameters-client-admin-service.html#requirement-464",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters-definitions.html#Parameters.parameter:document"]
+  }]
+}

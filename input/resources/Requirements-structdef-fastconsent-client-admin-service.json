@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "structdef-fastconsent-client-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/structdef-fastconsent-client-admin-service",
+  "name" : "StructDefFASTConsentClientAdminService",
+  "title" : "StructDef FASTConsent Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "StructDef FASTConsent Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "597",
+    "label" : "requirement-597",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "StructureDefinition FASTConsent<br/><br/>Many nested profiles, including from US Core. Will be checked by validator.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsent.html"]
+  }]
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "searchparam-fastconsentmanager-client-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/searchparam-fastconsentmanager-client-admin-service",
+  "name" : "SearchParamFASTConsentManagerClientAdminService",
+  "title" : "SearchParam FASTConsentManager Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "SearchParam FASTConsentManager Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "474",
+    "label" : "requirement-474",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "SearchParameter FASTConsentManager",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-manager.html"]
+  }]
+}

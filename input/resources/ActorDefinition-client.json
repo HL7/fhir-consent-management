@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ActorDefinition",
+  "id" : "client",
+  "url" : "http://hl7.org/fhir/us/consent-management/ActorDefinition/client",
+  "name" : "Client",
+  "title" : "Client",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Client",
+  "type" : "system",
+  "documentation" : "An application or product that implements the Client."
+}

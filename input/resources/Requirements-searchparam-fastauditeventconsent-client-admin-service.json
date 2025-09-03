@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "searchparam-fastauditeventconsent-client-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/searchparam-fastauditeventconsent-client-admin-service",
+  "name" : "SearchParamFASTAuditEventConsentClientAdminService",
+  "title" : "SearchParam FASTAuditEventConsent Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "SearchParam FASTAuditEventConsent Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "471",
+    "label" : "requirement-471",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "SearchParameter FASTAuditEventConsent",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-auditevent-consent.html"]
+  }]
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "structdef-revokeconsentparameters-client-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/structdef-revokeconsentparameters-client-admin-service",
+  "name" : "StructDefRevokeConsentParametersClientAdminService",
+  "title" : "StructDef RevokeConsentParameters Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "StructDef RevokeConsentParameters Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "469",
+    "label" : "requirement-469",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "StructureDefinition RevokeConsentParameters",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters.html"]
+  },
+  {
+    "key" : "441",
+    "label" : "requirement-441",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "The RevokeConsent operation \"consent\" input parameter SHALL be 1..1 and conform to the FASTConsent profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structdef-revokeconsentparameters-client-admin-service.html#requirement-469",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:consent"]
+  },
+  {
+    "key" : "448",
+    "label" : "requirement-448",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "The RevokeConsent operation \"patient\" input parameter SHALL be 1..1 and conform to the us-core-patient profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structdef-revokeconsentparameters-client-admin-service.html#requirement-469",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:patient"]
+  },
+  {
+    "key" : "443",
+    "label" : "requirement-443",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "The RevokeConsent operation \"document\" input parameter SHALL be 0..1 and conform to either the us-core-questionnaireresponse or FASTDocumentReference profile",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-structdef-revokeconsentparameters-client-admin-service.html#requirement-469",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:document"]
+  }]
+}

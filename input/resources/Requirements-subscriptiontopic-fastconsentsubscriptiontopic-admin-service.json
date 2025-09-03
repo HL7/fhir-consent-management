@@ -1,0 +1,120 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "subscriptiontopic-fastconsentsubscriptiontopic-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/subscriptiontopic-fastconsentsubscriptiontopic-admin-service",
+  "name" : "SubscriptionTopicFASTConsentSubscriptionTopicAdminService",
+  "title" : "SubscriptionTopic FASTConsentSubscriptionTopic Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-02T15:41:07-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "SubscriptionTopic FASTConsentSubscriptionTopic Requirements for Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service"],
+  "statement" : [{
+    "key" : "600",
+    "label" : "requirement-600",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL trigger a notification for every Consent create, unless filtered out<br/><br/>This requirement is derived by the definition in the topic plus the actual behavior defined in R5 SubscriptionTopic (which is what's linked).",
+    "derivedFrom" : "HL7 FHIR R5",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://hl7.org/fhir/subscriptiontopic.html#:~:text=Subscription%20Topics%20that%20include%20create,interaction%20is%20confirmed%20to%20apply."]
+  },
+  {
+    "key" : "606",
+    "label" : "requirement-606",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL trigger a notification for every Consent update, unless filtered out<br/><br/>This requirement is derived by the definition in the topic plus the actual behavior defined in R5 SubscriptionTopic (which is what's linked).",
+    "derivedFrom" : "HL7 FHIR R5",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://hl7.org/fhir/subscriptiontopic.html#:~:text=Subscription%20Topics%20that%20include%20update,PUT%20with%20an%20identical%20resource)."]
+  },
+  {
+    "key" : "607",
+    "label" : "requirement-607",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL trigger a notification for every Consent delete, unless filtered out<br/><br/>This requirement is derived by the definition in the topic plus the actual behavior defined in R5 SubscriptionTopic (which is what's linked).",
+    "derivedFrom" : "HL7 FHIR R5",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://hl7.org/fhir/subscriptiontopic.html#:~:text=Subscription%20Topics%20that%20include%20delete,interaction%20is%20confirmed%20to%20apply."]
+  },
+  {
+    "key" : "603",
+    "label" : "requirement-603",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter by SearchParameter FASTConsentPatientId",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%22canFilterBy%22%20%3A%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20identifier%20of%20the%20consent%20patient.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22patientId%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2DpatientId%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D"]
+  },
+  {
+    "key" : "628",
+    "label" : "requirement-628",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter by SearchParameter FASTConsentOrganizationId",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20identifier%20of%20the%20organization%20actor%20that%20gained%20consent.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22organizationId%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2DorganizationId%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C"]
+  },
+  {
+    "key" : "629",
+    "label" : "requirement-629",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter by actor identifier",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20identifier%20of%20one,modifier%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22identifier%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C"]
+  },
+  {
+    "key" : "630",
+    "label" : "requirement-630",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter by status",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20status%20of%20a%20consent.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22status%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Consent%2Dstatus%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C"]
+  },
+  {
+    "key" : "631",
+    "label" : "requirement-631",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter by scope",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20scope%20of%20the%20consent.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22scope%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Consent%2Dscope%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D"]
+  },
+  {
+    "key" : "632",
+    "label" : "requirement-632",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHALL support Consent notification filter combinations",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20scope%20of%20the%20consent.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22scope%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Consent%2Dscope%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D"]
+  },
+  {
+    "key" : "633",
+    "label" : "requirement-633",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service MAY support Consent notification filters by search parameters not listed by FASTConsentSubscriptionTopic<br/><br/>Not going to test just yet",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
+    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/components.html#:~:text=A%20server%20MAY%20support,parameters%20for%20best%20interoperability."]
+  }]
+}

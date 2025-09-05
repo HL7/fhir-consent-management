@@ -6,7 +6,7 @@
   "title" : "CapStmt Client",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-09-02T15:41:07-04:00",
+  "date" : "2025-09-03T19:43:24-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -175,7 +175,7 @@
     "label" : "requirement-53",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Client SHALL support $fileConsent operation against Consent resource<br/><br/>See functional area OpDef FileConsent (related req link goes to first req)",
+    "requirement" : "Consent Client SHALL support $fileConsent operation against Consent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
     "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/file%2Dconsent%22"]
   },
@@ -184,7 +184,7 @@
     "label" : "requirement-375",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Client SHALL support $updateConsent operation against Consent resource<br/><br/>See functional area OpDef UpdateConsent (related req link goes to first req)",
+    "requirement" : "Consent Client SHALL support $updateConsent operation against Consent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
     "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/update%2Dconsent%22"]
   },
@@ -193,7 +193,7 @@
     "label" : "requirement-376",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Client SHALL support $revokeConsent operation against Consent resource<br/><br/>See functional area OpDef RevokeConsent (related req link goes to first req)",
+    "requirement" : "Consent Client SHALL support $revokeConsent operation against Consent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
     "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22"]
   },
@@ -238,7 +238,7 @@
     "label" : "requirement-416",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "Consent Client SHALL support $recordDisclosure operation against AuditEvent resource<br/><br/>See functional area OpDef RecordDisclosure (related req link goes to first req)",
+    "requirement" : "Consent Client SHALL support $recordDisclosure operation against AuditEvent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
     "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22,OperationDefinition/record%2Ddisclosure%22"]
   },

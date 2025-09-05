@@ -71,7 +71,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentcontroller-client-admin-service.html#requirement-472">Requirements-searchparam-fastconsentcontroller-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">Requirements-search-parameters-client-admin-service.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -102,7 +102,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentmanager-client-admin-service.html#requirement-474">Requirements-searchparam-fastconsentmanager-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">Requirements-search-parameters-client-admin-service.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -164,6 +164,9 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
+</p>
+<p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt
 </p>
 </div>
@@ -181,6 +184,9 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-465">Requirements-extended-operations-client-admin-service.html#requirement-465</a>
+</p>
+<p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt
 </p>
 </div>
@@ -197,6 +203,9 @@
 <b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=a%20consent%20administration%20service%20SHALL%20support%3A,Revoke%20Consent">https://build.fhir.org/ig/HL7/fhir-consent-management/technical.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+</p>
 <p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt
 </p>

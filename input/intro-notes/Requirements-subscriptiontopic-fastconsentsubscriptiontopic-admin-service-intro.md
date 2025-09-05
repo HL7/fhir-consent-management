@@ -87,7 +87,7 @@
 <b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentpatientid-client-admin-service.html#requirement-476">Requirements-searchparam-fastconsentpatientid-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">Requirements-search-parameters-client-admin-service.html#requirement-476</a>
 </p>
 </div>
 </div>
@@ -107,7 +107,7 @@
 <b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentorganizationid-client-admin-service.html#requirement-475">Requirements-searchparam-fastconsentorganizationid-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">Requirements-search-parameters-client-admin-service.html#requirement-475</a>
 </p>
 </div>
 </div>

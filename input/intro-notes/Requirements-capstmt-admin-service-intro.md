@@ -89,6 +89,9 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+</p>
 </div>
 </div>
 
@@ -103,6 +106,9 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+</p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
 </p>
@@ -120,6 +126,9 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles">https://hl7.org/fhir/R4/profiling.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+<p>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+</p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile
 </p>
@@ -166,7 +175,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentcontroller-client-admin-service.html#requirement-472">Requirements-searchparam-fastconsentcontroller-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">Requirements-search-parameters-client-admin-service.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -197,7 +206,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentgrantee-client-admin-service.html#requirement-473">Requirements-searchparam-fastconsentgrantee-client-admin-service.html#requirement-473</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-473">Requirements-search-parameters-client-admin-service.html#requirement-473</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Missing corresponding req in Tech spec 6.2.3.4
@@ -217,7 +226,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentmanager-client-admin-service.html#requirement-474">Requirements-searchparam-fastconsentmanager-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">Requirements-search-parameters-client-admin-service.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -234,7 +243,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentorganizationid-client-admin-service.html#requirement-475">Requirements-searchparam-fastconsentorganizationid-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">Requirements-search-parameters-client-admin-service.html#requirement-475</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches identifier of grantee, manager, controller or the provision.actor.reference
@@ -269,7 +278,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-searchparam-fastconsentpatientid-client-admin-service.html#requirement-476">Requirements-searchparam-fastconsentpatientid-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">Requirements-search-parameters-client-admin-service.html#requirement-476</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches patient.identifier or patient.extension additionalIdentifier
@@ -318,10 +327,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-opdef-fileconsent-client-admin-service.html#requirement-133">Requirements-opdef-fileconsent-client-admin-service.html#requirement-133</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;See functional area OpDef FileConsent (related req link goes to first req)
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -338,10 +344,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-opdef-updateconsent-client-admin-service.html#requirement-431">Requirements-opdef-updateconsent-client-admin-service.html#requirement-431</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;See functional area OpDef UpdateConsent (related req link goes to first req)
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-465">Requirements-extended-operations-client-admin-service.html#requirement-465</a>
 </p>
 </div>
 </div>
@@ -358,10 +361,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-opdef-revokeconsent-client-admin-service.html#requirement-438">Requirements-opdef-revokeconsent-client-admin-service.html#requirement-438</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;See functional area OpDef RevokeConsent (related req link goes to first req)
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -437,10 +437,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-opdef-recorddisclosure-client-admin-service.html#requirement-445">Requirements-opdef-recorddisclosure-client-admin-service.html#requirement-445</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;See functional area OpDef RecordDisclosure (related req link goes to first req)
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-445">Requirements-extended-operations-client-admin-service.html#requirement-445</a>
 </p>
 </div>
 </div>

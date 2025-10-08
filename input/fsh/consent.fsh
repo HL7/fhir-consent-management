@@ -146,7 +146,7 @@ Description: "Disclosures are recorded as FHIR AuditEvent instances.  These Audi
   * ^slicing.description = "Slice to provide the Consent resource."
 * entity contains Consent 1..1 MS
 * entity[Consent].what 1..1 
-* entity[Consent].what = Reference(FASTConsent)
+* entity[Consent].what only Reference(FASTConsent)
 * entity[Consent].type = http://hl7.org/fhir/resource-types#Consent
 
 ValueSet: LOINCConsentDocumentTypes

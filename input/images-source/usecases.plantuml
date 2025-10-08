@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor Administrator as a
+actor Consenter as c
+actor ConsentSystem as s
+package Consent {
+  usecase "Request Consent" as UC1
+  usecase "Review Consent" as UC2
+  usecase "Sign and File Consent" as UC3
+  usecase "Delegate Consent" as UC4
+  usecase "Revoke Consent" as UC5
+  usecase "Disclosure Audit" as UC6
+  usecase "Propagate Audit Events" as UC7
+  usecase "Consent Provenance" as UC8
+}
+a --> UC1
+c --> UC1
+c --> UC2
+c --> UC3
+s --> UC3
+c --> UC4
+c --> UC5
+s --> UC5
+s --> UC6
+s --> UC7
+c --> UC8
+s --> UC8
+@enduml

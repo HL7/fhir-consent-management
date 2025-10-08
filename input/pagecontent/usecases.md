@@ -1,3 +1,6 @@
+<div>{%include usecases.svg%}</div>
+
+
 ### Request Consent
 
 **Actor:** Administrator, Consenter

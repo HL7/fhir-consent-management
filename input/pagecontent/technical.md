@@ -85,7 +85,7 @@ Disclosures are recorded as FHIR AuditEvent instances.
 The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SHALL be used when a system accesses a Consent instance for determining whether informtion can be accessed.  An [Audit Event instance](StructureDefinition-FASTConsentAuditEvent.html) conveys the purpose of the access (reading, writing, sending, etc.) while a reference to a Consent instance indicates the consent that was accessed.
 
 ##### Searching for Disclosures
-To allow systems to docuement disclosures to requesting authorities (including a patient), systems SHALL support the searching for FAST Audit Events using the following search parameters:
+To allow systems to document disclosures to requesting authorities (including a patient), systems SHALL support the searching for FAST Audit Events using the following search parameters:
 
 * [consent](SearchParameter-fast-auditevent-consent.html)
 * [patient]({{site.data.fhir.path}}auditevent.html#search)

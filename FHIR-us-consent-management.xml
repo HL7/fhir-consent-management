@@ -45,8 +45,6 @@
 <artifact id="Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser" key="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser" name="SubscriptionTopic FASTConsentSubscriptionTopic Client Admin Service"/>
 <artifact id="Requirements/technical-specification-admin-service" key="Requirements-technical-specification-admin-service" name="Technical Specification Admin Service"/>
 <artifact id="Requirements/technical-specification-client" key="Requirements-technical-specification-client" name="Technical Specification Client"/>
-<artifact id="StructureDefinition/UpdateConsentParameters" key="StructureDefinition-UpdateConsentParameters" name="Update Consent Operation Parameters"/>
-<artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>
 <artifact id="Requirements/workflow-client-admin-service" key="Requirements-workflow-client-admin-service" name="Workflow Client Admin Service"/>
 <artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
 <artifact id="SearchParameter/fast-consent-controller" key="SearchParameter-fast-consent-controller" name="fast-consent-controller"/>

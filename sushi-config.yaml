@@ -64,12 +64,16 @@ pages:
     title: Reading this IG
   usecases.md:
     title: Use Cases
+  consent_network.md:
+    title: Consent Network
   credits.md:
     title: Project and Participants
   conformance.md:
     title: Conformance Expectations
   technical.md:
     title: Technical Specification
+  sharing.md:
+    title: Consent and Information Sharing
   artifact_overview.md:
     title: Artifact Overview
   downloads.md:
@@ -110,10 +114,12 @@ menu:
   Background:
     Reading This IG: background.html
     Use Cases: usecases.html
+    Consent Network: consent_network.html
     Project and Participants: credits.html
   Specification:
     Conformance Expectations: conformance.html
     Technical Specification: technical.html
+    Information Sharing: sharing.html
   Artifacts:
     Overview: artifact_overview.html 
     FHIR Artifacts: artifacts.html

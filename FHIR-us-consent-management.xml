@@ -28,8 +28,6 @@
 <artifact id="OperationDefinition/record-disclosure" key="OperationDefinition-record-disclosure" name="RecordDisclosure"/>
 <artifact id="StructureDefinition/RevokeConsentParameters" key="StructureDefinition-RevokeConsentParameters" name="Revoke Consent Operation Parameters"/>
 <artifact id="OperationDefinition/revoke-consent" key="OperationDefinition-revoke-consent" name="Revoke a Consent"/>
-<artifact id="StructureDefinition/UpdateConsentParameters" key="StructureDefinition-UpdateConsentParameters" name="Update Consent Operation Parameters"/>
-<artifact id="OperationDefinition/update-consent" key="OperationDefinition-update-consent" name="Update a Consent"/>
 <artifact id="SearchParameter/fast-auditevent-consent" key="SearchParameter-fast-auditevent-consent" name="fast-auditevent-consent"/>
 <artifact id="SearchParameter/fast-consent-controller" key="SearchParameter-fast-consent-controller" name="fast-consent-controller"/>
 <artifact id="SearchParameter/fast-consent-grantee" key="SearchParameter-fast-consent-grantee" name="fast-consent-grantee"/>

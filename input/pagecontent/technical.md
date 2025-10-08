@@ -50,9 +50,6 @@ Along with these operations, consent administration service systems SHALL suppor
 ##### File Consent Operation
 The [File Consent Operation](OperationDefinition-file-consent.html) is used to file a consent with a consent administration service.  The details of the consent are contained in the [Consent](StructureDefinition-FASTConsent.html) instance and any documents that were used to generate the Consent are also included in the operation parameters.  
 
-##### Update Consent Operation
-The [Update Consent Operation](OperationDefinition-update-consent.html) is used to update an existing consent with a consent administration service.  The updated [Consent](StructureDefinition-FASTConsent.html) instance along with supporting documentation are the parameters of the operation.
-
 ##### Revoke Consent Operation
 The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used to revoke an existing consent with a consent administration service.  The parameters are a reference to a pre-existing Consent instance along with a reference to the Patient who is the subject of the consent and any supporting documentation for the revocation.
 

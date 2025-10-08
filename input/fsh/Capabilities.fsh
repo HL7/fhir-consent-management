@@ -39,9 +39,6 @@ Usage: #definition
       * name = "fileConsent"
       * definition = Canonical(FileConsent)
     * operation[+]
-      * name = "updateConsent"
-      * definition = Canonical(UpdateConsent)
-    * operation[+]
       * name = "revokeConsent"
       * definition = Canonical(RevokeConsent)
     * interaction[+]
@@ -132,9 +129,6 @@ Usage: #definition
     * operation[+]
       * name = "fileConsent"
       * definition = Canonical(FileConsent)
-    * operation[+]
-      * name = "updateConsent"
-      * definition = Canonical(UpdateConsent)
     * operation[+]
       * name = "revokeConsent"
       * definition = Canonical(RevokeConsent)

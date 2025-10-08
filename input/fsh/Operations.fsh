@@ -154,68 +154,6 @@ Description: "A profile that indicates the parameters for the Revoke Consent ope
 * parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
 * parameter[document].resource ^type.profile[+] = Canonical($USCoreQuestionnaireResponse)
 
-Instance: UpdateConsent
-InstanceOf: OperationDefinition
-Description: "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
-Usage: #definition
-
-* id = "update-consent"
-* url = "http://hl7.org/fhir/us/consent-management/OperationDefinition/update-consent"
-* name = "UpdateConsent"
-* title = "Update a Consent"
-* status = #active
-* kind = #operation
-* description = "This operation is used to update a consent with a consent administration service.  The parameters are a reference to the Consent resource along with accompanying documentation in the form of a DocumentReference (for PDF or other forms) or QuestionnaireResponse."
-* code = #updateConsent
-* resource = #Consent
-* system = false
-* type = true
-* instance = false
-* inputProfile = Canonical(UpdateConsentParameters)
-* parameter[+]
-  * name = #consent
-  * use = #in
-  * min = 1
-  * max = "1"
-  * documentation = "The Consent instance to update (see Input Parameters Profile for conformance)"
-  * type = #Consent
-* parameter[+]
-  * name = #document
-  * use = #in
-  * min = 1
-  * max = "1"
-  * documentation = "Accompanying documentation for the Consent in the form of a DocumentReference or QuestionnaireResponse (see Input Parameters Profile for conformance)"
-  * type = #Resource
-* parameter[+]
-  * name = #return
-  * use = #out
-  * min = 0
-  * max = "1"
-  * documentation = "Optional outcome of the operation call"
-  * type = #OperationOutcome
-
-Profile: UpdateConsentParameters
-Parent: Parameters
-Id: UpdateConsentParameters
-Title: "Update Consent Operation Parameters"
-Description: "A profile that indicates the parameters for the Update Consent operation."
-* parameter 1..*
-  * resource 1..1 MS
-  * value[x] 0..0
-  * part 0..0
-* parameter ^slicing.discriminator.type = #value
-* parameter ^slicing.discriminator.path = "name"
-* parameter ^slicing.rules = #open
-* parameter ^slicing.description = "Slice parameters based on the name"
-* parameter contains consent 1..1 MS and document 1..1 MS
-* parameter[consent].name ^patternString = "consent"
-* parameter[consent].resource ^type.code = #Consent
-* parameter[consent].resource ^type.profile[+] = Canonical(FASTConsent)
-* parameter[document].name ^patternString = "document"
-* parameter[document].resource ^type.code = #Resource
-* parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
-* parameter[document].resource ^type.profile[+] = Canonical($USCoreQuestionnaireResponse)
-
 Instance: RecordDisclosure
 InstanceOf: OperationDefinition
 Description: "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent AuditEvent and a reference to the corresponding Consent resource."

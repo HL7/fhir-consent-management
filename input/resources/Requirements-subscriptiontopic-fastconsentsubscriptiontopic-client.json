@@ -1,0 +1,68 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "subscriptiontopic-fastconsentsubscriptiontopic-client",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client",
+  "name" : "SubscriptionTopicFASTConsentSubscriptionTopicClient",
+  "title" : "SubscriptionTopic FASTConsentSubscriptionTopic Client",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-03T19:43:24-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "SubscriptionTopic FASTConsentSubscriptionTopic Requirements for Client",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "635",
+    "label" : "requirement-635",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Client MAY support Consent notification filter by SearchParameter FASTConsentPatientId",
+    "derivedFrom" : "HL7 FAST Consent IG"
+  },
+  {
+    "key" : "636",
+    "label" : "requirement-636",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Client MAY support Consent notification filter by SearchParameter FASTConsentOrganizationId",
+    "derivedFrom" : "HL7 FAST Consent IG"
+  },
+  {
+    "key" : "637",
+    "label" : "requirement-637",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Client MAY support Consent notification filter by actor identifier",
+    "derivedFrom" : "HL7 FAST Consent IG"
+  },
+  {
+    "key" : "638",
+    "label" : "requirement-638",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Client MAY support Consent notification filter by status",
+    "derivedFrom" : "HL7 FAST Consent IG"
+  },
+  {
+    "key" : "639",
+    "label" : "requirement-639",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Client MAY support Consent notification filter by scope",
+    "derivedFrom" : "HL7 FAST Consent IG"
+  },
+  {
+    "key" : "640",
+    "label" : "requirement-640",
+    "conformance" : ["MAY"],
+    "conditionality" : false,
+    "requirement" : "Consent Client MAY support Consent notification filter combinations",
+    "derivedFrom" : "HL7 FAST Consent IG"
+  }]
+}

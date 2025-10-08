@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser",
+  "name" : "SubscriptionTopicFASTConsentSubscriptionTopicClientAdminService",
+  "title" : "SubscriptionTopic FASTConsentSubscriptionTopic Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-03T19:43:24-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "SubscriptionTopic FASTConsentSubscriptionTopic Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "596",
+    "label" : "requirement-596",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "SubscriptionTopic FASTConsentSubscriptionTopic<br/><br/>This topic is defined as an auto-backported R5 SubscriptionTopic (see note below), so this means the requirements for processing it are defined in the captured R5 requirements below. Note: its raw representation (https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json) is as a Basic resource.",
+    "derivedFrom" : "HL7 FAST Consent IG",
+    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html"]
+  }]
+}

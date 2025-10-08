@@ -1,0 +1,39 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "conformance-client-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/conformance-client-admin-service",
+  "name" : "ConformanceClientAdminService",
+  "title" : "Conformance Client Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-03T19:43:24-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Conformance Requirements for Client Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service",
+  "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
+  "statement" : [{
+    "key" : "562",
+    "label" : "requirement-562",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Notification bundles SHALL contain a FHIR R4 Parameters resource, conforming to the R4 Backported R5 SubscriptionStatus profile, as the first entry<br/><br/>Not sure why, but this requirement is nearly repeated a couple sentences later as \"The status entry SHALL be the first entry of each notification bundle.\" No need to capture that.",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
+  },
+  {
+    "key" : "537",
+    "label" : "requirement-537",
+    "conformance" : ["SHALL"],
+    "conditionality" : false,
+    "requirement" : "Subscription.criteria SHALL contain the canonical URL for the Subscription Topic",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
+  }]
+}

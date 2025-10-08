@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "components-admin-service",
+  "url" : "http://hl7.org/fhir/us/consent-management/Requirements/components-admin-service",
+  "name" : "ComponentsAdminService",
+  "title" : "Components Admin Service",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-09-03T19:43:24-04:00",
+  "publisher" : "HL7 International / Community Based Collaborative Care",
+  "contact" : [{
+    "name" : "HL7 International / Community Based Collaborative Care",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://www.hl7.org/Special/committees/cbcc"
+    }]
+  }],
+  "description" : "Components Requirements for Admin Service",
+  "actor" : ["http://hl7.org/fhir/us/consent-management/ActorDefinition/admin-service"],
+  "statement" : [{
+    "key" : "565",
+    "label" : "requirement-565",
+    "conformance" : ["SHOULD"],
+    "conditionality" : false,
+    "requirement" : "Consent Administration Service SHOULD NOT use cross version extensions on R4 subscriptions to describe any elements also described by this guide<br/><br/>Not exactly sure how to test this",
+    "derivedFrom" : "Subscriptions R5 Backport",
+    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/components.html#:~:text=cross%20version%20extensions%20SHOULD%20NOT%20be%20used%20on%20R4%20subscriptions%20to%20describe%20any%20elements%20also%20described%20by%20this%20guide"]
+  }]
+}

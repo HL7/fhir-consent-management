@@ -7,7 +7,7 @@ Within the Consent sphere, there are three types of information sharing question
 For #1 and #3, there are existing mechanisms to convey the answer to those questions.  This guide provides operations to help answer question #2.
 
 ### Who has my Consent record been shared with?
-This guide provides both a means for [searching for consents](technical.html#searching-for-consents) and to [subscribe for updates](technical.html#consent-subscripions) to those consents.  The use of AuditEvents can be used to answer the question of who has received my Consent record.  By querying for AuditEvents that have an entity of a consent record, a system can find out when it was returned in a search result.
+This guide provides both a means for [searching for consents](technical.html#searching-for-consents) and to [subscribe for updates](technical.html#consent-subscriptions) to those consents.  The use of AuditEvents can be used to answer the question of who has received my Consent record.  By querying for AuditEvents that have an entity of a consent record, a system can find out when it was returned in a search result.
 
 There is a complexity that this guide introduces in that there can be a network of systems that receive a consent.  See the [Consent Network page](consent_network.html) for more information about how consents are shared across the network.
 

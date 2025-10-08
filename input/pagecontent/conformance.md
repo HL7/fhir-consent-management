@@ -18,4 +18,8 @@ As well, profiles in this implementation guide make use of the [mustSupport]({{s
 
 Along with those expectations, the following rules on MustSupport are also required:
 
-**ADD Must Support rules**
+* Data Sources **SHALL** be capable of populating the data element when sharing resources compliant with the profile. I.e. the system must be able to demonstrate the population and sharing of the element, but it is acceptable to omit the element if the system doesn't have values in a particular instance. A system that is incapable of ever sharing the element would be non-conformant.
+* Data Consumers **SHALL** be capable of processing resource instances containing the data elements without generating an error or causing the application to fail.
+* If the minimum cardinality of an element is greater than 0 – i.e. the element is ‘required’, then the element SHALL be present in the instance and SHALL have a value.
+* Data Consumers **SHALL** interpret missing data elements within resource instances as data not being present in the Data Source’s systems or was not deemed to be shareable with the Data Consumer for privacy or other business reasons.
+* Data Consumers **SHALL** be able to process resource instances containing data elements that have extensions in place of a value where such extensions are declared as part of the profile.

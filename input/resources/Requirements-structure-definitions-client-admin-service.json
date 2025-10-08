@@ -160,7 +160,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition BackportSubscription",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html"]
   },
   {
     "key" : "597",

@@ -24,6 +24,6 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD NOT use cross version extensions on R4 subscriptions to describe any elements also described by this guide<br/><br/>Not exactly sure how to test this",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/components.html#:~:text=cross%20version%20extensions%20SHOULD%20NOT%20be%20used%20on%20R4%20subscriptions%20to%20describe%20any%20elements%20also%20described%20by%20this%20guide"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/STU1.1/components.html#:~:text=cross%20version%20extensions%20SHOULD%20NOT%20be%20used%20on%20R4%20subscriptions%20to%20describe%20any%20elements%20also%20described%20by%20this%20guide"]
   }]
 }

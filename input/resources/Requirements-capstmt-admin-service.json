@@ -69,7 +69,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "332",
@@ -78,7 +78,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
   },
   {
     "key" : "36",
@@ -276,7 +276,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "400",
@@ -285,7 +285,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
   },
   {
     "key" : "404",
@@ -330,7 +330,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Subscription read",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHALL%20be%20capable%20of%20returning%20a%20Subscription%20resource%20using%3A%20GET%20%5Bbase%5D/Subscription/%5Bid%5D"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHALL%20be%20capable%20of%20returning%20a%20Subscription%20resource%20using%3A%20GET%20%5Bbase%5D/Subscription/%5Bid%5D"]
   },
   {
     "key" : "503",
@@ -339,7 +339,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription write via POST or PUT<br/><br/>- \"After POSTing the subscription, the client parses the Location header and saves the new Subscription's logical id for use in subsequent operations.\" - implies server should always return Location",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20creating%20a%20Subscription%20resource%20using%20either%3A%20POST%20%5Bbase%5D/Subscription%20or%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20creating%20a%20Subscription%20resource%20using%20either%3A%20POST%20%5Bbase%5D/Subscription%20or%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D"]
   },
   {
     "key" : "509",
@@ -348,7 +348,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription update via PUT or PATCH",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
   },
   {
     "key" : "510",
@@ -357,7 +357,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription delete",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
   },
   {
     "key" : "511",
@@ -366,7 +366,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription search<br/><br/>Not testing at this time",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D"]
   },
   {
     "key" : "602",
@@ -375,7 +375,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription search by url<br/><br/>Not testing at this time",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri"]
   },
   {
     "key" : "604",
@@ -384,7 +384,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription search by status<br/><br/>Not testing at this time",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,token"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,token"]
   },
   {
     "key" : "508",
@@ -393,7 +393,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support $status operation against Subscription resource",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation"]
   },
   {
     "key" : "517",
@@ -402,7 +402,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Subscription resources that conform to BackportSubscription profile",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22resource%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%22url,StructureDefinition/backport%2Dsubscription%22%5D"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=%22resource%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%22url,StructureDefinition/backport%2Dsubscription%22%5D"]
   },
   {
     "key" : "514",
@@ -411,7 +411,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL mark with profile assertions Subscription resources that conform to the BackportSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "515",
@@ -420,6 +420,6 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support searching by the _profile parameter for Subscription resources that conform to the BackportSubscription profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of%20resources,for%20the%20declared%20profiles"]
   }]
 }

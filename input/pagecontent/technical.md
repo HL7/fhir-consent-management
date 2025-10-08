@@ -29,6 +29,9 @@ This implementation guide also builds on the [US Core]({{site.data.fhir.uscore}}
 
 This implementation guide uses Subscriptions that are based on the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
+#### Testing Requirements
+There is a [FAST Consent Testing Guide](https://wildfhir4.wildfhir.org/ig/fhir-consent-management-tg/index.html) which is a companion guide to this guide and provides testing artifacts used in the verification and validation implementations declaring conformance to and against this guide.
+
 ### Detailed Requirements
 
 #### Identifying Patients, Practitioners, Organizations, and Related Persons
@@ -42,16 +45,15 @@ Every operation in this guide has an optional OperationOutcome defined as the re
 To satisfy the business use cases for consent management, three operations are defined that a consent administration service SHALL support:
 
 * File Consent
-* Update Consent
 * Revoke Consent
 
 Along with these operations, consent administration service systems SHALL support searching for consents.  Finally, a consent administration service SHALL support subscriptions to allow other systems to be informed when consents for a patient have changed.
 
 ##### File Consent Operation
-The [File Consent Operation](OperationDefinition-file-consent.html) is used to file a consent with a consent administration service.  The details of the consent are contained in the [Consent](StructureDefinition-FASTConsent.html) instance and any documents that were used to generate the Consent are also included in the operation parameters.  
+The [File Consent Operation](OperationDefinition-file-consent.html) is used to file a consent with a consent administration service.  The details of the consent are contained in the [Consent](StructureDefinition-FASTConsent.html) instance and any documents that were used to generate the Consent are also included in the operation parameters.  When filing a consent, the Consent status element **SHALL** be set to 'active'.
 
 ##### Revoke Consent Operation
-The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used to revoke an existing consent with a consent administration service.  The parameters are a reference to a pre-existing Consent instance along with a reference to the Patient who is the subject of the consent and any supporting documentation for the revocation.
+The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used to revoke an existing consent with a consent administration service.  The parameters are a reference to a pre-existing Consent instance along with a reference to the Patient who is the subject of the consent and any supporting documentation for the revocation.  After a consent has been revoked, the Consent status element for the revoked consent **SHALL** be set to 'inactive'.  A revoked consent **SHALL NOT** be deleted from the consent management system.
 
 ##### Searching for Consents
 To support searching for consents, the following search parameters SHALL be supported:
@@ -76,10 +78,10 @@ To register a subscription, client systems will POST to a consent administration
 
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
-#### Disclosure of Consent
+#### Sharing Health Information due to Consent
 Along with the business use cases of consent management, there is also a requirement for systems to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.  To support this requirement, this guide defines an operation for recording consent disclosures and requires systems to implement searches for disclosures.
 
-Disclosures are recorded as FHIR AuditEvent instances.
+Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared.
 
 ##### Record Disclosure Operation
 The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SHALL be used when a system accesses a Consent instance for determining whether informtion can be accessed.  An [Audit Event instance](StructureDefinition-FASTConsentAuditEvent.html) conveys the purpose of the access (reading, writing, sending, etc.) while a reference to a Consent instance indicates the consent that was accessed.

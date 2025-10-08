@@ -24,7 +24,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Subscription read",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20the%20Subscription%20resource%20(read,-/write)."]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20the%20Subscription%20resource%20(read,-/write)."]
   },
   {
     "key" : "497",
@@ -33,7 +33,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Subscription write",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20the%20Subscription%20resource%20(read/write,-)."]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20the%20Subscription%20resource%20(read/write,-)."]
   },
   {
     "key" : "498",
@@ -42,7 +42,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support $status operation against Subscription resource",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20the%20%24status%20operation%20on%20the%20Subscription%20resource,-."]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20the%20%24status%20operation%20on%20the%20Subscription%20resource,-."]
   },
   {
     "key" : "499",
@@ -51,7 +51,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD support Subscription topic discovery via the CapabilityStatement SubscriptionTopic Canonical extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHOULD%20support%20topic%20discovery%20via%20the%20CapabilityStatement%20SubscriptionTopic%20Canonical%20extension,-SHALL%20support%20at"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHOULD%20support%20topic%20discovery%20via%20the%20CapabilityStatement%20SubscriptionTopic%20Canonical%20extension,-SHALL%20support%20at"]
   },
   {
     "key" : "500",
@@ -61,7 +61,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support at least one Subscription channel type, and SHOULD include one from Subscriptions R5 Backport IG",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,least%20one%20channel%20type%2C%20and%20SHOULD%20include%20one%20from%20this%20guide,-SHALL%20support%20at"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,least%20one%20channel%20type%2C%20and%20SHOULD%20include%20one%20from%20this%20guide,-SHALL%20support%20at"]
   },
   {
     "key" : "501",
@@ -70,7 +70,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support at least one Subscription Payload Type",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20at%20least%20one%20Payload%20Type,-Note%20that%20in"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=into%20this%20element.-,Conformance%20in%20FHIR%20R4,SHALL%20support%20at%20least%20one%20Payload%20Type,-Note%20that%20in"]
   },
   {
     "key" : "502",
@@ -79,7 +79,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL conform to the BackportSubscriptionCapabilityStatementR4 CapabilityStatement<br/><br/>Expect this means include the same declarations in addition to including it in some way",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=FHIR%20Servers%20claiming%20conformance%20to%20this%20Implementation%20Guide%20must%20conform%20to%20the%20expectations%20described%20in%20the%20Capability%20Statement%20appropriate%20to%20the%20implemented%20FHIR%20version.%20For%20FHIR%20R4%20servers%2C%20this%20guide%20defines%20the%20R4%20Server%20CapabilityStatement"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=FHIR%20Servers%20claiming%20conformance%20to%20this%20Implementation%20Guide%20must%20conform%20to%20the%20expectations%20described%20in%20the%20Capability%20Statement%20appropriate%20to%20the%20implemented%20FHIR%20version.%20For%20FHIR%20R4%20servers%2C%20this%20guide%20defines%20the%20R4%20Server%20CapabilityStatement"]
   },
   {
     "key" : "567",
@@ -88,7 +88,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD NOT use cross version extensions on R4 subscriptions to describe any elements also described by this guide<br/><br/>Not exactly sure how to test this",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=For%20FHIR%20R4,by%20this%20guide."]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=For%20FHIR%20R4,by%20this%20guide."]
   },
   {
     "key" : "504",
@@ -97,7 +97,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHOULD declare conformance with the BackportSubscriptionCapabilityStatementR4 using CapabilityStatement.instantiates",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=SHOULD%20declare%20conformance%20with%20the%20Backport%20Subscription%20Server%20Capability%20Statement%20by%20including%20its%20official%20URL%20in%20the%20server%E2%80%99s%20CapabilityStatement.instantiates%20element%3A%20http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/CapabilityStatement/backport%2Dsubscription%2Dserver%2Dr4"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=SHOULD%20declare%20conformance%20with%20the%20Backport%20Subscription%20Server%20Capability%20Statement%20by%20including%20its%20official%20URL%20in%20the%20server%E2%80%99s%20CapabilityStatement.instantiates%20element%3A%20http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/CapabilityStatement/backport%2Dsubscription%2Dserver%2Dr4"]
   },
   {
     "key" : "513",
@@ -106,7 +106,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL support Subscription resources that conform to BackportSubscription profile",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=server%2Dr4.-,SHALL%20specify%20the%20full%20capability%20details%20from%20the%20CapabilityStatement%20it%20claims,element%3A%20http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/StructureDefinition/backport%2Dsubscription,-Must%2Dsupport"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=server%2Dr4.-,SHALL%20specify%20the%20full%20capability%20details%20from%20the%20CapabilityStatement%20it%20claims,element%3A%20http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/StructureDefinition/backport%2Dsubscription,-Must%2Dsupport"]
   },
   {
     "key" : "506",
@@ -115,7 +115,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL be able to read values in the backport-channel-type extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1"]
   },
   {
     "key" : "507",
@@ -124,7 +124,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL reject the subscription request if a client requests an unsupported channel via the backport-channel-type extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1"]
   },
   {
     "key" : "529",
@@ -133,7 +133,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL be able to read values in the backport-filter-criteria extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-filter-criteria-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-filter-criteria-1"]
   },
   {
     "key" : "530",
@@ -142,7 +142,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL be able to apply filters as described by any Subscription Topics the server advertises support for",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-filter-criteria-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-filter-criteria-1"]
   },
   {
     "key" : "531",
@@ -151,7 +151,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL reject the subscription request if any filters are unsupported<br/><br/>Will test with a variety of query strings that are not supported per the server's CapStmt.",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-filter-criteria-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-filter-criteria-1"]
   },
   {
     "key" : "533",
@@ -160,7 +160,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL be able to read values in the backport-payload-content extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
   },
   {
     "key" : "534",
@@ -169,7 +169,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL include information in notifications as described in this guide based on the value of the backport-payload-content extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
   },
   {
     "key" : "535",
@@ -178,7 +178,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL reject the subscription request if a client asks for a content level the server does not intend to support (e.g., does not meet security requirements)<br/><br/>This cannot be fully tested for a given system unless we know its specific requirements, but we can hit it with each content level as an exploratory test.",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
   },
   {
     "key" : "563",
@@ -187,7 +187,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL be able to generate a valid and correct R4 Backported R5 SubscriptionStatus resource for each notification",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
   },
   {
     "key" : "538",
@@ -196,7 +196,7 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL be able to read values in Subscription.criteria for subscription topics referenced by it",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
   },
   {
     "key" : "539",
@@ -205,6 +205,6 @@
     "conditionality" : false,
     "requirement" : "Consent Administration Service SHALL reject the subscription request if it does not support a requested topic or will not honor the subscription otherwise",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
   }]
 }

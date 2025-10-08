@@ -18,6 +18,7 @@
 <artifact id="Consent/ConsentExample" key="Consent-ConsentExample" name="ConsentExample"/>
 <artifact id="DocumentReference/DocumentReferenceExample" key="DocumentReference-DocumentReferenceExample" name="DocumentReferenceExample"/>
 <artifact id="Requirements/extended-operations-client-admin-service" key="Requirements-extended-operations-client-admin-service" name="Extended Operations Client Admin Service"/>
+<artifact id="ValueSet/FASTConsentStatuses" key="ValueSet-FASTConsentStatuses" name="FAST Consent Statuses"/>
 <artifact id="SubscriptionTopic/FASTConsentSubscriptionTopic" key="SubscriptionTopic-FASTConsentSubscriptionTopic" name="FAST Consent Subscription Topic"/>
 <artifact id="StructureDefinition/FASTConsent" key="StructureDefinition-FASTConsent" name="FASTConsent"/>
 <artifact id="StructureDefinition/FASTConsentAuditEvent" key="StructureDefinition-FASTConsentAuditEvent" name="FASTConsentAuditEvent"/>

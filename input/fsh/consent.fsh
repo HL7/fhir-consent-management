@@ -6,6 +6,8 @@ and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named 
 and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
 
 * status 1..1 MS
+  * ^short = "active | inactive"
+* status from FASTConsentStatuses (required)
 * scope 1..1 MS
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category 1..* MS
@@ -116,7 +118,7 @@ Description: "This profile records non-structured documentation that records a p
 
 Profile: FASTConsentAuditEvent
 Parent: AuditEvent
-Description: "This profile captures the event of disclosing information after consulting a filed Consent."
+Description: "Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared."
 * type = http://dicom.nema.org/resources/ontology/DCM#110106
 * action = http://hl7.org/fhir/audit-event-action#R
 * period 1..1 MS
@@ -138,6 +140,14 @@ Description: "This profile captures the event of disclosing information after co
 * entity 1..* MS
   * what MS
   * type MS
+  * ^slicing.discriminator.type = #value
+  * ^slicing.discriminator.path = "type"
+  * ^slicing.rules = #open
+  * ^slicing.description = "Slice to provide the Consent resource."
+* entity contains Consent 1..1 MS
+* entity[Consent].what 1..1 
+* entity[Consent].what = Reference(FASTConsent)
+* entity[Consent].type = http://hl7.org/fhir/resource-types#Consent
 
 ValueSet: LOINCConsentDocumentTypes
 Title: "LOINC Consent Document Types"
@@ -146,6 +156,13 @@ Description: "These codes are used to convey the type of consent document being 
 * ^experimental = false
 * http://loinc.org#64292-6
 * http://loinc.org#59284-0
+
+ValueSet: FASTConsentStatuses
+Title: "FAST Consent Statuses"
+Description: "The two codes that are applicable to FAST Consent instances.  'active' for active Consents, and 'inactive' for revoked Consents."
+* ^experimental = false
+* http://hl7.org/fhir/consent-state-codes#active
+* http://hl7.org/fhir/consent-state-codes#inactive
 
 Profile: FASTReference
 Parent: Reference

@@ -24,7 +24,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHOULD NOT use cross version extensions on R4 subscriptions to describe any elements also described by this guide<br/><br/>Not exactly sure how to test this",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=For%20FHIR%20R4,by%20this%20guide."]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#:~:text=For%20FHIR%20R4,by%20this%20guide."]
   },
   {
     "key" : "516",
@@ -33,7 +33,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client MAY support the backport-channel-type extension<br/><br/>Not testing at this time",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-channel-type-1"]
   },
   {
     "key" : "532",
@@ -42,7 +42,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL be able to write values in the backport-filter-criteria extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
   },
   {
     "key" : "536",
@@ -51,7 +51,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL be able to write values in the backport-payload-content extension",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#backport-payload-content-1"]
   },
   {
     "key" : "564",
@@ -60,7 +60,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL be able to process a valid R4 Backported R5 SubscriptionStatus resource without errors",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
   },
   {
     "key" : "540",
@@ -69,6 +69,6 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL be able to write subscription topic URLs in Subscription.criteria",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
   }]
 }

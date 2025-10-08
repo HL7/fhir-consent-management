@@ -69,7 +69,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile.  Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "56",
@@ -267,7 +267,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "405",

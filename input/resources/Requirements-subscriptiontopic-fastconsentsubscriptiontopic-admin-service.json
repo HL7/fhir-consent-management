@@ -115,6 +115,6 @@
     "requirement" : "Consent Administration Service MAY support Consent notification filters by search parameters not listed by FASTConsentSubscriptionTopic<br/><br/>Not going to test just yet",
     "derivedFrom" : "Subscriptions R5 Backport",
     "parent" : "Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596",
-    "reference" : ["https://hl7.org/fhir/uv/subscriptions-backport/components.html#:~:text=A%20server%20MAY%20support,parameters%20for%20best%20interoperability."]
+    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/components.html#:~:text=A%20server%20MAY%20support,parameters%20for%20best%20interoperability."]
   }]
 }

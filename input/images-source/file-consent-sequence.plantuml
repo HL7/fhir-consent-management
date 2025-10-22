@@ -1,0 +1,4 @@
+@startuml
+Consenter -> Consenter: Signs the consent form
+Consenter -> ConsentSystem: Computable Consent Resource is stored
+@enduml

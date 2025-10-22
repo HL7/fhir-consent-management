@@ -1,0 +1,4 @@
+@startuml
+Consenter -> Consenter: Views the consent form
+Consenter -> Consenter: Completes the consent form
+@enduml

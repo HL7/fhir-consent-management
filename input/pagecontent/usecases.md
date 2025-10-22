@@ -3,6 +3,8 @@
 
 ### Request Consent
 
+<div>{%include request-consent-sequence.svg%}</div>
+
 **Actor:** Administrator, Consenter
 
 **Pre-condition:** 
@@ -20,6 +22,8 @@
 - If there is a delegation in place, the substitute decision maker should be notified.
 
 ### Review Consent
+
+<div>{%include review-consent-sequence.svg%}</div>
 
 **Actor:** Consenter 
 
@@ -56,6 +60,8 @@ A completed consent form is available for submission.
 
 ### Sign and File Consent
 
+<div>{%include file-consent-sequence.svg%}</div>
+
 **Actor:** Consenter
 
 **Pre-condition:**
@@ -76,6 +82,8 @@ A consent form has been reviewed and completed (see use case [Review Consent](us
 
 
 ### Delegate Consent
+
+<div>{%include delegate-consent-sequence.svg%}</div>
 
 **Actor:** Consenter
 
@@ -98,6 +106,8 @@ By navigating and signing a delegation form, the consenter assigns a delegate to
 
 ### Revoke Consent
 
+<div>{%include revoke-consent-sequence.svg%}</div>
+
 **Actor:** Consenter
 
 **Pre-condition:**
@@ -118,6 +128,8 @@ A consent has been previously signed and filed and is still active (not expired)
 ### Disclosure Audit
 (implementing this use case is optional)
 
+<div>{%include disclosure-audit-sequence.svg%}</div>
+
 **Actor:** Consenter
 
 **Pre-condition:** 
@@ -131,6 +143,8 @@ A consent has been signed and filed.
 **Post-condition:**
 
 ### Propagate Consent Events
+
+<div>{%include propogate-consent-events-sequence.svg%}</div>
 
 **Actor:** Consenter
 
@@ -147,6 +161,8 @@ A notice of consent event is sent to a partner system. Supported events are:
 - The requesting entity will receive event notifications. 
 
 ### Consent Provenance
+
+<div>{%include consent-provenance-sequence.svg%}</div>
 
 **Actor:** Consenter
 

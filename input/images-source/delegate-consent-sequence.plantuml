@@ -1,0 +1,3 @@
+@startuml
+Consenter -> Consenter: Assigns a delegate to the consent
+@enduml

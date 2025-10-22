@@ -1,0 +1,4 @@
+@startuml
+Administrator -> Consenter: Administrator specifies a consenter
+Administrator -> Consenter: Assigns a Consent form
+@enduml

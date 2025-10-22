@@ -1,0 +1,5 @@
+@startuml
+ConsentSystemA -> ConsentSystemB: Subscribe to receive consent events
+ConsentSystemB -> ConsentSystemA: Send consent events
+ConsentSystemA -> ConsentSystemB: End subscription to consent events
+@enduml

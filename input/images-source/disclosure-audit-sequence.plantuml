@@ -1,0 +1,6 @@
+@startuml
+Consenter -> ConsentSystem: Retrieve a previously filed consent
+ConsentSystem --> Consenter: Return previous consent record
+Consenter -> ConsentSystem: Request a record of activities authorized or blocked
+ConsentSystem --> Consenter: Return list of activities based on chosen consent
+@enduml

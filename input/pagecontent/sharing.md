@@ -1,10 +1,10 @@
 Within the Consent sphere, there are three types of information sharing questions that can be asked:
 
 1. Who has my Consent record been shared with?
-1. Who has consulted my Consent record to make a decision on sharing my health information?
 1. What health information has been shared with who?
+1. Who has consulted my Consent record to make a decision on sharing my health information?
 
-For #1 and #3, there are existing mechanisms to convey the answer to those questions.  This guide provides operations to help answer question #2.
+For #1 and #2, there are existing mechanisms to convey the answer to those questions.  This guide provides operations to help answer question #3.
 
 ### Who has my Consent record been shared with?
 This guide provides both a means for [searching for consents](technical.html#searching-for-consents) and to [subscribe for updates](technical.html#consent-subscriptions) to those consents.  The use of AuditEvents can be used to answer the question of who has received my Consent record.  By querying for AuditEvents that have an entity of a consent record, a system can find out when it was returned in a search result.
@@ -19,4 +19,4 @@ IHE has a number of guides related to this question so this guide does not offer
 ### Who has consulted my Consent record to make a decision on sharing my health information?
 Nestled in between question #1 and question #3 is the question around who consulted a patient's Consent record.  There will be times when a Consent record was consulted and a decision made to **NOT** share information.  A patient may want to know that this happened.
 
-To enable this question to be answered, the [Record Disclosure Operation](OperationDefinition-record-disclosure.html) is introduced in this guide.  It records an AuditEvent whenever a Consent record was consulted, no matter whether that led to health information sharing or not.
+To enable this question to be answered, the [Record Disclosure Operation](OperationDefinition-record-disclosure.html) is introduced in this guide.  It records a [FAST Audit Event](StructureDefinition-FASTConsentAuditEvent.html) whenever a Consent record was consulted, no matter whether that led to health information sharing or not.

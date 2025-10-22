@@ -14,7 +14,7 @@ The artifacts are of five types:
 
 #### Capability Statements
 * [Consent Administrative Server Capabilities](CapabilityStatement-ConsentAdministrativeServerCapabilities.html) - Required for server systems receiving consents
-* [Consent Client Capabilities](CapabilityStatement-ConsentConsentCapabilities.html) - Required for client systems exchanging filing and review consents
+* [Consent Client Capabilities](CapabilityStatement-ConsentClientCapabilities.html) - Required for client systems exchanging filing and review consents
 
 #### Operation Definitions
 * [File a Consent](OperationDefinition-file-consent.html) - {{site.data.OperationDefinition-file-consent.description}}

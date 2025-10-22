@@ -117,37 +117,13 @@ Description: "This profile records non-structured documentation that records a p
 * category[ConsentDocumentCategory] = http://loinc.org#57016-8
 
 Profile: FASTConsentAuditEvent
-Parent: AuditEvent
-Description: "Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared."
-* type = http://dicom.nema.org/resources/ontology/DCM#110106
-* action = http://hl7.org/fhir/audit-event-action#R
-* period 1..1 MS
-* recorded MS
-* purposeOfEvent MS
-* agent MS
-  * type MS
-  * role MS
-  * who 1..1 MS
-  * who only FASTReference
-  * who only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
-  * requestor MS
-  * purposeOfUse 1..* MS
-* source MS
-  * observer MS
-  * observer only FASTReference
-  * observer only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
-  * type MS
-* entity 1..* MS
-  * what MS
-  * type MS
-  * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "type"
-  * ^slicing.rules = #open
-  * ^slicing.description = "Slice to provide the Consent resource."
-* entity contains Consent 1..1 MS
-* entity[Consent].what 1..1 
-* entity[Consent].what only Reference(FASTConsent)
-* entity[Consent].type = http://hl7.org/fhir/resource-types#Consent
+Parent: https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAudit.AuthZconsent
+Description: "Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted and whether the decision to disclose data was made or not."
+* agent.who only FASTReference
+* agent.who only Reference($USCoreOrganization or $USCorePatient or $USCorePractitioner or $USCoreRelatedPerson or $USCorePractitionerRole)
+* entity[patient].what only FASTReference
+* entity[patient].what only Reference($USCorePatient)
+* entity[consent].what only Reference(FASTConsent)
 
 ValueSet: LOINCConsentDocumentTypes
 Title: "LOINC Consent Document Types"

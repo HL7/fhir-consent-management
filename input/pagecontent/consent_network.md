@@ -14,13 +14,7 @@ When any System creates and subsequently exchanges a Consent resource with anoth
 
 Please refer to Figure 1 as a functional level depiction of the Inheritance based relationship.
 
-{::options parse_block_html="false" /}
-<figure>
-  <img style="padding-top:0;padding-bottom:30px" width="1600px" src="Consent_Network_Relationship.png" alt="Consent Network Inheritance Relationship"/>
-  <figcaption>Figure 1 - Consent Network Inheritance Relationship</figcaption>
-</figure>
-{::options parse_block_html="true" /}
-
+<div>{%include consent-network-activity.svg%}</div>
 
 
 Each subsequent sharing of the same consent will retain its' origan thus creating an inherent relationship between the system retaining the Consent resource and the system that created the Consent resource irrespective of the system from which the Consent was sent.
@@ -47,9 +41,4 @@ The inherent network created by the relationships across systems in which the sa
 
 Figure 2 represents a 3 layered Consent Network illustrating this virtual Network Relationship Tree
 
-{::options parse_block_html="false" /}
-<figure>
-  <img style="padding-top:0;padding-bottom:30px" width="1600px" src="Consent_Network_Relationship_Tree.png" alt="Consent Network Relationship Tree"/>
-  <figcaption>Figure 2 - Consent Network Relationship Tree</figcaption>
-</figure>
-{::options parse_block_html="true" /}
+<div>{%include consent-network-state.svg%}</div>

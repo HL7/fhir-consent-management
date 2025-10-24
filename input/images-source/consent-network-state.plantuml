@@ -1,0 +1,39 @@
+@startuml
+State System_A {
+    state "Consent 123\nSystem A" as sysa 
+    state "Subscription\nSystem B\nSystem C" as sysbc 
+    sysa -right-> sysbc
+}
+State System_B {
+    state "Consent 123\nSystem A" as sysa2
+    state "Subscription\nSystem D\nSystem E\nSystem F" as sysdef
+    sysa2 -right-> sysdef
+}
+State System_C {
+    state "Consent 123\nSystem A" as sysa3
+    state "Subscription\nSystem G\nSystem H" as sysgh
+    sysa3 -right-> sysgh
+}
+System_A -down-> System_B
+System_A -down-> System_C
+State System_D {
+    state "Consent 123\nSystem A" as sysa4
+}
+State System_E {
+    state "Consent 123\nSystem A" as sysa5
+}
+State System_F {
+    state "Consent 123\nSystem A" as sysa6
+}
+System_B -down-> System_D
+System_B -down-> System_E
+System_B -down-> System_F
+State System_G {
+    state "Consent 123\nSystem A" as sysa8
+}
+State System_H {
+    state "Consent 123\nSystem A" as sysa7
+}
+System_C -down-> System_G 
+System_C -down-> System_H
+@enduml

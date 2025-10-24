@@ -1,0 +1,18 @@
+@startuml
+<style>
+element {HorizontalAlignment center}
+</style>
+start
+:System A creates a 
+consent document with 
+origin attributes;
+:Document is transmitted 
+through a secure 
+exchange network;
+:Network passes the 
+document without altering 
+origin information;
+:System B receives 
+and stores the document;
+stop
+@enduml

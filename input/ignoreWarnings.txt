@@ -34,5 +34,9 @@ The slice 'uscore' on path 'DocumentReference.category' is not marked as 'must-s
 This IG is version 4.0.1, while the IG 'hl7.fhir.uv.subscriptions-backport.r4' is from version 4.0.0
 The ImplementationGuide is based on FHIR version 4.0.1 but package hl7.fhir.uv.subscriptions-backport.r4#1.1.0 is based on FHIR version 4.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 
-# 10 - Requirements references will eventually resolve
-No definition could be found for URL value%
+# 10 - Conformance Clauses that won't get explicitly called out
+INFORMATION: CapabilityStatement-ConsentAdministrativeServerCapabilities.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
+INFORMATION: CapabilityStatement-ConsentClientCapabilities.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
+INFORMATION: StructureDefinition-FASTConsent.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
+INFORMATION: StructureDefinition-FASTConsentAuditEvent.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
+INFORMATION: conformance.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause

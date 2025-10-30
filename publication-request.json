@@ -1,0 +1,14 @@
+{
+  "package-id" : "hl7.fhir.us.consent-management",
+  "version" : "1.0.0-ballot",
+  "path" : "http://hl7.org/fhir/us/consent-management/2026Jan",
+  "status" : "ballot",
+  "sequence" : "STU 1",
+  "mode": "working",
+  "desc" : "A FHIR IG that provides APIs for managing consent at scale across multiple consent management repositories.",
+  "first" : true,
+  "title" : "Scalable Consent Management",
+  "ci-build" : "http://build.fhir.org/ig/HL7/fhir-consent-management",
+  "category" : "Privacy / Security",
+  "introduction" : "This guide details the consent management use cases as well as the required custom FHIR operations and profiles to exchange the required consent data elements both between the user and the consent mangement repository as well as between repositories.  This includes the interactions between patients and the consent management system in the process of soliciting, navigating, and executing consents, which is sometimes referred to as consent ceremony, as well as a high-level API (e.g., defining custom FHIR operations) to cover use cases for consent management."
+}

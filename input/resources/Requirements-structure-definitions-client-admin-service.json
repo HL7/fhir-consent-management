@@ -6,7 +6,7 @@
   "title" : "Structure Definitions Client Admin Service",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-09-03T19:43:24-04:00",
+  "date" : "2025-10-15T14:24:14-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -25,7 +25,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition FileConsentParameters",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters.html"]
   },
   {
     "key" : "70",
@@ -35,7 +35,7 @@
     "requirement" : "The FileConsent operation \"consent\" input parameter SHALL be 1..1 and conform to the FASTConsent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-464",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters-definitions.html#Parameters.parameter:consent"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters-definitions.html#Parameters.parameter:consent"]
   },
   {
     "key" : "430",
@@ -45,36 +45,7 @@
     "requirement" : "The FileConsent operation \"document\" input parameter SHALL be 1..1 and conform to either the us-core-questionnaireresponse or FASTDocumentReference profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-464",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters-definitions.html#Parameters.parameter:document"]
-  },
-  {
-    "key" : "468",
-    "label" : "requirement-468",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "StructureDefinition UpdateConsentParameters",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-UpdateConsentParameters.html"]
-  },
-  {
-    "key" : "434",
-    "label" : "requirement-434",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "The UpdateConsent operation \"consent\" input parameter SHALL be 1..1 and conform to the FASTConsent profile",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-468",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-UpdateConsentParameters-definitions.html#Parameters.parameter:consent"]
-  },
-  {
-    "key" : "436",
-    "label" : "requirement-436",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "The UpdateConsent operation \"document\" input parameter SHALL be 1..1 and conform to either the us-core-questionnaireresponse or FASTDocumentReference profile",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-468",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-UpdateConsentParameters-definitions.html#Parameters.parameter:document"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FileConsentParameters-definitions.html#Parameters.parameter:document"]
   },
   {
     "key" : "469",
@@ -83,7 +54,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition RevokeConsentParameters",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters.html"]
   },
   {
     "key" : "441",
@@ -93,7 +64,7 @@
     "requirement" : "The RevokeConsent operation \"consent\" input parameter SHALL be 1..1 and conform to the FASTConsent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-469",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:consent"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:consent"]
   },
   {
     "key" : "448",
@@ -103,7 +74,7 @@
     "requirement" : "The RevokeConsent operation \"patient\" input parameter SHALL be 1..1 and conform to the us-core-patient profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-469",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:patient"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:patient"]
   },
   {
     "key" : "443",
@@ -113,7 +84,7 @@
     "requirement" : "The RevokeConsent operation \"document\" input parameter SHALL be 0..1 and conform to either the us-core-questionnaireresponse or FASTDocumentReference profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-469",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:document"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RevokeConsentParameters-definitions.html#Parameters.parameter:document"]
   },
   {
     "key" : "470",
@@ -122,7 +93,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition RecordDisclosureParameters",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RecordDisclosureParameters.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RecordDisclosureParameters.html"]
   },
   {
     "key" : "452",
@@ -132,7 +103,7 @@
     "requirement" : "The RecordDisclosure operation \"disclosure\" input parameter SHALL be 1..1 and conform to the \tFASTConsentAuditEvent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-470",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RecordDisclosureParameters-definitions.html#key_Parameters.parameter:disclosure"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RecordDisclosureParameters-definitions.html#key_Parameters.parameter:disclosure"]
   },
   {
     "key" : "450",
@@ -142,7 +113,7 @@
     "requirement" : "The RecordDisclosure operation \"consent\" input parameter SHALL be 1..1 and conform to the FASTConsent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
     "parent" : "Requirements-structure-definitions-client-admin-service.html#requirement-470",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RecordDisclosureParameters-definitions.html#Parameters.parameter:consent"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-RecordDisclosureParameters-definitions.html#Parameters.parameter:consent"]
   },
   {
     "key" : "477",
@@ -151,7 +122,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition FASTSubscription<br/><br/>- No requirements to use this yet\n- The constraint that status is always \"active\" might not make sense. I think the client is supposed to POST it as \"requested\".",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTSubscription.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTSubscription.html"]
   },
   {
     "key" : "595",
@@ -160,7 +131,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition BackportSubscription",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html"]
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition-backport-subscription.html"]
   },
   {
     "key" : "597",
@@ -169,7 +140,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition FASTConsent<br/><br/>Many nested profiles, including from US Core. Will be checked by validator.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsent.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsent.html"]
   },
   {
     "key" : "599",
@@ -178,7 +149,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition FASTDocumentReference<br/><br/>Many nested profiles, including from US Core. Will be checked by validator.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTDocumentReference.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTDocumentReference.html"]
   },
   {
     "key" : "601",
@@ -187,7 +158,7 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition FASTReference<br/><br/>Many nested profiles, including from US Core. Will be checked by validator.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTReference.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTReference.html"]
   },
   {
     "key" : "598",
@@ -196,6 +167,6 @@
     "conditionality" : false,
     "requirement" : "StructureDefinition FASTConsentAuditEvent<br/><br/>Many nested profiles, including from US Core. Will be checked by validator.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsentAuditEvent.html"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsentAuditEvent.html"]
   }]
 }

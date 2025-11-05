@@ -6,7 +6,7 @@
   "title" : "CapStmt Client",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-09-03T19:43:24-04:00",
+  "date" : "2025-10-15T14:24:14-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -24,7 +24,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL implement the client CapabilityStatement<br/><br/>- Interpreting this as: a client doesn't necessarily have to maintain and make available a client CS, but does have to implement the functionality therein. So specific requirements from the CS are traced to tests that exercise them.\n- Does this mean a conforming system has to reference the \"requirements\" CS here, or could they just have their own CS that happens to be compatible?",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/artifacts.html#:~:text=Capabilities%20required%20for%20a%20server%20system%20receiving%20consents."]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/artifacts.html#:~:text=Capabilities%20required%20for%20a%20server%20system%20receiving%20consents."]
   },
   {
     "key" : "49",
@@ -33,7 +33,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support JSON FHIR<br/><br/>- Plan is to have JSON and XML flavors of all tests, but explicitly tracing each of those back to these requirements is probably not necessary.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22%20%3A%20%5B-,%22json%22,-%2C%0A%20%20%20%20%22xml%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22%20%3A%20%5B-,%22json%22,-%2C%0A%20%20%20%20%22xml%22"]
   },
   {
     "key" : "50",
@@ -42,7 +42,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support XML FHIR<br/><br/>- Plan is to have JSON and XML flavors of all tests, but explicitly tracing each of those back to these requirements is probably not necessary.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22json%22%2C-,%22xml%22,-%5D%2C%0A%20%20%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22json%22%2C-,%22xml%22,-%5D%2C%0A%20%20%22"]
   },
   {
     "key" : "333",
@@ -51,7 +51,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22mode%22%20%3A%20%22client,type%22%20%3A%20%22Consent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22%20%3A%20%5B,type%22%20%3A%20%22Consent%22"]
   },
   {
     "key" : "52",
@@ -60,7 +60,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent resources that conform to FASTConsent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22"]
   },
   {
     "key" : "334",
@@ -69,7 +69,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL mark with profile assertions Consent resources that conform to the FASTConsent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile.  Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "56",
@@ -78,7 +78,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent read",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22read%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.html#:~:text=Core%20FHIR%20Resource-,Consent,Supports%20search%2Dtype%2C%20read,-."]
   },
   {
     "key" : "57",
@@ -87,7 +87,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22"]
   },
   {
     "key" : "58",
@@ -96,7 +96,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by FASTConsentController",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22reference%22"]
   },
   {
     "key" : "369",
@@ -105,7 +105,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by date",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22date%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22date%22"]
   },
   {
     "key" : "370",
@@ -114,7 +114,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by FASTConsentGrantee",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,grantee%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,grantee%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
   },
   {
     "key" : "371",
@@ -123,7 +123,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by FASTConsentManager",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,manager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,manager%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
   },
   {
     "key" : "59",
@@ -132,7 +132,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by FASTConsentOrganizationId<br/><br/>Matches identifier of grantee, manager, controller or the provision.actor.reference",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22token%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,type%22%20%3A%20%22token%22"]
   },
   {
     "key" : "60",
@@ -141,7 +141,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by patient",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patient%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
   },
   {
     "key" : "372",
@@ -150,7 +150,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by FASTConsentPatientId<br/><br/>Matches patient.identifier or patient.extension additionalIdentifier",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patientId%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,patientId%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
   },
   {
     "key" : "47",
@@ -159,7 +159,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by scope",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,scope%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,scope%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
   },
   {
     "key" : "61",
@@ -168,7 +168,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent search by status",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,status%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,status%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22token%22"]
   },
   {
     "key" : "53",
@@ -177,16 +177,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support $fileConsent operation against Consent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/file%2Dconsent%22"]
-  },
-  {
-    "key" : "375",
-    "label" : "requirement-375",
-    "conformance" : ["SHALL"],
-    "conditionality" : false,
-    "requirement" : "Consent Client SHALL support $updateConsent operation against Consent resource",
-    "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/update%2Dconsent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/file%2Dconsent%22"]
   },
   {
     "key" : "376",
@@ -195,7 +186,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support $revokeConsent operation against Consent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/revoke%2Dconsent%22"]
   },
   {
     "key" : "381",
@@ -204,7 +195,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Consent subscriptions as defined by the FASTConsentSubscriptionTopic for FHIR R4 with Subscriptions Backport",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22type%22%20%3A%20%22Subscription%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22type%22%20%3A%20%22Subscription%22"]
   },
   {
     "key" : "382",
@@ -213,7 +204,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Subscription create",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22create%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22create%22"]
   },
   {
     "key" : "383",
@@ -222,7 +213,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Subscription update",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22update%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22update%22"]
   },
   {
     "key" : "384",
@@ -231,7 +222,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support Subscription delete",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22delete%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22extension%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B,%22code%22%20%3A%20%22delete%22"]
   },
   {
     "key" : "416",
@@ -240,7 +231,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support $recordDisclosure operation against AuditEvent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22,OperationDefinition/record%2Ddisclosure%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22,OperationDefinition/record%2Ddisclosure%22"]
   },
   {
     "key" : "401",
@@ -249,7 +240,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support AuditEvent resource",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22resource%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22AuditEvent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22resource%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22AuditEvent%22"]
   },
   {
     "key" : "402",
@@ -258,7 +249,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support AuditEvent resources that conform to FASTConsentAuditEvent profile",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22"]
   },
   {
     "key" : "403",
@@ -267,7 +258,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL mark with profile assertions AuditEvent resources that conform to the FASTConsentAuditEvent profile<br/><br/>Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.",
     "derivedFrom" : "HL7 FHIR R4",
-    "reference" : ["http://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
+    "satisfiedBy" : ["https://hl7.org/fhir/R4/profiling.html#profile-uses:~:text=a%20producer%20of,by%20the%20profile)"]
   },
   {
     "key" : "405",
@@ -276,7 +267,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support AuditEvent read",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,code%22%20%3A%20%22read%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,code%22%20%3A%20%22read%22"]
   },
   {
     "key" : "408",
@@ -285,7 +276,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support AuditEvent search",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsentAuditEvent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22"]
   },
   {
     "key" : "411",
@@ -294,7 +285,7 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support AuditEvent search by FASTAuditEventConsent",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22,consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22type%22%20%3A%20%22reference%22"]
   },
   {
     "key" : "414",
@@ -303,6 +294,6 @@
     "conditionality" : false,
     "requirement" : "Consent Client SHALL support AuditEvent search by patient",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "reference" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,type%22%20%3A%20%22reference%22"]
+    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22AuditEvent,type%22%20%3A%20%22reference%22"]
   }]
 }

@@ -125,6 +125,51 @@ Description: "Disclosures are recorded as FHIR AuditEvent instances.  These Audi
 * entity[patient].what only Reference($USCorePatient)
 * entity[consent].what only Reference(FASTConsent)
 
+Instance: ConsentAuditEventExample
+InstanceOf: FASTConsentAuditEvent
+Description: "An example of a Consent Audit Event"
+* subtype = https://profiles.ihe.net/ITI/BALP/CodeSystem/AuthZsubType#AuthZ-Consent
+* action = http://hl7.org/fhir/audit-event-action#E
+* recorded = 2025-11-01T11:30:59.220-07:00
+* outcome = http://hl7.org/fhir/audit-event-outcome#0
+* outcomeDesc = "Returned patient health information"
+* purposeOfEvent = http://terminology.hl7.org/CodeSystem/v3-ActReason#CAREMGT
+* agent[client]
+  * who
+    * identifier
+      * system = "http://hl7.org/fhir/sid/us-npi"
+      * value = "1234567893"
+  * requestor = false
+  * network.address = "192.168.0.1"
+* agent[user]
+  * who
+    * identifier
+      * system = "http://hl7.org/fhir/sid/us-npi"
+      * value = "345678931"
+  * requestor = true
+* agent[userorg]
+  * who
+    * identifier
+      * system = "http://hl7.org/fhir/sid/us-npi"
+      * value = "101010101"
+  * requestor = false
+* agent[authorizer]
+  * who
+    * identifier
+      * system = "http://hl7.org/fhir/sid/us-npi"
+      * value = "234567890"
+  * requestor = false
+* source.observer
+  * identifier
+    * system = "http://hl7.org/fhir/sid/us-npi"
+    * value = "234567890"
+* entity[patient].what
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
+* entity[consent].what = Reference(ConsentExample)
+
+
 ValueSet: LOINCConsentDocumentTypes
 Title: "LOINC Consent Document Types"
 Description: "These codes are used to convey the type of consent document being referenced."

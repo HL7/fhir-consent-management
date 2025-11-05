@@ -38,7 +38,7 @@ There is a [FAST Consent Testing Guide](https://wildfhir4.wildfhir.org/ig/fhir-c
 One of the most important parts of registering consents across systems is the proper identification of patients, practitioners, organizations, and related persons.  For a self-contained consent adminstration system, the URIs of those entities could be used, but when consents are spread across multiple systems, those URIs may be potentially no longer useful.  For that reason, this guide mandates that §ID1:client systems **SHALL** query the consent administration service for the identifiers of the involved patients, practitioners, organizations, and related persons§.  How exactly these systems will identify that the proper entities are discovered is out of scope of this guide.  For patient matching and identification, the [FAST Interoperable Digital Identity and Patient Matching guide](https://hl7.org/fhir/us/identity-matching/) can be referenced.  Similar means for matching and identifying practitioners, organizations, and related persons should be used.
 
 #### General Operation Details
-Every operation in this guide has an optional OperationOutcome defined as the return of the operation.  This OperationOutcome instance will detail whether the operation was a success or not and, if not, what business rules did not allow the operation to be successful.  The HTTP status code returned by the operation will indicate whether an operation was successful or not.  But systems MAY return an OperationOutcome with a success to be consistent.  Systems SHOULD return an OperationOutcome with the details if an HTTP status code of 4xx or 5xx is returned.
+Every operation in this guide has an optional OperationOutcome defined as the return of the operation.  This OperationOutcome instance will detail whether the operation was a success or not and, if not, what business rules did not allow the operation to be successful.  The HTTP status code returned by the operation will indicate whether an operation was successful or not.  §OP10:Systems **MAY** return an OperationOutcome with a success to be consistent.§  §OP11:Systems **SHOULD** return an OperationOutcome with the details if an HTTP status code of 4xx or 5xx is returned.§
 
 #### Consent Management
 
@@ -53,7 +53,8 @@ The [File Consent Operation](OperationDefinition-file-consent.html) is used to f
 The [Revoke Consent Operation](OperationDefinition-revoke-consent.html) is used to revoke an existing consent with a consent administration service.  The parameters are a reference to a pre-existing Consent instance along with a reference to the Patient who is the subject of the consent and any supporting documentation for the revocation.  §OP5:After a consent has been revoked, the Consent status element for the revoked consent **SHALL** be set to 'inactive'.§  §OP6:A revoked consent **SHALL NOT** be deleted from the consent management system.§
 
 ##### Searching for Consents
-§OP7:To support searching for consents, the following search parameters SHALL be supported§:
+
+§OP7:To support searching for consents, the following search parameters **SHALL** be supported - patient, controller, manager, date, status, and scope.§
 
 * [patient]({{site.data.fhir.path}}consent.html#search)
 * [controller](SearchParameter-fast-consent-controller.html)
@@ -82,7 +83,7 @@ Along with the business use cases of consent management, §OP8:consent administr
 Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared.
 
 ##### Record Disclosure Operation
-The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SHALL be used when a system accesses a Consent instance for determining whether informtion can be accessed.  An [Audit Event instance](StructureDefinition-FASTConsentAuditEvent.html) conveys the purpose of the access (reading, writing, sending, etc.) while a reference to a Consent instance indicates the consent that was accessed.
+§OP12:The [Record Disclosure Operation](OperationDefinition-record-disclosure.html) SHALL be used when a system accesses a Consent instance for determining whether informtion can be accessed.§  This operation takes an [Audit Event instance](StructureDefinition-FASTConsentAuditEvent.html) that conveys the purpose of the access (reading, writing, sending, etc.) while a reference to a Consent instance indicates the consent that was accessed.
 
 ##### Searching for Disclosures
 §OP9:To allow systems to document disclosures to requesting authorities (including a patient), systems **SHALL** support the searching for FAST Audit Events§ using the following search parameters:

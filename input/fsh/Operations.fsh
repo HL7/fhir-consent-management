@@ -154,6 +154,15 @@ Description: "A profile that indicates the parameters for the Revoke Consent ope
 * parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
 * parameter[document].resource ^type.profile[+] = Canonical($USCoreQuestionnaireResponse)
 
+Instance: RevokeConsentExample
+InstanceOf: RevokeConsentParameters
+Description: "An example of a $revokeConsent Parameters resource."
+* parameter[consent].valueReference = Reference(ConsentExample)
+* parameter[patient].valueReference
+  * identifier
+    * system = "http://example.org/mrn"
+    * value = "M1230041"
+
 Instance: RecordDisclosure
 InstanceOf: OperationDefinition
 Description: "This operation is used to record a disclosure based on a given consent for a given patient with a consent administration service.  The parameters are a Consent AuditEvent and a reference to the corresponding Consent resource."
@@ -217,3 +226,9 @@ Description: "A profile that indicates the parameters for the Record Disclosure 
 * parameter[consent].value[x] ^min = 1
 * parameter[consent].value[x] only Reference(FASTConsent)
 * parameter[consent].value[x] ^mustSupport = true
+
+Instance: RecordDisclosureExample
+InstanceOf: RecordDisclosureParameters
+Description: "An example of a $recordDisclosure Parameters resource."
+* parameter[disclosure].resource = ConsentAuditEventExample
+* parameter[consent].valueReference = Reference(ConsentExample)

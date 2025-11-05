@@ -6,7 +6,7 @@
   "title" : "Workflow Client Admin Service",
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-09-03T19:43:24-04:00",
+  "date" : "2025-10-15T14:24:14-04:00",
   "publisher" : "HL7 International / Community Based Collaborative Care",
   "contact" : [{
     "name" : "HL7 International / Community Based Collaborative Care",
@@ -25,6 +25,6 @@
     "conditionality" : false,
     "requirement" : "Informative: Consent Client and Consent Administration Service generally follow the subscription workflow for R4 systems in section 2.3.3<br/><br/>All constituent parts of this workflow are normatively defined elsewhere. Will use this workflow as a basis for the test cases needed.",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "reference" : ["http://hl7.org/fhir/uv/subscriptions-backport/workflow.html#workflow-fhir-r4"]
+    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/workflow.html#workflow-fhir-r4"]
   }]
 }

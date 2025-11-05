@@ -9,7 +9,7 @@
 ### Requirements Statement List
 
 <p>
-<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-1detail,#req-2detail,#req-34detail,#req-43detail,#req-35detail,#req-331detail,#req-332detail,#req-36detail,#req-37detail,#req-199detail,#req-72detail,#req-38detail,#req-200detail,#req-39detail,#req-40detail,#req-368detail,#req-42detail,#req-41detail,#req-46detail,#req-373detail,#req-374detail,#req-377detail,#req-378detail,#req-379detail,#req-380detail,#req-415detail,#req-397detail,#req-398detail,#req-399detail,#req-400detail,#req-404detail,#req-406detail,#req-409detail,#req-412detail,#req-505detail,#req-503detail,#req-509detail,#req-510detail,#req-511detail,#req-602detail,#req-604detail,#req-508detail,#req-517detail,#req-514detail,#req-515detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
+<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-1detail,#req-2detail,#req-34detail,#req-43detail,#req-35detail,#req-331detail,#req-332detail,#req-36detail,#req-37detail,#req-199detail,#req-72detail,#req-38detail,#req-200detail,#req-39detail,#req-40detail,#req-368detail,#req-42detail,#req-41detail,#req-46detail,#req-374detail,#req-661detail,#req-377detail,#req-378detail,#req-379detail,#req-380detail,#req-415detail,#req-397detail,#req-398detail,#req-399detail,#req-400detail,#req-404detail,#req-406detail,#req-409detail,#req-412detail,#req-505detail,#req-503detail,#req-509detail,#req-510detail,#req-511detail,#req-602detail,#req-604detail,#req-508detail,#req-694detail,#req-695detail,#req-517detail,#req-514detail,#req-515detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
 </p>
 
 #### <a id="requirement-1" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-1detail" aria-expanded="false">1:&nbsp;Consent Administration Service SHALL implement the server CapabilityStatement</a>
@@ -90,7 +90,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -107,7 +107,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile. Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
@@ -127,7 +127,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile
@@ -143,7 +143,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B-,%22code%22%20%3A%20%22read%22,-%7D%0A%20%20%20%20%20%20%20%20%20%20%5D%2C">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.html#:~:text=Core%20FHIR%20Resource-,Consent,Supports%20search%2Dtype%2C%20read,-.">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -175,7 +175,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">Requirements-search-parameters-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -206,7 +206,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-473">Requirements-search-parameters-client-admin-service.html#requirement-473</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-473">473:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-473</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Missing corresponding req in Tech spec 6.2.3.4
@@ -226,7 +226,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">Requirements-search-parameters-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -243,7 +243,7 @@ Also, what test should this be traced to? I'm thinking this traces to test proce
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">Requirements-search-parameters-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-475</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches identifier of grantee, manager, controller or the provision.actor.reference
@@ -278,7 +278,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">Requirements-search-parameters-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-476</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches patient.identifier or patient.extension additionalIdentifier
@@ -327,24 +327,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
-</p>
-</div>
-</div>
-
-#### <a id="requirement-373" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-373detail" aria-expanded="false">373:&nbsp;Consent Administration Service SHALL support $updateConsent operation against Consent resource</a>
-
-<div class="collapse" id="req-373detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/update%2Dconsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-465">Requirements-extended-operations-client-admin-service.html#requirement-465</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -361,8 +344,22 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-466</a>
 </p>
+</div>
+</div>
+
+#### <a id="requirement-661" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-661detail" aria-expanded="false">661:&nbsp;Consent Administration Service SHALL support Subscription resource</a>
+
+<div class="collapse" id="req-661detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;HL7 FAST Consent IG
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22,%3A%20%22Subscription%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
 </div>
 
@@ -437,7 +434,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-445">Requirements-extended-operations-client-admin-service.html#requirement-445</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-445">445:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-445</a>
 </p>
 </div>
 </div>
@@ -602,6 +599,9 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=A%20Server%20SHOULD%20be%20capable%20of%20modifying%20a%20Subscription%20resource%20using%20either%3A%20PUT%20%5Bbase%5D/Subscription/%5Bid%5D%20or%20PATCH%20%5Bbase%5D/Subscription/%5Bid%5D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
+<p>
+<b>Notes:</b>&nbsp;The CapStmt and the rendered page disagree - the raw CS does not include patch and the page does. Not testing patch at this time.
+</p>
 </div>
 </div>
 
@@ -631,12 +631,12 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
-<b>Notes:</b>&nbsp;Not testing at this time
+<b>Notes:</b>&nbsp;Not testing search at this time
 </p>
 </div>
 </div>
 
-#### <a id="requirement-602" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-602detail" aria-expanded="false">602:&nbsp;Consent Administration Service SHOULD support Subscription search by url</a>
+#### <a id="requirement-602" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-602detail" aria-expanded="false">602:&nbsp;Consent Administration Service SHALL support Subscription search by url</a>
 
 <div class="collapse" id="req-602detail">
 <div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
@@ -644,11 +644,11 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Specification:</b>&nbsp;Subscriptions R5 Backport
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Supported%20Operations-,Subscription,url%2C%20status,-%2D">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
-<p><b>Conformance:</b>&nbsp;SHOULD</p>
+<p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Notes:</b>&nbsp;Not testing at this time
+<b>Notes:</b>&nbsp;Not testing search at this time. Also, the raw CapStmt (linked) and the rendered page for the CapStmt disagree: the raw says SHALL, the page says SHOULD. See: https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=Search%20Parameter%20Summary,uri
 </p>
 </div>
 </div>
@@ -665,7 +665,7 @@ Missing corresponding req in Tech spec 6.2.3.4
 </p>
 <p><b>Conformance:</b>&nbsp;SHOULD</p>
 <p>
-<b>Notes:</b>&nbsp;Not testing at this time
+<b>Notes:</b>&nbsp;Not testing search at this time
 </p>
 </div>
 </div>
@@ -681,6 +681,40 @@ Missing corresponding req in Tech spec 6.2.3.4
 <b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=SHALL%20support%20the%20%24status%20operation">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
+</div>
+</div>
+
+#### <a id="requirement-694" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-694detail" aria-expanded="false">694:&nbsp;Consent Administration Service MAY support $events operation against Subscription resource</a>
+
+<div class="collapse" id="req-694detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;Subscriptions R5 Backport
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json#:~:text=%22extension%22%20%3A%20%5B%7B%0D%0A%20%20%20%20%20%20%20%20%20%20%22url%22%20%3A%20%22http%3A//hl7.org/fhir/StructureDefinition/capabilitystatement%2Dexpectation%22%2C%0D%0A%20%20%20%20%20%20%20%20%20%20%22valueCode%22%20%3A%20%22MAY,http%3A//hl7.org/fhir/uv/subscriptions%2Dbackport/OperationDefinition/backport%2Dsubscription%2Devents%22">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.json</a>
+</p>
+<p><b>Conformance:</b>&nbsp;MAY</p>
+<p>
+<b>Notes:</b>&nbsp;Not testing at this time
+</p>
+</div>
+</div>
+
+#### <a id="requirement-695" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-695detail" aria-expanded="false">695:&nbsp;Consent Administration Service MAY support $get-ws-binding-token operation against Subscription resource</a>
+
+<div class="collapse" id="req-695detail">
+<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
+<p>
+<b>Specification:</b>&nbsp;Subscriptions R5 Backport
+</p>
+<p>
+<b>Link to Text:</b>&nbsp;<a href="https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html#:~:text=%24status%2C%20%24events%2C-,%24get%2Dws%2Dbinding%2Dtoken,-Subscription">https://hl7.org/fhir/uv/subscriptions-backport/CapabilityStatement-backport-subscription-server-r4.html</a>
+</p>
+<p><b>Conformance:</b>&nbsp;MAY</p>
+<p>
+<b>Notes:</b>&nbsp;Not testing at this time
+</p>
 </div>
 </div>
 

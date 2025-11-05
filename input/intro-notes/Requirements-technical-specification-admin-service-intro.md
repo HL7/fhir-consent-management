@@ -9,7 +9,7 @@
 ### Requirements Statement List
 
 <p>
-<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-68detail,#req-69detail,#req-63detail,#req-364detail,#req-365detail,#req-367detail,#req-71detail,#req-201detail,#req-73detail,#req-62detail,#req-100detail,#req-101detail,#req-64detail,#req-407detail,#req-266detail,#req-298detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
+<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-68detail,#req-69detail,#req-63detail,#req-364detail,#req-365detail,#req-367detail,#req-71detail,#req-201detail,#req-73detail,#req-62detail,#req-101detail,#req-64detail,#req-407detail,#req-266detail,#req-298detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
 </p>
 
 #### <a id="requirement-68" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-68detail" aria-expanded="false">68:&nbsp;Consent Administration Service SHOULD return OperationOutcome with details of which business rules did not allow an operation to be successful if an HTTP status code of 4xx or 5xx is returned</a>
@@ -71,7 +71,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">Requirements-search-parameters-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -102,7 +102,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">Requirements-search-parameters-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -164,27 +164,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;Redundant with CapStmt
-</p>
-</div>
-</div>
-
-#### <a id="requirement-100" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-100detail" aria-expanded="false">100:&nbsp;Consent Administration Service SHALL support Update Consent operation</a>
-
-<div class="collapse" id="req-100detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/technical.html#:~:text=a%20consent%20administration%20service%20SHALL%20support%3A,Update%20Consent">https://build.fhir.org/ig/HL7/fhir-consent-management/technical.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-465">Requirements-extended-operations-client-admin-service.html#requirement-465</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-463</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt
@@ -204,7 +184,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-466</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Redundant with CapStmt

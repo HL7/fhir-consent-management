@@ -15,7 +15,9 @@
 
 - The administrator specifies a consenter. The consenter is either explicitly selected by the administrator or is implied by the workflow.
 
-- The administrator initiates a request for consent from the consenter by assigning the form to the consenter.
+- The administrator initiates a request to collect consent from the consenter based on the form and identity of the consenter.
+
+- The consent system notifies the consenter and tracks the assignment of the form to the consenter.
 
 **Post-condition:**
 - The consenter is notified about the request.
@@ -144,7 +146,7 @@ A consent has been signed and filed.
 
 ### Propagate Consent Events
 
-<div>{%include propogate-consent-events-sequence.svg%}</div>
+<div>{%include propagate-consent-events-sequence.svg%}</div>
 
 **Actor:** Consenter
 

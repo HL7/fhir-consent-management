@@ -67,8 +67,8 @@ pages:
     title: Reading this IG
   usecases.md:
     title: Use Cases
-  consent_network.md:
-    title: Consent Network
+  implementation_notes.md:
+    title: Implementation Notes
   credits.md:
     title: Project and Participants
   conformance.md:
@@ -117,7 +117,7 @@ menu:
   Background:
     Reading This IG: background.html
     Use Cases: usecases.html
-    Consent Network: consent_network.html
+    Implementation Notes: implementation_notes.html
     Project and Participants: credits.html
   Specification:
     Conformance Expectations: conformance.html

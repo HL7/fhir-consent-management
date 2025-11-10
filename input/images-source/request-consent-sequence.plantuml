@@ -1,4 +1,5 @@
 @startuml
-Administrator -> Consenter: Administrator specifies a consenter
-Administrator -> Consenter: Assigns a Consent form
+Administrator -> ConsentSystem: Request to collect consent specifying a consenter and a consent form
+ConsentSystem -> Consenter: Notify the consent request
+ConsentSystem -> ConsentSystem: Track request status
 @enduml

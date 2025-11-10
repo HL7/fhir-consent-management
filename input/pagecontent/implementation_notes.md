@@ -30,7 +30,7 @@ Each subsequent sharing of the same consent will retain its origin, establishing
 
 For example, if System A created a Consent, System A would add a system identifier to the Consent to establish itself as the manager of the Consent. This originator identifier is encapsulated using the `manager` extension. This attribute denotes to all recipients of the shared Consent what system originated it. Thus, when the Consent resource is shared with another system or systems, a relationship between sender and recipient system(s) is formed.
 
-Consent resources when shared from System to System operationally instantiate a relationship through the creation of a Subscription within the System from which it was received.
+Consent resources, when shared from system to system, operationally instantiate a relationship through the creation of a Subscription within the system from which it was received.
 
 This is achieved through the use of standard FHIR Subscription operations
 

@@ -82,6 +82,7 @@ Usage: #definition
       * url = "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/capabilitystatement-subscriptiontopic-canonical"
       * valueCanonical = "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic"
     * type = #Subscription
+    * supportedProfile = Canonical(FASTSubscription)
     * interaction[+]
       * code = #create
     * interaction[+]
@@ -173,6 +174,7 @@ Usage: #definition
       * url = "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/capabilitystatement-subscriptiontopic-canonical"
       * valueCanonical = "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic"
     * type = #Subscription
+    * supportedProfile = Canonical(FASTSubscription)
     * interaction[+]
       * code = #create
     * interaction[+]

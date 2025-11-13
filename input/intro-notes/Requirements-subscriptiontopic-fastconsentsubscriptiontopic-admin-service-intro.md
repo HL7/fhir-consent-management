@@ -87,7 +87,7 @@
 <b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">Requirements-search-parameters-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-476</a>
 </p>
 </div>
 </div>
@@ -100,14 +100,14 @@
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20identifier%20of%20the%20organization%20actor%20that%20gained%20consent.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22organizationId%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/SearchParameter/fast%2Dconsent%2DorganizationId%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C">https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html#:~:text=organizationId,FASTConsentOrganizationId">https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
 <b>Parent:</b>&nbsp;<a href="Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596">Requirements-subscriptiontopic-fastconsentsubscriptiontopic-client-admin-ser.html#requirement-596</a>
 </p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">Requirements-search-parameters-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-475</a>
 </p>
 </div>
 </div>
@@ -120,7 +120,7 @@
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20identifier%20of%20one,modifier%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22identifier%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C">https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html#:~:text=actor,actor">https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
@@ -137,7 +137,7 @@
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html#:~:text=%7B%0A%20%20%20%20%20%20%22description%22%20%3A%20%22The%20status%20of%20a%20consent.%22%2C%0A%20%20%20%20%20%20%22filterParameter%22%20%3A%20%22status%22%2C%0A%20%20%20%20%20%20%22filterDefinition%22%20%3A%20%22http%3A//hl7.org/fhir/SearchParameter/Consent%2Dstatus%22%2C%0A%20%20%20%20%20%20%22comparator%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%22eq%22%0A%20%20%20%20%20%20%5D%0A%20%20%20%20%7D%2C">https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html#:~:text=Identifier-,status,status,-Equals">https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>

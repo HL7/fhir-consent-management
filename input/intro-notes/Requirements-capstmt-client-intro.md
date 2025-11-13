@@ -9,7 +9,7 @@
 ### Requirements Statement List
 
 <p>
-<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-48detail,#req-49detail,#req-50detail,#req-333detail,#req-52detail,#req-334detail,#req-56detail,#req-57detail,#req-58detail,#req-369detail,#req-370detail,#req-371detail,#req-59detail,#req-60detail,#req-372detail,#req-47detail,#req-61detail,#req-53detail,#req-375detail,#req-376detail,#req-381detail,#req-382detail,#req-383detail,#req-384detail,#req-416detail,#req-401detail,#req-402detail,#req-403detail,#req-405detail,#req-408detail,#req-411detail,#req-414detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
+<button class="btn btn-info btn-lg btn-block" type="button" title="Click to Expand/Collapse All Requirements Statement Details" data-toggle="collapse" data-target="#req-48detail,#req-49detail,#req-50detail,#req-333detail,#req-52detail,#req-334detail,#req-56detail,#req-57detail,#req-58detail,#req-369detail,#req-370detail,#req-371detail,#req-59detail,#req-60detail,#req-372detail,#req-47detail,#req-61detail,#req-53detail,#req-376detail,#req-381detail,#req-382detail,#req-383detail,#req-384detail,#req-416detail,#req-401detail,#req-402detail,#req-403detail,#req-405detail,#req-408detail,#req-411detail,#req-414detail" aria-expanded="false">Expand/Collapse All Requirements Statement Details</button>
 </p>
 
 #### <a id="requirement-48" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-48detail" aria-expanded="false">48:&nbsp;Consent Client SHALL implement the client CapabilityStatement</a>
@@ -72,7 +72,7 @@
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22mode%22%20%3A%20%22client,type%22%20%3A%20%22Consent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html#:~:text=%22resource%22%20%3A%20%5B,type%22%20%3A%20%22Consent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentAdministrativeServerCapabilities.json.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -90,7 +90,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
 </p>
 </div>
 </div>
@@ -107,7 +107,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-structure-definitions-client-admin-service.html#requirement-597">597:&nbsp;Requirements-structure-definitions-client-admin-service.html#requirement-597</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Base FHIR requirement, applies because of declaring supportedProfile.  Not marking as fully tested because I will continue to need to trace this to every transaction that applies.
@@ -123,7 +123,7 @@
 <b>Specification:</b>&nbsp;HL7 FAST Consent IG
 </p>
 <p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent%22%2C%0A%20%20%20%20%20%20%20%20%20%20%22supportedProfile%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%F0%9F%94%97%20%22http%3A//hl7.org/fhir/us/consent%2Dmanagement/StructureDefinition/FASTConsent%22%0A%20%20%20%20%20%20%20%20%20%20%5D%2C%0A%20%20%20%20%20%20%20%20%20%20%22interaction%22%20%3A%20%5B%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22search%2Dtype%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%22code%22%20%3A%20%22read%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html</a>
+<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.html#:~:text=Core%20FHIR%20Resource-,Consent,Supports%20search%2Dtype%2C%20read,-.">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.html</a>
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 </div>
@@ -155,7 +155,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">Requirements-search-parameters-client-admin-service.html#requirement-472</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-472">472:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-472</a>
 </p>
 </div>
 </div>
@@ -186,7 +186,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-473">Requirements-search-parameters-client-admin-service.html#requirement-473</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-473">473:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-473</a>
 </p>
 </div>
 </div>
@@ -203,7 +203,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">Requirements-search-parameters-client-admin-service.html#requirement-474</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-474">474:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-474</a>
 </p>
 </div>
 </div>
@@ -220,7 +220,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">Requirements-search-parameters-client-admin-service.html#requirement-475</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-475">475:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-475</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches identifier of grantee, manager, controller or the provision.actor.reference
@@ -254,7 +254,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">Requirements-search-parameters-client-admin-service.html#requirement-476</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-search-parameters-client-admin-service.html#requirement-476">476:&nbsp;Requirements-search-parameters-client-admin-service.html#requirement-476</a>
 </p>
 <p>
 <b>Notes:</b>&nbsp;Matches patient.identifier or patient.extension additionalIdentifier
@@ -302,24 +302,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">Requirements-extended-operations-client-admin-service.html#requirement-463</a>
-</p>
-</div>
-</div>
-
-#### <a id="requirement-375" title="Click to Open or Close Details" data-toggle="collapse" data-target="#req-375detail" aria-expanded="false">375:&nbsp;Consent Client SHALL support $updateConsent operation against Consent resource</a>
-
-<div class="collapse" id="req-375detail">
-<div class="card card-body" style="border:1px solid;border-color:#cccccc;padding:10px" markdown="1">
-<p>
-<b>Specification:</b>&nbsp;HL7 FAST Consent IG
-</p>
-<p>
-<b>Link to Text:</b>&nbsp;<a href="https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html#:~:text=%22type%22%20%3A%20%22Consent,consent%2Dmanagement/OperationDefinition/update%2Dconsent%22">https://build.fhir.org/ig/HL7/fhir-consent-management/CapabilityStatement-ConsentClientCapabilities.json.html</a>
-</p>
-<p><b>Conformance:</b>&nbsp;SHALL</p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-465">Requirements-extended-operations-client-admin-service.html#requirement-465</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-463">463:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-463</a>
 </p>
 </div>
 </div>
@@ -336,7 +319,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">Requirements-extended-operations-client-admin-service.html#requirement-466</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-466">466:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-466</a>
 </p>
 </div>
 </div>
@@ -409,7 +392,7 @@
 </p>
 <p><b>Conformance:</b>&nbsp;SHALL</p>
 <p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-445">Requirements-extended-operations-client-admin-service.html#requirement-445</a>
+<b>Related Requirement:</b>&nbsp;<a href="Requirements-extended-operations-client-admin-service.html#requirement-445">445:&nbsp;Requirements-extended-operations-client-admin-service.html#requirement-445</a>
 </p>
 </div>
 </div>

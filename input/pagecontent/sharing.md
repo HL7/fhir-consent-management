@@ -9,7 +9,7 @@ For #1 and #2, there are existing mechanisms to convey the answer to those quest
 ### Who has my Consent record been shared with?
 This guide provides both a means for [searching for consents](technical.html#searching-for-consents) and to [subscribe for updates](technical.html#consent-subscriptions) to those consents.  The use of AuditEvents can be used to answer the question of who has received my Consent record.  By querying for AuditEvents that have an entity of a consent record, a system can find out when it was returned in a search result.
 
-There is a complexity that this guide introduces in that there can be a network of systems that receive a consent.  See the [Consent Network page](consent_network.html) for more information about how consents are shared across the network.
+There is a complexity that this guide introduces in that there may be a network of systems that receive a consent.  See the [Implementation Notes](implementation_notes.html) for more information about how consents may be shared and stored across the network.
 
 ### What health information has been shared with who?
 Similar to the question of where a patient's Consent record has been shared, this question is asking about health information more generally.  What specific health information (i.e. lab tests, procedures, medications) has been shared and with whom?

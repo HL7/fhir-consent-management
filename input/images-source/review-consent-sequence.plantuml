@@ -1,4 +1,7 @@
 @startuml
-Consenter -> Consenter: Views the consent form
-Consenter -> Consenter: Completes the consent form
+ConsentSystem -> Consenter: Send the rendered consent form
+loop
+    Consenter -> Consenter: Reviews the consent form 
+    Consenter -> ConsentSystem: Saves partially filled form
+end
 @enduml

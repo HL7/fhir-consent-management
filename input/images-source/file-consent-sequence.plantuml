@@ -1,4 +1,7 @@
 @startuml
-Consenter -> Consenter: Signs the consent form
-Consenter -> ConsentSystem: Computable Consent Resource is stored
+Consenter -> ConsentSystem: Complete and sign the consent form
+ConsentSystem -> ConsentSystem: Store original consent form
+ConsentSystem -> ConsentSystem: Generate human-readable (downloadable) copy
+ConsentSystem -> ConsentSystem: Derive and store a computable Consent Resource
+ConsentSystem -> Consenter: Confirm activation of the consent
 @enduml

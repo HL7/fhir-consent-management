@@ -2,6 +2,7 @@
 
 
 ### The FAST Consent project
+
 Further details about the project, including minutes of meetings can be found on the [project Confluence page](https://confluence.hl7.org/spaces/FAST/pages/358254755/Consent+Management).
 
 
@@ -12,11 +13,12 @@ Primary author:
 
 Project leads:
 
-* Durwin Day (HCSC)
 * Kevin Day (Edifecs)
 * Maidul Islam (Optum)
+* Mohammad Jafari (VA, Independent)
 * Sam Schifman
-* Mohammad Jafari
+
+Special thanks for Durwin Day (HCSC) for his participation as a co-lead prior to his retirement.
 
 Reference implementation Lead:
 
@@ -31,4 +33,4 @@ This implementation guide was created under the supervision and review of the HL
 
 This implementation guide was initiated and created with the support of the founding [FAST Project](https://confluence.hl7.org/spaces/FAST/pages/130482368/FHIR+at+Scale+Taskforce+FAST+Home) member organizations.
 
-Our thanks to these and to the many others not explicitly listed who contributed their time, enthusiasm and expertise to this work.
+Our thanks to these and to the many others not explicitly listed who contributed their time, enthusiasm, and expertise to this work.

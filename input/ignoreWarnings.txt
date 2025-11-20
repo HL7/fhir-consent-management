@@ -43,6 +43,8 @@ INFORMATION: StructureDefinition-FASTConsentAuditEvent.html: The html source con
 INFORMATION: conformance.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
 INFORMATION: technical.html: The html source contains the word 'SHOULD' but it is not in a text phrase marked as a conformance clause
 
+
+# 09d - Conformance Clauses that are contained in Requirements objects
 INFORMATION: Requirements-capstmt-admin-service.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
 INFORMATION: Requirements-capstmt-client.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
 INFORMATION: Requirements-components-admin-service.html: The html source contains the word 'SHOULD' but it is not in a text phrase marked as a conformance clause

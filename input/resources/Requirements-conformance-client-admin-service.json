@@ -25,7 +25,7 @@
     "conditionality" : false,
     "requirement" : "Notification bundles SHALL contain a FHIR R4 Parameters resource, conforming to the R4 Backported R5 SubscriptionStatus profile, as the first entry<br/><br/>Not sure why, but this requirement is nearly repeated a couple sentences later as \"The status entry SHALL be the first entry of each notification bundle.\" No need to capture that.",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
+    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#notification-entry-subscriptionstatus-1"]
   },
   {
     "key" : "537",
@@ -34,6 +34,6 @@
     "conditionality" : false,
     "requirement" : "Subscription.criteria SHALL contain the canonical URL for the Subscription Topic",
     "derivedFrom" : "Subscriptions R5 Backport",
-    "satisfiedBy" : ["https://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
+    "satisfiedBy" : ["http://hl7.org/fhir/uv/subscriptions-backport/conformance.html#subscriptioncriteria-1"]
   }]
 }

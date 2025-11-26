@@ -23,8 +23,8 @@
     "label" : "requirement-596",
     "conformance" : ["SHALL"],
     "conditionality" : false,
-    "requirement" : "SubscriptionTopic FASTConsentSubscriptionTopic<br/><br/>This topic is defined as an auto-backported R5 SubscriptionTopic (see note below), so this means the requirements for processing it are defined in the captured R5 requirements below. Note: its raw representation (https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json) is as a Basic resource.",
+    "requirement" : "SubscriptionTopic FASTConsentSubscriptionTopic<br/><br/>This topic is defined as an auto-backported R5 SubscriptionTopic (see note below), so this means the requirements for processing it are defined in the captured R5 requirements below. Note: its raw representation (http://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.json) is as a Basic resource.",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SubscriptionTopic-FASTConsentSubscriptionTopic.html"]
   }]
 }

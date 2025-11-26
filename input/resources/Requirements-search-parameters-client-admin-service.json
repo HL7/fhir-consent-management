@@ -25,7 +25,7 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentController",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-controller.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-controller.html"]
   },
   {
     "key" : "473",
@@ -34,7 +34,7 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentGrantee",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-grantee.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-grantee.html"]
   },
   {
     "key" : "474",
@@ -43,7 +43,7 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentManager",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-manager.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-manager.html"]
   },
   {
     "key" : "475",
@@ -52,7 +52,7 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentOrganizationId",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-organizationId.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-organizationId.html"]
   },
   {
     "key" : "476",
@@ -61,7 +61,7 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTConsentPatientId",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-patientId.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-consent-patientId.html"]
   },
   {
     "key" : "471",
@@ -70,6 +70,6 @@
     "conditionality" : false,
     "requirement" : "SearchParameter FASTAuditEventConsent",
     "derivedFrom" : "HL7 FAST Consent IG",
-    "satisfiedBy" : ["https://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-auditevent-consent.html"]
+    "satisfiedBy" : ["http://build.fhir.org/ig/HL7/fhir-consent-management/SearchParameter-fast-auditevent-consent.html"]
   }]
 }

@@ -16,7 +16,7 @@ releaseLabel: STU 1 - Ballot # ci-build | draft | qa-preview | ballot | trial-us
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 International / Community Based Collaborative Care
-  url: http://www.hl7.org/Special/committees/cbcc
+  url: http://www.hl7.org/Special/committees/homehealth
 
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status

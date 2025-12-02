@@ -4,7 +4,7 @@
 The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
 
 # 02 - We don't have narratives on the parameters.
-Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
+Constraint failed: dom-6: 'A resource should have narrative for robust management (text.`div`.exists())' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
 
 # 03 - We have checked that the LOINC Consent codes are in the US Core Doc Ref Type value set
 Unable to check if http://hl7.org/fhir/us/consent-management/ValueSet/LOINCConsentDocumentTypes is a proper subset of http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type - value set is too large to check

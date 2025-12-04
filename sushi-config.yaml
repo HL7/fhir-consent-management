@@ -12,7 +12,7 @@ status: active # draft | active | retired | unknown
 version: 1.0.0-ballot
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: STU 1 - Ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: STU 1 Ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 International / Community Based Collaborative Care

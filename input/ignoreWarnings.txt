@@ -1,6 +1,6 @@
 == Suppressed Messages ==
 
-# 01 -This IG is based on hl7.fhir.us.core#6.1.0
+# 01 -This IG is based on hl7.fhir.us.core#6.1.0 due to CMS regulation stating that systems must conform to 6.1.0
 The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
 
 # 02 - We don't have narratives on the parameters.

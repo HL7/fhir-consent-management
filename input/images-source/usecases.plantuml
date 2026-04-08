@@ -10,7 +10,7 @@ package Consent {
   usecase "Delegate Consent" as UC4
   usecase "Revoke Consent" as UC5
   usecase "Disclosure Audit" as UC6
-  usecase "Propagate Audit Events" as UC7
+  usecase "Propagate Consent Events" as UC7
   usecase "Consent Provenance" as UC8
 }
 a --> UC1

@@ -1,9 +1,10 @@
 Profile: FASTConsent
 Parent: Consent
 Description: "This profile captures the details of a Patient's Consent."
-* extension contains http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 1..* MS
-and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS
-and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
+* extension contains 
+// http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.grantee named grantee 1..* MS and
+http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.manager named manager 0..* MS and
+http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named controller 0..* MS
 
 * status 1..1 MS
   * ^short = "active | inactive"
@@ -37,10 +38,10 @@ and http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller nam
 Instance: ConsentExample
 InstanceOf: FASTConsent
 Description: "An example of a consent."
-* extension[grantee].valueReference
-  * identifier
-    * system = "http://hl7.org/fhir/sid/us-npi"
-    * value = "1234567893"
+//* extension[grantee].valueReference
+//  * identifier
+//    * system = "http://hl7.org/fhir/sid/us-npi"
+//    * value = "1234567893"
 * status = #active
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category = http://terminology.hl7.org/CodeSystem/v3-ActCode#INFA

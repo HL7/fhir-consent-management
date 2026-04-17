@@ -29,7 +29,7 @@
 
 **Actor:** Consenter 
 
-**Pre-Condition:**
+**Pre-condition:**
 - A consent request may have been initiated by an administrator or the consenter themselves.
 
 - A consent form is available  and assigned to the consenter. 
@@ -53,7 +53,7 @@
 - The consenter shall be able to see whether the form is complete and ready for signing and submission as the consenter navigates the form.
 
 **Post-condition:**
-A completed consent form is available for submission.
+- A completed consent form is available for submission.
 
 **Alternative Flow:**
 - The consenter may save the incomplete form and log out of the application. The state of the form including all the information entered shall be retained.
@@ -104,7 +104,7 @@ By navigating and signing a delegation form, the consenter assigns a delegate to
 - The delegate may be assigned through other mechanisms such as a court order. These alternatives are outside the scope of this IG although the effect is the same.
 
 **Notes:**
-- conditions and limitations on the scope of the power of a delegate may apply based on overarching policies.
+- Conditions and limitations on the scope of the power of a delegate may apply based on overarching policies.
 
 ### Revoke Consent
 
@@ -155,9 +155,9 @@ A consent has been signed and filed.
 
 **Narrative:**
 A notice of consent event is sent to a partner system. Supported events are:
-- the consenter starting to review the consent form (optional).
-- the consenter signs and files the consent.
-- the consent is revoked.
+- The consenter starting to review the consent form (optional).
+- The consenter signs and files the consent.
+- The consent is revoked.
 
 **Post-condition:**
 - The requesting entity will receive event notifications. 
@@ -174,10 +174,10 @@ A consent has been signed and filed.
 **Narrative:**
 The consenter can navigate the timeline of the lifecycle events about the consent, including:
 
-- when and by by whom the consent was requested,
-- when and by whom the consent was filed/signed.
-- if/when and by whom the consent was revoked.
-- if/when and to whom the consent has been shared.
+- When and by whom the consent was requested,
+- When and by whom the consent was filed/signed.
+- If/when and by whom the consent was revoked.
+- If/when and to whom the consent has been shared.
 
 **Post-condition:**
 

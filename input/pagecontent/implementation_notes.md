@@ -1,12 +1,12 @@
-This section offers supplementary  notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. The content is informative and aims to help implementers interpret the guide correctly, align with best practices, and assist in making technical design decisions.
+This section offers supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. The content is informative and aims to help implementers interpret the guide correctly, align with best practices, and assist in making technical design decisions.
 
 ### Enforcing Consent
-For example, jurisdictional policies may stipulate that a data exchanged for the purposes of treatment does not require the patient's consent or require the patient's consent for exchange of sensitive information. If the overarching policies determine that a transaction hinges on the consent, it needs to determine the identity of the patient(s) whose consent is needed, retrieve the consent, and then apply it to the context of the transaction.
+For example, jurisdictional policies may stipulate that data exchanged for the purposes of treatment does not require the patient's consent or require the patient's consent for exchange of sensitive information. If the overarching policies determine that a transaction hinges on the consent, it needs to determine the identity of the patient(s) whose consent is needed, retrieve the consent, and then apply it to the context of the transaction.
 
-Consent is a key policy component that must be enforced within the broader access control framework. Whether a transaction or data exchange is subject to patient consent depends on overarching policies, which define when consent is required and when data may flow without it. For example, jurisdictional regulations may stipulate that data exchanged for treatment purposes does not require patient consent, while the exchange of sensitive information does. When overarching policies indicate that a transaction depends on consent, the system must identify the  patients whose consents are relevant, retrieve the applicable consents, and apply them within the transaction’s context. 
+Consent is a key policy component that must be enforced within the broader access control framework. Whether a transaction or data exchange is subject to patient consent depends on overarching policies, which define when consent is required and when data may flow without it. For example, jurisdictional regulations may stipulate that data exchanged for treatment purposes does not require patient consent, while the exchange of sensitive information does. When overarching policies indicate that a transaction depends on consent, the system must identify the patients whose consents are relevant, retrieve the applicable consents, and apply them within the transaction's context.
 
 ### Exchanging Consent
-The consent resource contains policy fragments that capture the consenter’s preferences regarding the use of their information. This policy fragments may change during the life cycle of the consent, particularly when a consent is revoked. To ensure that the consenters wishes are respected, it is essential to ensure that at the time of enforcement the consent resource used as the basis of authorization decisions is current and up to date.
+The consent resource contains policy fragments that capture the consenter's preferences regarding the use of their information. These policy fragments may change during the life cycle of the consent, particularly when a consent is revoked. To ensure that the consenters' wishes are respected, it is essential to ensure that at the time of enforcement the consent resource used as the basis of authorization decisions is current and up to date.
 
 If the consent is freshly retrieved from the consent management source (which maintains direct relationship with the patient), the enforcing system can be confident that it is current and up to date. However, this is not always practical since in many scenarios a copy of the consent may be exchanged between systems. For example, a copy of the consent may be included as part of the patient's longitudinal record in single member or bulk exchange.
 
@@ -46,6 +46,6 @@ This is achieved through the use of standard FHIR Subscription operations
 
 The inherent network created by the relationships across systems in which the same Consent resource is shared forms a tree of relationships based on the Consent.
 
-The figure below represents a 3 layered Consent Network illustrating this virtual Network Relationship Tree
+The figure below represents a three-layered Consent Network illustrating this virtual Network Relationship Tree
 
 <div>{%include consent-network-state.svg%}</div>

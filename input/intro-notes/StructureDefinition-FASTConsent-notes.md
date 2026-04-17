@@ -46,12 +46,11 @@ The following search parameters and search parameter combinations SHALL be suppo
 
 1. **SHALL** support searching using the combination of the **[`patient`]({{site.data.fhir.path}}search.html#reference)** and **[`status`]({{site.data.fhir.path}}search.html#token)** search parameters:
 
-    `GET [base]/Patient?patient={type\}[id]&amp;status=[code]`
+    `GET [base]/Consent?patient={type\}[id]&amp;status=[code]`
 
     Example:
     
-      1. GET [base]/Patient?patient=Patient\1032702&amp;status=active
-
+      1. GET [base]/Consent?patient=Patient\1032702&amp;status=active
     *Implementation Notes:* Fetches a bundle of all Consent resources matching the specified patient and status ([how to search by reference]({{site.data.fhir.path}}search.html#reference) and [how to search by token]({{site.data.fhir.path}}search.html#token))
 
 
@@ -61,11 +60,10 @@ The following search parameter combinations **SHOULD** be supported:
 
 1. **SHOULD** support searching using the combination of the **[`patient`]({{site.data.fhir.path}}search.html#reference)** and **[`date`]({{site.data.fhir.path}}search.html#date)** search parameters:
 
-    `GET [base]/Patient?patient={type\}[id]&amp;date=[date]`
+    `GET [base]/Consent?patient={type\}[id]&amp;date=[date]`
 
     Example:
     
-      1. GET [base]/Patient?patient=Patient\1032702&amp;date=2024-03-20
-
+      1. GET [base]/Consent?patient=Patient\1032702&amp;date=2024-03-20
     *Implementation Notes:* Fetches a bundle of all Patient resources matching the specified patient and date ([how to search by reference]({{site.data.fhir.path}}search.html#reference) and [how to search by date]({{site.data.fhir.path}}search.html#date))
 

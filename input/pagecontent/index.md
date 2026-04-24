@@ -40,7 +40,7 @@ This implementation guide (and the menu for it) is organized into the following 
 
 * *Background* - Supporting informative pages that do not set conformance expectations
   * [Reading this IG](background.html) points to key pages in the FHIR spec and other source specifications that must be understood in order to understand this guide
-  * Use Case Pages - each use case page describes the intent use case, gives examples of its use, and provides a high-level overview of expected process flow
+  * [Use Case Pages](use-cases.html) - each use case page describes the intent use case, gives examples of its use, and provides a high-level overview of expected process flow
   * [Project and Participants](credits.html) gives a high-level overview of FAST and identifies the individuals and organizations involved in developing this implementation guide
 * *Specification* - Pages that set conformance expectations
   * [Conformance Expectations](conformance.html) defines base language and expectations for declaring conformance with the guide

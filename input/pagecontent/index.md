@@ -45,6 +45,7 @@ This implementation guide (and the menu for it) is organized into the following 
 * *Specification* - Pages that set conformance expectations
   * [Conformance Expectations](conformance.html) defines base language and expectations for declaring conformance with the guide
   * [Technical Specification](technical.html) defines the specific conformance requirements for systems wishing to conform to this implementation guide.
+  * [Information Sharing](sharing.html) defines the conformance requirements for sharing consent information between consent management systems.
   * [Privacy, Safety, and Security]({{site.data.fhir.path}}security.html#SecPrivConsiderations) covers considerations around data access, protection, and similar concepts that apply to all implementations
 * *FHIR Artifacts*
   * [Overview](artifact_overview.html) introduces and provides links to the profiles, search parameters and other FHIR artifacts used in this implementation guide

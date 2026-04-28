@@ -34,9 +34,6 @@ The artifacts are of five types:
 ##### Data Type Profiles
 * [FAST Reference](StructureDefinition-FASTReference.html) - {{site.data.StructureDefinition-FASTReference.description}}
 
-##### Extensions
-{% include ext-list-generator.md use="profile" %}
-
 #### Search Parameters
 * [FAST AuditEvent Consent](SearchParameter-fast-auditevent-consent.html) - {{site.data.SearchParameter-fast-auditevent-consent.description}}
 * [FAST Consent Controller](SearchParameter-fast-consent-controller.html) - {{site.data.SearchParameter-fast-consent-controller.description}}

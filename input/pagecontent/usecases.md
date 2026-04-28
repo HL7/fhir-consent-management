@@ -89,8 +89,6 @@ A consent form has been reviewed and completed (see use case [Review Consent](us
 
 **Actor:** Consenter
 
-**Pre-condition:**
-
 **Narrative:**
 By navigating and signing a delegation form, the consenter assigns a delegate to sign and file a consent on their behalf. 
 
@@ -142,8 +140,6 @@ A consent has been signed and filed.
 
 - The consenter is able to navigate a record of activities authorized or blocked based on the consent in question. 
 
-**Post-condition:**
-
 ### Propagate Consent Events
 
 <div>{%include propagate-consent-events-sequence.svg%}</div>
@@ -178,6 +174,3 @@ The consenter can navigate the timeline of the lifecycle events about the consen
 - When and by whom the consent was filed/signed.
 - If/when and by whom the consent was revoked.
 - If/when and to whom the consent has been shared.
-
-**Post-condition:**
-

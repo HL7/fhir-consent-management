@@ -35,7 +35,7 @@ There is a [FAST Consent Testing Guide](https://wildfhir4.wildfhir.org/ig/fhir-c
 ### Detailed Requirements
 
 #### Identifying Patients, Practitioners, Organizations, and Related Persons
-One of the most important parts of registering consents across systems is the proper identification of patients, practitioners, organizations, and related persons.  For a self-contained consent adminstration system, the URIs of those entities could be used, but when consents are spread across multiple systems, those URIs may be potentially no longer useful.  For that reason, this guide mandates that §ID1:Client systems **SHALL** query the consent administration service for the identifiers of the involved patients, practitioners, organizations, and related persons§.  How exactly these systems will identify that the proper entities are discovered is out of scope of this guide.  For patient matching and identification, the [FAST Interoperable Digital Identity and Patient Matching guide](https://hl7.org/fhir/us/identity-matching/) can be referenced.  Similar means for matching and identifying practitioners, organizations, and related persons should be used.
+One of the most important parts of registering consents across systems is the proper identification of patients, practitioners, organizations, and related persons.  For a self-contained consent adminstration system, the URIs of those entities could be used, but when consents are spread across multiple systems, those URIs may be potentially no longer useful.  §ID1:For that reason, this guide mandates that Client systems **SHALL** query the consent administration service for the identifiers of the involved patients, practitioners, organizations, and related persons§.  How exactly these systems will identify that the proper entities are discovered is out of scope of this guide.  For patient matching and identification, the [FAST Interoperable Digital Identity and Patient Matching guide](https://hl7.org/fhir/us/identity-matching/) can be referenced.  Similar means for matching and identifying practitioners, organizations, and related persons should be used.
 
 #### General Operation Details
 Every operation in this guide has an optional OperationOutcome defined as the return of the operation.  This OperationOutcome instance will detail whether the operation was a success or not and, if not, what business rules did not allow the operation to be successful.  The HTTP status code returned by the operation will indicate whether an operation was successful or not.  §OP10:Systems **MAY** return an OperationOutcome with a success to be consistent.§  §OP11:Systems **SHOULD** return an OperationOutcome with the details if an HTTP status code of 4xx or 5xx is returned.§
@@ -44,7 +44,7 @@ Every operation in this guide has an optional OperationOutcome defined as the re
 
 §OP1:To satisfy the business use cases for consent management, two operations are defined that a consent administration service **SHALL** support: File Consent and Revoke Consent.§
 
-Along with these operations, §OP2:Consent administration service systems **SHALL** support searching for consents§.  Finally, §OP3:a consent administration service **SHALL** support subscriptions to allow other systems to be informed when consents for a patient have changed.§
+§OP2:Along with these operations, Consent administration service systems **SHALL** support searching for consents§.  §OP3:Finally, a consent administration service **SHALL** support subscriptions to allow other systems to be informed when consents for a patient have changed.§
 
 ##### File Consent Operation
 The [File Consent Operation](OperationDefinition-file-consent.html) is used to file a consent with a consent administration service.  The details of the consent are contained in the [Consent](StructureDefinition-FASTConsent.html) instance and any documents that were used to generate the Consent are also included in the operation parameters.  §OP4:When filing a consent, the Consent status element **SHALL** be set to 'active'.§
@@ -78,7 +78,7 @@ To register a subscription, client systems will POST to a consent administration
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
 #### Sharing Health Information due to Consent
-Along with the business use cases of consent management, §OP8:consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, this guide defines an operation for recording consent disclosures and requires systems to implement searches for disclosures.
+§OP8:Along with the business use cases of consent management, consent administration services **SHALL** be able to record and retrieve disclosures of when a consent was accessed to determine whether patient information could be accessed.§  To support this requirement, this guide defines an operation for recording consent disclosures and requires systems to implement searches for disclosures.
 
 Disclosures are recorded as FHIR AuditEvent instances.  These AuditEvents reflect the Consent instance that was consulted as well as the type of health information that was shared.
 

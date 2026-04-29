@@ -23,6 +23,7 @@ Usage: #definition
   * max = "1"
   * documentation = "The Consent instance to file (see Input Parameters Profile for conformance)"
   * type = #Consent
+  * targetProfile = Canonical(FASTConsent)
 * parameter[+]
   * name = #document
   * use = #in

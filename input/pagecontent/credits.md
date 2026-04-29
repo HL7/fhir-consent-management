@@ -1,6 +1,3 @@
-### FAST
-
-
 ### The FAST Consent project
 
 Further details about the project, including minutes of meetings can be found on the [project Confluence page](https://confluence.hl7.org/spaces/FAST/pages/358254755/Consent+Management).

@@ -11,9 +11,9 @@ If the consent is freshly retrieved from the consent management source (which ma
 When a copy of consent travels to a different system, before making decisions based on the consent, the enforcing system needs to ensure it is up to date. The enforcing system can use one or more of the following mechanisms to ensure the freshness of the consent before enforcement:
 
 - Establishing a FHIR subscription with the source of the exchange to receive updates if and when the consent changes, for example upon revocation. 
-- Establishing a FHIR subscription with the original collector of the consent (e.g., [the `manager` extension](https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsent-definitions.html#key_Consent.extension:manager)) to receive updates if and when the consent changes, for example upon revocation.
+- Establishing a FHIR subscription with the original collector of the consent (e.g., [the `manager` extension](StructureDefinition-FASTConsent-definitions.html#key_Consent.extension:manager)){{site.data.StructureDefinition-FASTConsent.description.key_Consent.extension:manager}} to receive updates if and when the consent changes, for example upon revocation.
 - Using consent URL to retrieve the latest version of the consent from the source of the exchange, either periodically, or at the time of the enforcement.
-- Using consent metadata (e.g., [the `manager` extension](https://build.fhir.org/ig/HL7/fhir-consent-management/StructureDefinition-FASTConsent-definitions.html#key_Consent.extension:manager)) to fetch the latest version of the consent from the original collector of the consent.
+- Using consent metadata (e.g., [the `manager` extension](StructureDefinition-FASTConsent-definitions.html#key_Consent.extension:manager)) to fetch the latest version of the consent from the original collector of the consent.
 
 A consent enforcer may choose to rely on one or more of these methods to engineer a solution for ensuring that its copy of the consent is up to date and reliable. Note that depending on the circumstances and the relationships between systems and how they may change over time, not all of these methods are always feasible. For example, if the enforcing system does not have a relationship with the manager of the consent it may not be able to establish a subscription or retrieve a fresh copy. 
 

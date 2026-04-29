@@ -29,7 +29,7 @@ While _policy decision_ and _policy enforcement_ are generally out of scope for 
 
 {::options parse_block_html="false" /}
 <figure>
-  <img style="padding-top:0;padding-bottom:30px" width="800px" src="scope.svg" alt="Scope of the Implementation Guide"/>
+  <img style="padding-top:0;padding-bottom:30px" width="1000px" src="scope.svg" alt="Scope of the Implementation Guide"/>
   <figcaption>Scope of the Implementation Guide</figcaption>
 </figure>
 {::options parse_block_html="true" /}

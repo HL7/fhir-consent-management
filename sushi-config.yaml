@@ -125,6 +125,16 @@ menu:
   Artifacts:
     Overview: artifact_overview.html 
     FHIR Artifacts: artifacts.html
+  Base Specs:
+    FHIR R4 Spec: new-tab {{site.data.fhir.path}}
+    US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/index.html
+    Subscriptions R5 Backport: new-tab {{site.data.fhir.ver.subscriptions}}
+    IHE Privacy Consent on FHIR: new-tab {{site.data.fhir.ver.iheconsent}}
+  Support:
+    Discussion Forum: https://chat.fhir.org/#narrow/stream/426241-FHIR-at-Scale-.28FAST.29.3A-Consent-Management
+    Project Page: https://confluence.hl7.org/spaces/FAST/pages/358254755/Consent+Management
+    Project Dashboard: https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=18104
+    Propose a Change: https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-consent-management
     Downloads: downloads.html
     
 

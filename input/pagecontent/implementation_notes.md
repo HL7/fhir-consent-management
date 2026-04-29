@@ -1,8 +1,6 @@
 This section offers supplementary notes to support the understanding and implementation of this Implementation Guide and the use cases in its scope. The content is informative and aims to help implementers interpret the guide correctly, align with best practices, and assist in making technical design decisions.
 
 ### Enforcing Consent
-For example, jurisdictional policies may stipulate that data exchanged for the purposes of treatment does not require the patient's consent or require the patient's consent for exchange of sensitive information. If the overarching policies determine that a transaction hinges on the consent, it needs to determine the identity of the patient(s) whose consent is needed, retrieve the consent, and then apply it to the context of the transaction.
-
 Consent is a key policy component that must be enforced within the broader access control framework. Whether a transaction or data exchange is subject to patient consent depends on overarching policies, which define when consent is required and when data may flow without it. For example, jurisdictional regulations may stipulate that data exchanged for treatment purposes does not require patient consent, while the exchange of sensitive information does. When overarching policies indicate that a transaction depends on consent, the system must identify the patients whose consents are relevant, retrieve the applicable consents, and apply them within the transaction's context.
 
 ### Exchanging Consent

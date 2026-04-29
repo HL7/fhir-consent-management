@@ -30,6 +30,9 @@ Schematrons are also available for download:
 
 - [Schematrons(compressed folder)](schematrons.zip)
 
+### Cross-Version Analysis
+{% include cross-version-analysis.xhtml %}
+
 ### Implementation Guide Details
 
 The following links to the [ImplementationGuide](http://hl7.org/fhir/implementationguide.html) resource defines the technical details of this publication, including dependencies and publishing parameters:

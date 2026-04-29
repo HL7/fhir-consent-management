@@ -50,9 +50,6 @@ The following examples are present in this guide to show specific use cases:
 * [FAST Patient Subscription Example](Subscription-FASTPatientSubscriptionExample.html)
 * [FAST Subscription Notification](Bundle-FASTSubscriptionNotification.html)
 
-### Cross-Version Analysis
-{% include cross-version-analysis.xhtml %}
-
 ### Global Profiles
 
 {% include globals-table.xhtml %}

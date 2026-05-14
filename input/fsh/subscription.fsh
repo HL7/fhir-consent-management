@@ -2,13 +2,13 @@ Profile: FASTSubscription
 Parent: http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-subscription
 Description: "A profile for FAST subscriptions."
 * criteria = "http://hl7.org/fhir/us/consent-management/SubscriptionTopic/FASTConsentSubscriptionTopic"
-* status = #active
 * channel.type = #rest-hook
 
 Instance: FASTPatientSubscriptionExample
 InstanceOf: FASTSubscription
 Description: "An example of a FAST Subscription for a specific patient."
 * criteria.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria].valueString = "patientId=http://hl7.org/fhir/sid/us-npi|1234567893"
+* status = #active
 * channel.endpoint = "http://example.org/send-me-subscription-notifications"
 * channel.payload = #application/fhir+json
 * channel.payload.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content].valueCode = #full-resource
@@ -18,6 +18,7 @@ Instance: FASTOrganizationSubscriptionExample
 InstanceOf: FASTSubscription
 Description: "An example of a FAST Subscription for a specific organization."
 * criteria.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria].valueString = "organizationId=http://hl7.org/fhir/sid/us-npi|1234567893"
+* status = #active
 * channel.endpoint = "http://example.org/send-me-subscription-notifications"
 * channel.payload = #application/fhir+json
 * channel.payload.extension[http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content].valueCode = #full-resource

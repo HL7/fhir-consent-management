@@ -11,7 +11,7 @@ http://hl7.org/fhir/5.0/StructureDefinition/extension-Consent.controller named c
 * scope 1..1 MS
 * scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category 1..* MS
-* identifier 1..1 MS
+* identifier 1..* MS
 * patient 1..1 MS
 * patient only FASTReference
 * patient only Reference($USCorePatient)

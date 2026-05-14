@@ -12,7 +12,7 @@
     {
       "description": "When a consent record has been 'touched' and needs to be distributed amongst interested parties.",
       "resource": "http://hl7.org/fhir/StructureDefinition/Consent",
-      "supportedInteraction" : ["create","update","delete"]
+      "supportedInteraction" : ["create","update"]
     }
   ],
   "canFilterBy": [

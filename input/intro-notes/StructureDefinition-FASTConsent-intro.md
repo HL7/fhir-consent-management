@@ -15,7 +15,6 @@ The following data elements must always be present or must be supported if the d
 1. a source[x] that is either a DocumentReference with an attachment or a QuestionnaireResponse
 1. a provision, that must include the following:
     1. a type
-    1. an actor (where role is fixed to IRCP)
 1. a Consent grantee extension (backported from the R5 Consent resource)
 
 **Each Consent Must Support:**
@@ -25,6 +24,8 @@ The following data elements must always be present or must be supported if the d
 1. a provision purpose
 1. a Consent manager extension (backported from the R5 Consent resource)
 1. a Consent controller extension (backported from the R5 Consent resource)
+1. a provision, that must support the following:
+    1. an actor (where role is fixed to IRCP)
 
 **Each Consent MUST NOT provide:**
 

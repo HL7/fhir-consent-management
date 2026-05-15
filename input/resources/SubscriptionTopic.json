@@ -42,9 +42,9 @@
       "comparator": ["eq"]
     },
     {
-      "description": "The scope of the consent.",
-      "filterParameter": "scope",
-      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-scope",
+      "description": "The category of the consent.",
+      "filterParameter": "category",
+      "filterDefinition": "http://hl7.org/fhir/SearchParameter/Consent-category",
       "comparator": ["eq"]
     }
   ]

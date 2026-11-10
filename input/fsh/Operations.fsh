@@ -140,11 +140,11 @@ Description: "A profile that indicates the parameters for the Revoke Consent ope
 * parameter contains consent 1..1 MS and patient 1..1 MS and document 0..1 MS
 * parameter[consent].name ^patternString = "consent"
 * parameter[consent].value[x] ^min = 1
-* parameter[consent].value[x] only Reference(FASTConsent)
+* parameter[consent].value[x] only FASTReference(FASTConsent)
 * parameter[consent].value[x] ^mustSupport = true
 * parameter[patient].name ^patternString = "patient"
 * parameter[patient].value[x] ^min = 1
-* parameter[patient].value[x] only Reference($USCorePatient)
+* parameter[patient].value[x] only FASTReference($USCorePatient)
 * parameter[patient].value[x] ^mustSupport = true
 * parameter[document].name ^patternString = "document"
 * parameter[document].value[x] ^min = 0

@@ -95,6 +95,8 @@ To register a subscription, Consent Client systems will POST to a Consent Server
 
 For more details about supporting subscriptions, including how to delete a subscription that is no longer desired, consult the [Subscriptions R5 Backport framework]({{site.data.fhir.subscriptions}}).
 
+We recognize that there are authentication details with subscriptions and subscription notifications, but this IG does not impose any specific details.  Please refer to the Subscription Backport IG for information on notification authentications.
+
 #### Updating Consents
 
 §OP15?^client,consent-server:This guide does not define an Update Consent operation, and systems conforming to this guide **SHOULD NOT** update an existing Consent resource in place using RESTful `PUT` or `PATCH`.§ The reasons are:

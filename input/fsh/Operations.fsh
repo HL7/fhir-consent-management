@@ -45,6 +45,8 @@ Id: FileConsentParameters
 Title: "File Consent Operation Parameters"
 Description: "A profile that indicates the parameters for the File Consent operation."
 * parameter 1..*
+  * resource 1..1 MS
+  * value[x] 0..0
   * part 0..0
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
@@ -52,15 +54,9 @@ Description: "A profile that indicates the parameters for the File Consent opera
 * parameter ^slicing.description = "Slice parameters based on the name"
 * parameter contains consent 1..1 MS and document 1..1 MS
 * parameter[consent].name ^patternString = "consent"
-* parameter[consent].value[x] ^min = 0
-* parameter[consent].value[x] ^max = "0"
-* parameter[consent].resource ^min = 1
 * parameter[consent].resource ^type.code = #Consent
 * parameter[consent].resource ^type.profile[+] = Canonical(FASTConsent)
 * parameter[document].name ^patternString = "document"
-* parameter[document].value[x] ^min = 0
-* parameter[document].value[x] ^max = "0"
-* parameter[document].resource ^min = 1
 * parameter[document].resource ^type.code = #Resource
 * parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
 * parameter[document].resource ^type.profile[+] = Canonical($USCoreQuestionnaireResponse)
@@ -144,11 +140,13 @@ Description: "A profile that indicates the parameters for the Revoke Consent ope
 * parameter contains consent 1..1 MS and patient 1..1 MS and document 0..1 MS
 * parameter[consent].name ^patternString = "consent"
 * parameter[consent].value[x] ^min = 1
-* parameter[consent].value[x] only FASTReference(FASTConsent)
+* parameter[consent].value[x] only Reference(FASTConsent)
+* parameter[consent].valueReference only FASTReference
 * parameter[consent].value[x] ^mustSupport = true
 * parameter[patient].name ^patternString = "patient"
 * parameter[patient].value[x] ^min = 1
-* parameter[patient].value[x] only FASTReference($USCorePatient)
+* parameter[patient].value[x] only Reference($USCorePatient)
+* parameter[patient].valueReference only FASTReference
 * parameter[patient].value[x] ^mustSupport = true
 * parameter[document].name ^patternString = "document"
 * parameter[document].value[x] ^min = 0

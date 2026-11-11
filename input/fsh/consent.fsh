@@ -187,6 +187,6 @@ Description: "The two codes that are applicable to FAST Consent instances.  'act
 Profile: FASTReference
 Parent: Reference
 Description: "A profile on the Reference datatype that requires the identifier and exposes a set of additional identifiers in an extension."
-* extension contains http://hl7.org/fhir/StructureDefinition/additionalIdentifier|5.3.0 named additionalIdentifier 0..* MS
+* extension contains http://hl7.org/fhir/StructureDefinition/additionalIdentifier|5.4.0 named additionalIdentifier 0..* MS
 * identifier 1..1 MS
 

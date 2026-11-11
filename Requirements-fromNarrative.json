@@ -11,27 +11,17 @@
   "http://hl7.org/fhir/us/consent-management/ActorDefinition/client"],
   "_actor" : [{
     "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "url" : "http://hl7.org/fhir/6.0/StructureDefinition/extension-Requirements.actor.key",
       "valueId" : "consent-server"
     }]
   },
   {
     "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-actorkey",
+      "url" : "http://hl7.org/fhir/6.0/StructureDefinition/extension-Requirements.actor.key",
       "valueId" : "client"
     }]
   }],
   "statement" : [{
-    "key" : "1",
-    "conformance" : ["SHALL"],
-    "requirement" : "SC-8?^client:this guide requires that an external identifier for those participants SHALL be populated."
-  },
-  {
-    "key" : "2",
-    "conformance" : ["SHALL"],
-    "requirement" : "SC-8?^client:this guide requires that an external identifier for those participants SHALL be populated."
-  },
-  {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
       "valueId" : "consent-server"
@@ -450,6 +440,16 @@
     "conformance" : ["SHOULD"],
     "conditionality" : true,
     "requirement" : "**SHOULD** support searching using the combination of the **[`patient`](http://hl7.org/fhir/R4/search.html#reference)** and **[`date`](http://hl7.org/fhir/R4/search.html#date)** search parameters:"
+  },
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementactor",
+      "valueId" : "client"
+    }],
+    "key" : "SC-8",
+    "conformance" : ["SHALL"],
+    "conditionality" : true,
+    "requirement" : "this guide requires that an external identifier for those participants SHALL be populated."
   },
   {
     "extension" : [{

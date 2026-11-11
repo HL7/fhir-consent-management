@@ -1,6 +1,4 @@
 
-### Requirements Actor(s)
-
 <p>These requirements apply to the following actors: </p>
 <ul>
 <li><b><a href="ActorDefinition-client.html">Client</a></b>&nbsp;An application or product that implements the Client.</li>

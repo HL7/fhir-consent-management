@@ -9,10 +9,10 @@ name: ScalableConsentManagement
 title: Scalable Consent Management
 description: A FHIR IG that provides APIs for managing consent at scale across multiple consent management repositories.
 status: active # draft | active | retired | unknown
-version: 1.0.0-preview
+version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
-releaseLabel: STU 1 PReview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: STU 1 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 International / Community Based Collaborative Care
@@ -117,6 +117,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   globals-in-artifacts: true
   pin-canonicals: pin-multiples
   shownav: true
+  version-comparison: n/a
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │

@@ -1,9 +1,9 @@
 {
   "package-id" : "hl7.fhir.us.consent-management",
-  "version" : "1.0.0-preview",
-  "path" : "http://hl7.org/fhir/us/consent-management/2026Jan",
-  "status" : "preview",
+  "version" : "1.0.0",
+  "path" : "http://hl7.org/fhir/us/consent-management/1.0.0",
+  "status" : "trial-use",
   "sequence" : "STU 1",
-  "mode": "working",
+  "mode": "milestone",
   "desc" : "A FHIR IG that provides APIs for managing consent at scale across multiple consent management repositories."
 }

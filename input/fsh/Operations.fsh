@@ -45,8 +45,6 @@ Id: FileConsentParameters
 Title: "File Consent Operation Parameters"
 Description: "A profile that indicates the parameters for the File Consent operation."
 * parameter 1..*
-  * resource 1..1 MS
-  * value[x] 0..0
   * part 0..0
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
@@ -54,9 +52,13 @@ Description: "A profile that indicates the parameters for the File Consent opera
 * parameter ^slicing.description = "Slice parameters based on the name"
 * parameter contains consent 1..1 MS and document 1..1 MS
 * parameter[consent].name ^patternString = "consent"
+* parameter[consent].value[x] ^max = "0"
+* parameter[consent].resource ^min = 1
 * parameter[consent].resource ^type.code = #Consent
 * parameter[consent].resource ^type.profile[+] = Canonical(FASTConsent)
 * parameter[document].name ^patternString = "document"
+* parameter[document].value[x] ^max = "0"
+* parameter[document].resource ^min = 1
 * parameter[document].resource ^type.code = #Resource
 * parameter[document].resource ^type.profile[+] = Canonical(FASTDocumentReference)
 * parameter[document].resource ^type.profile[+] = Canonical($USCoreQuestionnaireResponse)
@@ -160,6 +162,9 @@ Instance: RevokeConsentExample
 InstanceOf: RevokeConsentParameters
 Description: "An example of a $revokeConsent Parameters resource."
 * parameter[consent].valueReference = Reference(ConsentExample)
+  * identifier
+    * system = "http://example.org/consent"
+    * value = "33445522"
 * parameter[patient].valueReference
   * identifier
     * system = "http://example.org/mrn"

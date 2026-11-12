@@ -118,6 +118,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   pin-canonicals: pin-multiples
   shownav: true
   version-comparison: n/a
+  auto-oid-root: 2.16.840.1.113883.4.642.40.107
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │

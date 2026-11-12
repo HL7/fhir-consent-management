@@ -24,12 +24,6 @@
 <p>
 <b>Parent:</b>&nbsp;<a href="Requirements-subscription-topics-client-consent-server.html#requirement-596">Requirements-subscription-topics-client-consent-server.html#requirement-596</a>
 </p>
-<p>
-<b>Related Requirement:</b>&nbsp;<a href="Requirements-unknown.html#requirement-1090">1090:&nbsp;Requirements-unknown.html#requirement-1090</a>
-</p>
-<p>
-<b>Notes:</b>&nbsp;build: replaced requirement 1090
-</p>
 </div>
 </div>
 

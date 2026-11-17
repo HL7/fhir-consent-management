@@ -89,9 +89,6 @@ INFORMATION: en/Requirements-workflow-client-consent-server.ai.html: The html so
 INFORMATION: en/Requirements-workflow-client-consent-server.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause: 'Conformance: SHALL'
 INFORMATION: en/changes.html: No conformance term found in the text: ID1 Client→Consent Client; 
 
-# 10 - The code is 'cbcc', but the publisher wants cbcc in the url but it should be homehealth. (https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/CBCC.20vs.20Homehealth/with/560287669)
-The nominated WG 'cbcc' means that the contact url should be 'http://www.hl7.org/Special/committees/cbcc' but it was not found
-
 # 11 - Subscription Topic warnings that have been verified to be correct
 No definition could be found for URL value 'hipaa-auth'
 %The parameter 'subscription' has the same name as a parameter for at least one operation in the core specification%
@@ -102,3 +99,6 @@ ValueSet 'http://hl7.org/fhir/ValueSet/subscription-notification-type' not found
 # 13 - Requirements.statement satisfiedBy and reference values use of https
 %A definition could not be found for Canonical URL 'https%
 %No definition could be found for URL value 'https%
+
+# 14 - Auto-generated Requirements object has an extension that the publisher can't find.  Conformance table is still generated correctly.  See https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/Error.20with.20auto-created.20narrative.20Requirements.20object/with/639889998
+Extension url 'http://hl7.org/fhir/6.0/StructureDefinition/extension-Requirements.actor.key' is not valid (invalid Version '6.0')

@@ -15,8 +15,8 @@ copyrightYear: 2024+
 releaseLabel: STU 1 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: HL7 International / Community Based Collaborative Care
-  url: http://www.hl7.org/Special/committees/homehealth
+  name: HL7 International / Security
+  url: http://www.hl7.org/Special/committees/secure
 
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
@@ -24,7 +24,7 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
     valueInteger: 1
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
-    valueCode: cbcc
+    valueCode: sec
     
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
